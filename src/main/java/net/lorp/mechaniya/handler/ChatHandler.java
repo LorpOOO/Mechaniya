@@ -1,14 +1,12 @@
 package net.lorp.mechaniya.handler;
 
 import dev.ftb.mods.ftbessentials.util.FTBEPlayerData;
-import net.lorp.mechaniya.Mechaniya;
 import net.minecraft.ChatFormatting;
 import net.minecraft.network.chat.Component;
 import net.minecraft.server.MinecraftServer;
 import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.world.phys.Vec3;
 import net.neoforged.bus.api.SubscribeEvent;
-import net.neoforged.fml.common.EventBusSubscriber;
 import net.neoforged.neoforge.event.ServerChatEvent;
 
 import java.util.List;
@@ -100,7 +98,7 @@ public class ChatHandler {
                 .collect(Collectors.toList());
 
         if (nearbyPlayers.size() <= 1) {
-            Component noFoundNearbyPlayers = Component.literal("§8Вас ніхто не чує. Постав §r§f!§r§8 на початку, щоб написати в глобальний чат.");
+            Component noFoundNearbyPlayers = Component.literal("§7Вас ніхто не чує. Постав §r§f!§r§7 на початку, щоб написати в глобальний чат.");
 
             sender.sendSystemMessage(noFoundNearbyPlayers);
 

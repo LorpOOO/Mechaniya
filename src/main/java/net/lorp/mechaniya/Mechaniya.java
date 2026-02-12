@@ -9,11 +9,13 @@ import net.lorp.mechaniya.item.ModCreativeModeTabs;
 import net.lorp.mechaniya.item.ModItems;
 import net.lorp.mechaniya.chemical.MechaniyaChemicals;
 import net.minecraft.world.item.CreativeModeTabs;
+import net.neoforged.api.distmarker.Dist;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.bus.api.SubscribeEvent;
 import net.neoforged.fml.ModContainer;
 import net.neoforged.fml.common.Mod;
 import net.neoforged.fml.config.ModConfig;
+import net.neoforged.fml.loading.FMLEnvironment;
 import net.neoforged.neoforge.common.NeoForge;
 import net.neoforged.neoforge.event.BuildCreativeModeTabContentsEvent;
 import net.neoforged.neoforge.event.server.ServerStartingEvent;
@@ -37,6 +39,10 @@ public class Mechaniya {
         ModFluidType.register(modEventBus);
         ModFluid.register(modEventBus);
         modContainer.registerConfig(ModConfig.Type.COMMON, Config.SPEC);
+
+        if (FMLEnvironment.dist == Dist.CLIENT) {
+            modEventBus.addListener(MechaniyaModClient::onRegisterClientExtensions);
+        }
     }
 
     @SuppressWarnings("all")
