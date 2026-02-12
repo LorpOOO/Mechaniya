@@ -1,0 +1,24 @@
+{
+  "replace": false,
+  "values": [
+    "mechaniya:andesite_machine",
+    "mechaniya:rubber_machine",
+    "mechaniya:brass_machine",
+    "mechaniya:silver_ore",
+    "mechaniya:deepslate_silver_ore",
+    "mechaniya:heatproof_machine",
+    "mechaniya:zinc_machine",
+    "mechaniya:ender_machine",
+    "mechaniya:basic_energy_machine",
+    "mechaniya:advanced_energy_machine",
+    "mechaniya:elite_energy_machine",
+    "mechaniya:ultimate_energy_machine",
+    "mechaniya:rocket_machine",
+    "mechaniya:enderiam_energy_machine",
+    "mechaniya:radiant_machine",
+    "mechaniya:simple_energy_machine",
+    "mechaniya:steel_mix_block",
+    "mechaniya:mithril_block",
+    "mechaniya:blaze_gold_block"
+  ]
+}

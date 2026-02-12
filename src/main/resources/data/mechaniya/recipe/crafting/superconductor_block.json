@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "###",
+    "###",
+    "###"
+  ],
+  "key": {
+    "#": { "item": "mechaniya:superconductor_ingot" }
+  },
+  "result": {
+    "count": 1,
+    "item": "mechaniya:superconductor_block"
+  }
+}

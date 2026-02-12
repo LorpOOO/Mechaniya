@@ -1,0 +1,33 @@
+{
+  "type": "create:mixing",
+  "heat_requirement": "superheated",
+  "ingredients": [
+    {
+      "item": "ae2:ender_dust"
+    },
+    {
+      "item": "ae2:ender_dust"
+    },
+    {
+      "item": "ae2:ender_dust"
+    },
+    {
+      "item": "ae2:ender_dust"
+    },
+    {
+      "item": "mekanism:enriched_diamond"
+    },
+    {
+      "item": "mekanism:enriched_diamond"
+    },
+    {
+      "tag": "c:ingots/platinum"
+    }
+  ],
+  "results": [
+    {
+      "count": 2,
+      "id": "mechaniya:enderium_ingot"
+    }
+  ]
+}

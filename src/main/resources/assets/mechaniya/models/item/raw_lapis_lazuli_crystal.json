@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "mechaniya:item/raw_lapis_lazuli_crystal"
+  }
+}

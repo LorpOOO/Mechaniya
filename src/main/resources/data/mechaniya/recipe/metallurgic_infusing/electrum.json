@@ -1,0 +1,16 @@
+{
+  "type": "mekanism:metallurgic_infusing",
+  "chemical_input": {
+    "amount": 10,
+    "tag": "mekanism:gold"
+  },
+  "item_input": {
+    "count": 1,
+    "tag": "c:ingots/silver"
+  },
+  "output": {
+    "count": 2,
+    "id": "unify:electrum_ingot"
+  },
+  "per_tick_usage": false
+}

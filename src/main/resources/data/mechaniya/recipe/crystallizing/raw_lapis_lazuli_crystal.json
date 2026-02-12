@@ -1,0 +1,11 @@
+{
+  "type": "mekanism:crystallizing",
+  "input": {
+    "amount": 250,
+    "chemical": "mechaniya:liquefied_lapis_lazuli"
+  },
+  "output": {
+    "count": 1,
+    "id": "mechaniya:raw_lapis_lazuli_crystal"
+  }
+}

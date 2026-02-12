@@ -1,0 +1,18 @@
+{
+  "type": "create:filling",
+  "ingredients": [
+    {
+      "item": "create_enchantment_industry:super_experience_nugget"
+    },
+    {
+      "type": "fluid_stack",
+      "amount": 100,
+      "fluid": "mechaniya:shimmer"
+    }
+  ],
+  "results": [
+    {
+      "id": "mechaniya:huper_experience_nugget"
+    }
+  ]
+}

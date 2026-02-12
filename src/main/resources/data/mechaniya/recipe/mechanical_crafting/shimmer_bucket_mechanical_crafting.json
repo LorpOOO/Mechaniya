@@ -1,0 +1,45 @@
+{
+  "type": "create:mechanical_crafting",
+  "accept_mirrored": false,
+  "category": "misc",
+  "key": {
+    "A": {
+      "item": "create_sa:heap_of_experience"
+    },
+    "B": {
+      "item": "create_enchantment_industry:super_experience_nugget"
+    },
+    "Z": {
+      "item": "mechaniya:huper_experience_heap"
+    },
+	"Q": {
+      "item": "dndesires:vanilla_milkshake_bucket"
+    },
+	"C": {
+      "item": "dndesires:chocolate_milkshake_bucket"
+    },
+	"X": {
+      "item": "dndesires:pumpkin_milkshake_bucket"
+    },
+	"W": {
+      "item": "dndesires:glowberry_milkshake_bucket"
+    },
+	"R": {
+      "item": "dndesires:strawberry_milkshake_bucket"
+    }
+  },
+  "pattern": [
+    "AAAAAAA",
+    "ABBBBBA",
+    "ABZRZBA",
+    "ABQWXBA",
+	"ABZCZBA",
+	"ABBBBBA",
+    "AAAAAAA"
+  ],
+  "result": {
+    "count": 1,
+    "id": "mechaniya:shimmer_bucket"
+  },
+  "show_notification": false
+}

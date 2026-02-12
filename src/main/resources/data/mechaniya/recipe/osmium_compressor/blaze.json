@@ -1,0 +1,16 @@
+{
+  "type": "mekanism:compressing",
+  "chemical_input": {
+    "amount": 1,
+    "chemical": "mekanism:osmium"
+  },
+  "item_input": {
+    "count": 64,
+    "item": "minecraft:blaze_powder"
+  },
+  "output": {
+    "count": 1,
+    "id": "mechaniya:enriched_blaze"
+  },
+  "per_tick_usage": true
+}

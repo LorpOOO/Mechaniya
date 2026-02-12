@@ -1,0 +1,15 @@
+{
+  "type": "create:mixing",
+  "heat_requirement": "heated",
+  "ingredients": [
+    {
+      "item": "c:ingots/nickel"
+    }
+  ],
+  "results": [
+    {
+      "amount": 90,
+      "id": "evolvedmekanism:molten_nickel"
+    }
+  ]
+}

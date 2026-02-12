@@ -1,0 +1,119 @@
+{
+  "type": "create:sequenced_assembly",
+  "ingredient": {
+    "item": "createmechanisms:zinc_mechanism"
+  },
+  "loops": 2,
+  "results": [
+    {
+      "chance": 100,
+      "id": "createmechanisms:heat_mechanism"
+    }
+  ],
+  "sequence": [
+    {
+      "type": "create:pressing",
+      "ingredients": [
+        {
+          "item": "createmechanisms:incomplete_heat_mechanism"
+        }
+      ],
+      "results": [
+        {
+          "id": "createmechanisms:incomplete_heat_mechanism"
+        }
+      ]
+    },
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "createmechanisms:incomplete_heat_mechanism"
+        },
+        {
+          "item": "mechaniya:cured_warped_rubber"
+        }
+      ],
+      "results": [
+        {
+          "id": "createmechanisms:incomplete_heat_mechanism"
+        }
+      ]
+    },
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "createmechanisms:incomplete_heat_mechanism"
+        },
+        {
+          "item": "architects_palette:nether_brass_ingot"
+        }
+      ],
+      "results": [
+        {
+          "id": "createmechanisms:incomplete_heat_mechanism"
+        }
+      ]
+    },
+    {
+      "type": "create:filling",
+      "ingredients": [
+        {
+          "item": "createmechanisms:incomplete_heat_mechanism"
+        },
+        {
+          "type": "fluid_stack",
+          "amount": 1000,
+          "fluid": "minecraft:lava"
+        }
+      ],
+      "results": [
+        {
+          "item": {
+            "id": "createmechanisms:incomplete_heat_mechanism"
+          }
+        }
+      ]
+    },
+    {
+      "type": "create:filling",
+      "ingredients": [
+        {
+          "item": "createmechanisms:incomplete_heat_mechanism"
+        },
+        {
+          "type": "fluid_stack",
+          "amount": 1000,
+          "fluid": "minecraft:lava"
+        }
+      ],
+      "results": [
+        {
+          "item": {
+            "id": "createmechanisms:incomplete_heat_mechanism"
+          }
+        }
+      ]
+    },
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "createmechanisms:incomplete_heat_mechanism"
+        },
+        {
+          "item": "create:sturdy_sheet"
+        }
+      ],
+      "results": [
+        {
+          "id": "createmechanisms:incomplete_heat_mechanism"
+        }
+      ]
+    }
+  ],
+  "transitional_item": {
+    "id": "createmechanisms:incomplete_heat_mechanism"
+  }
+}

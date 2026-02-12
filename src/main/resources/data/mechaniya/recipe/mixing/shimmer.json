@@ -1,0 +1,31 @@
+{
+  "type": "create:mixing",
+  "heat_requirement": "heated",
+  "ingredients": [
+    {
+      "item": "mechaniya:huper_experience_nugget"
+    },
+    {
+      "item": "createcompounds:chromatic_compound"
+    },
+    {
+      "item": "mechaniya:blaze_gold_nugget"
+    },
+    {
+      "type": "fluid_stack",
+      "amount": 100,
+      "fluid": "create_enchantment_industry:experience"
+    },
+    {
+      "type": "fluid_stack",
+      "amount": 100,
+      "fluid": "mechaniya:shimmer"
+    }
+  ],
+  "results": [
+    {
+      "amount": 210,
+      "id": "mechaniya:shimmer"
+    }
+  ]
+}

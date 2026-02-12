@@ -1,0 +1,22 @@
+{
+  "type": "create:mixing",
+  "heat_requirement": "heated",
+  "ingredients": [
+    {
+      "type": "fluid_stack",
+      "amount": 4,
+      "fluid": "evolvedmekanism:molten_copper"
+    },
+    {
+      "type": "fluid_stack",
+      "amount": 4,
+      "fluid": "evolvedmekanism:molten_tin"
+    }
+  ],
+  "results": [
+    {
+      "amount": 4,
+      "id": "evolvedmekanism:molten_bronze"
+    }
+  ]
+}

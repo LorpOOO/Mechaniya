@@ -1,0 +1,10 @@
+{
+  "type": "evolvedmekanism:melting",
+  "input": {
+    "item": "tfmg:bauxite_powder"
+  },
+  "output": {
+    "id": "evolvedmekanism:molten_aluminum",
+    "amount": 90
+  }
+}

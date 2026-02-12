@@ -1,0 +1,98 @@
+{
+  "type": "create:sequenced_assembly",
+  "ingredient": {
+    "item": "createmechanisms:iron_energy_mechanism"
+  },
+  "loops": 1,
+  "results": [
+    {
+      "chance": 100,
+      "id": "createmechanisms:computing_mechanism"
+    }
+  ],
+  "sequence": [
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "createmechanisms:incomplete_computing_mechanism"
+        },
+        {
+          "item": "ae2:silicon"
+        }
+      ],
+      "results": [
+        {
+          "id": "createmechanisms:incomplete_computing_mechanism"
+        }
+      ]
+    },
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "createmechanisms:incomplete_computing_mechanism"
+        },
+        {
+          "item": "ae2:fluix_crystal"
+        }
+      ],
+      "results": [
+        {
+          "id": "createmechanisms:incomplete_computing_mechanism"
+        }
+      ]
+    },
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "createmechanisms:incomplete_computing_mechanism"
+        },
+        {
+          "item": "ae2:charged_certus_quartz_crystal"
+        }
+      ],
+      "results": [
+        {
+          "id": "createmechanisms:incomplete_computing_mechanism"
+        }
+      ]
+    },
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "createmechanisms:incomplete_computing_mechanism"
+        },
+        {
+          "item": "minecraft:diamond"
+        }
+      ],
+      "results": [
+        {
+          "id": "createmechanisms:incomplete_computing_mechanism"
+        }
+      ]
+    },
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "createmechanisms:incomplete_computing_mechanism"
+        },
+        {
+          "item": "mechaniya:certus_quartz_tube"
+        }
+      ],
+      "results": [
+        {
+          "id": "createmechanisms:incomplete_computing_mechanism"
+        }
+      ]
+    }
+  ],
+  "transitional_item": {
+    "id": "createmechanisms:incomplete_computing_mechanism"
+  }
+}

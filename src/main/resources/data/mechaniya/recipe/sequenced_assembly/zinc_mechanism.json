@@ -1,0 +1,82 @@
+{
+  "type": "create:sequenced_assembly",
+  "ingredient": {
+    "item": "create:precision_mechanism"
+  },
+  "loops": 1,
+  "results": [
+    {
+      "chance": 100,
+      "id": "createmechanisms:zinc_mechanism"
+    }
+  ],
+  "sequence": [
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "createmechanisms:incomplete_zinc_mechanism"
+        },
+        {
+          "tag": "c:plates/cast_iron"
+        }
+      ],
+      "results": [
+        {
+          "id": "createmechanisms:incomplete_zinc_mechanism"
+        }
+      ]
+    },
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "createmechanisms:incomplete_zinc_mechanism"
+        },
+        {
+          "item": "mechaniya:radiant_rod"
+        }
+      ],
+      "results": [
+        {
+          "id": "createmechanisms:incomplete_zinc_mechanism"
+        }
+      ]
+    },
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "createmechanisms:incomplete_zinc_mechanism"
+        },
+        {
+          "item": "mechaniya:radiant_rod"
+        }
+      ],
+      "results": [
+        {
+          "id": "createmechanisms:incomplete_zinc_mechanism"
+        }
+      ]
+    },
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "createmechanisms:incomplete_zinc_mechanism"
+        },
+        {
+          "item": "create:experience_nugget"
+        }
+      ],
+      "results": [
+        {
+          "id": "createmechanisms:incomplete_zinc_mechanism"
+        }
+      ]
+    }
+  ],
+  "transitional_item": {
+    "id": "createmechanisms:incomplete_zinc_mechanism"
+  }
+}

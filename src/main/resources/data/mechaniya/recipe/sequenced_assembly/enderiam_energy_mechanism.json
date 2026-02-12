@@ -1,0 +1,82 @@
+{
+  "type": "create:sequenced_assembly",
+  "ingredient": {
+    "item": "mechaniya:netherite_energy_mechanism"
+  },
+  "loops": 1,
+  "results": [
+    {
+      "chance": 100,
+      "id": "createmechanisms:enderiam_energy_mechanism"
+    }
+  ],
+  "sequence": [
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "createmechanisms:incomplete_enderiam_energy_mechanism"
+        },
+        {
+          "item": "northstar:martian_steel_sheet"
+        }
+      ],
+      "results": [
+        {
+          "id": "createmechanisms:incomplete_enderiam_energy_mechanism"
+        }
+      ]
+    },
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "createmechanisms:incomplete_enderiam_energy_mechanism"
+        },
+        {
+          "item": "mechaniya:enderium_ingot"
+        }
+      ],
+      "results": [
+        {
+          "id": "createmechanisms:incomplete_enderiam_energy_mechanism"
+        }
+      ]
+    },
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "createmechanisms:incomplete_enderiam_energy_mechanism"
+        },
+        {
+          "item": "minecraft:copper_ingot"
+        }
+      ],
+      "results": [
+        {
+          "id": "createmechanisms:incomplete_enderiam_energy_mechanism"
+        }
+      ]
+    },
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "createmechanisms:incomplete_enderiam_energy_mechanism"
+        },
+        {
+          "item": "mekanism:ultimate_control_circuit"
+        }
+      ],
+      "results": [
+        {
+          "id": "createmechanisms:incomplete_enderiam_energy_mechanism"
+        }
+      ]
+    }
+  ],
+  "transitional_item": {
+    "id": "createmechanisms:incomplete_enderiam_energy_mechanism"
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "unify:iron_dust"
+    },
+    {
+      "tag": "c:dusts/coal_coke"
+    },
+    {
+      "tag": "c:dusts/coal_coke"
+    },
+    {
+      "item": "unify:iron_dust"
+    }
+  ],
+  "result": {
+    "id": "mechaniya:steel_mix",
+    "count": 2
+  }
+}

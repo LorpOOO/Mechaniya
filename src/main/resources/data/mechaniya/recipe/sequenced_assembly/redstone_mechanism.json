@@ -1,0 +1,82 @@
+{
+  "type": "create:sequenced_assembly",
+  "ingredient": {
+    "item": "create:precision_mechanism"
+  },
+  "loops": 1,
+  "results": [
+    {
+      "chance": 100,
+      "id": "createmechanisms:redstone_mechanism"
+    }
+  ],
+  "sequence": [
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "createmechanisms:incomplete_redstone_mechanism"
+        },
+        {
+          "item": "minecraft:redstone"
+        }
+      ],
+      "results": [
+        {
+          "id": "createmechanisms:incomplete_redstone_mechanism"
+        }
+      ]
+    },
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "createmechanisms:incomplete_redstone_mechanism"
+        },
+        {
+          "item": "minecraft:redstone"
+        }
+      ],
+      "results": [
+        {
+          "id": "createmechanisms:incomplete_redstone_mechanism"
+        }
+      ]
+    },
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "createmechanisms:incomplete_redstone_mechanism"
+        },
+        {
+          "item": "architects_palette:cerebral_plate"
+        }
+      ],
+      "results": [
+        {
+          "id": "createmechanisms:incomplete_redstone_mechanism"
+        }
+      ]
+    },
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "createmechanisms:incomplete_redstone_mechanism"
+        },
+        {
+          "item": "minecraft:iron_nugget"
+        }
+      ],
+      "results": [
+        {
+          "id": "createmechanisms:incomplete_redstone_mechanism"
+        }
+      ]
+    }
+  ],
+  "transitional_item": {
+    "id": "createmechanisms:incomplete_redstone_mechanism"
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "type": "create_enchantment_industry:grinding",
+  "ingredients": [
+    {
+      "item": "mechaniya:super_experience_heap"
+    }
+  ],
+  "results": [
+    {
+      "amount": 12,
+      "id": "create_enchantment_industry:experience"
+    }
+  ]
+}

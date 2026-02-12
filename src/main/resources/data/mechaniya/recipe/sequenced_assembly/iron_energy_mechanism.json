@@ -1,0 +1,83 @@
+{
+  "type": "create:sequenced_assembly",
+  "ingredient": {
+    "item": "createmechanisms:basic_energy_mechanism"
+  },
+  "loops": 1,
+  "results": [
+    {
+      "chance": 100,
+      "id": "createmechanisms:iron_energy_mechanism"
+    }
+  ],
+  "sequence": [
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "createmechanisms:incomplete_iron_energy_mechanism"
+        },
+        {
+          "item": "minecraft:iron_ingot"
+        }
+      ],
+      "results": [
+        {
+          "id": "createmechanisms:incomplete_iron_energy_mechanism"
+        }
+      ]
+    },
+
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "createmechanisms:incomplete_iron_energy_mechanism"
+        },
+        {
+          "item": "mekanism:alloy_infused"
+        }
+      ],
+      "results": [
+        {
+          "id": "createmechanisms:incomplete_iron_energy_mechanism"
+        }
+      ]
+    },
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "createmechanisms:incomplete_iron_energy_mechanism"
+        },
+        {
+          "item": "mechaniya:certus_quartz_tube"
+        }
+      ],
+      "results": [
+        {
+          "id": "createmechanisms:incomplete_iron_energy_mechanism"
+        }
+      ]
+    },
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "createmechanisms:incomplete_iron_energy_mechanism"
+        },
+        {
+          "item": "mekanism:basic_control_circuit"
+        }
+      ],
+      "results": [
+        {
+          "id": "createmechanisms:incomplete_iron_energy_mechanism"
+        }
+      ]
+    }
+  ],
+  "transitional_item": {
+    "id": "createmechanisms:incomplete_iron_energy_mechanism"
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "type": "mekmm:stamper",
+  "input": {
+    "count": 1,
+    "tag": "c:ingots/cast_iron"
+  },
+  "mold": {
+    "count": 1,
+    "item": "immersiveengineering:mold_plate"
+  },
+  "output": {
+    "count": 1,
+    "id": "unify:cast_iron_sheet"
+  }
+}

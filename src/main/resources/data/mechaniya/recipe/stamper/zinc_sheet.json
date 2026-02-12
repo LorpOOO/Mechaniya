@@ -1,0 +1,15 @@
+{
+  "type": "mekmm:stamper",
+  "input": {
+    "count": 1,
+    "tag": "c:ingots/zinc"
+  },
+  "mold": {
+    "count": 1,
+    "item": "immersiveengineering:mold_plate"
+  },
+  "output": {
+    "count": 1,
+    "id": "unify:zinc_sheet"
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "III",
+    "IbI",
+    "III"
+  ],
+  "key": {
+    "I": {
+      "item": "create_sa:heat_engine"
+    },
+    "b": {
+      "item": "dndesires:industrial_casing"
+    }
+  },
+  "result": {
+    "id": "mechaniya:zinc_machine"
+  }
+}

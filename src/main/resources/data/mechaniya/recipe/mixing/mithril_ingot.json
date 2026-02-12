@@ -1,0 +1,29 @@
+{
+  "type": "create:mixing",
+  "heat_requirement": "superheated",
+  "ingredients": [
+    {
+      "item": "mechaniya:blaze_gold_ingot"
+    },
+    {
+      "item": "mechaniya:enderium_ingot"
+    },
+    {
+      "item": "mechaniya:enderium_ingot"
+    },
+    {
+      "item": "createcompounds:refined_radiance"
+    },
+    {
+      "type": "fluid_stack",
+      "amount": 100,
+      "fluid": "mechaniya:shimmer"
+    }
+  ],
+  "results": [
+    {
+      "count": 1,
+      "id": "mechaniya:mithril_ingot"
+    }
+  ]
+}

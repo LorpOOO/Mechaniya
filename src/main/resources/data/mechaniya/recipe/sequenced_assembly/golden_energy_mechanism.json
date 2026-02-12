@@ -1,0 +1,79 @@
+{
+  "type": "create:sequenced_assembly",
+  "ingredient": {
+    "item": "createmechanisms:iron_energy_mechanism"
+  },
+  "loops": 1,
+  "results": [
+    {
+      "chance": 100,
+      "id": "createmechanisms:golden_energy_mechanism"
+    }
+  ],
+  "sequence": [
+    {
+      "type": "create:pressing",
+      "ingredients": [
+        {
+          "item": "createmechanisms:incomplete_golden_energy_mechanism"
+        }
+      ],
+      "results": [
+        {
+          "id": "createmechanisms:incomplete_golden_energy_mechanism"
+        }
+      ]
+    },
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "createmechanisms:incomplete_golden_energy_mechanism"
+        },
+        {
+          "item": "minecraft:gold_ingot"
+        }
+      ],
+      "results": [
+        {
+          "id": "createmechanisms:incomplete_golden_energy_mechanism"
+        }
+      ]
+    },
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "createmechanisms:incomplete_golden_energy_mechanism"
+        },
+        {
+          "item": "mekanism:hdpe_sheet"
+        }
+      ],
+      "results": [
+        {
+          "id": "createmechanisms:incomplete_golden_energy_mechanism"
+        }
+      ]
+    },
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "createmechanisms:incomplete_golden_energy_mechanism"
+        },
+        {
+          "item": "mekanism:advanced_control_circuit"
+        }
+      ],
+      "results": [
+        {
+          "id": "createmechanisms:incomplete_golden_energy_mechanism"
+        }
+      ]
+    }
+  ],
+  "transitional_item": {
+    "id": "createmechanisms:incomplete_golden_energy_mechanism"
+  }
+}

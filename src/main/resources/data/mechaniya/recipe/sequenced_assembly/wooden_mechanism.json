@@ -1,0 +1,75 @@
+{
+  "type": "create:sequenced_assembly",
+  "ingredient": {
+    "tag": "minecraft:logs"
+  },
+  "results": [
+    {
+      "id": "createmechanisms:wooden_mechanism"
+    }
+  ],
+  "sequence": [
+    {
+      "type": "create:pressing",
+      "ingredients": [
+        {
+          "item": "createmechanisms:incomplete_wooden_mechanism"
+        }
+      ],
+      "results": [
+        {
+          "id": "createmechanisms:incomplete_wooden_mechanism"
+        }
+      ]
+    },
+	      {
+  "type": "create:cutting",
+  "ingredients": [
+    {
+      "item": "createmechanisms:incomplete_wooden_mechanism"
+    }
+  ],
+  "processing_time": 100,
+  "results": [
+    {
+      "id": "createmechanisms:incomplete_wooden_mechanism"
+    }
+  ]
+    },
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "createmechanisms:incomplete_wooden_mechanism"
+        },
+        {
+          "item": "create:andesite_alloy"
+        }
+      ],
+      "results": [
+        {
+          "id": "createmechanisms:incomplete_wooden_mechanism"
+        }
+      ]
+    },
+	    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "createmechanisms:incomplete_wooden_mechanism"
+        },
+        {
+          "item": "create:cogwheel"
+        }
+      ],
+      "results": [
+        {
+          "id": "createmechanisms:incomplete_wooden_mechanism"
+        }
+      ]
+    }
+  ],
+  "transitional_item": {
+    "id": "createmechanisms:incomplete_wooden_mechanism"
+  }
+}

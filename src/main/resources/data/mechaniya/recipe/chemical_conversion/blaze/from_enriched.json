@@ -1,0 +1,11 @@
+{
+  "type": "mekanism:chemical_conversion",
+  "input": {
+    "count": 1,
+    "item": "mechaniya:enriched_blaze"
+  },
+  "output": {
+    "amount": 40,
+    "id": "mechaniya:blaze"
+  }
+}

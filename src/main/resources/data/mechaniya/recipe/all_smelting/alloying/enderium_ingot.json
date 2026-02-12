@@ -1,0 +1,18 @@
+{
+  "type": "evolvedmekanism:alloying",
+  "extra_input": {
+    "count": 4,
+    "item": "ae2:ender_dust"
+  },
+  "second_extra_input": {
+    "count": 2,
+    "item": "mekanism:enriched_diamond"
+  },
+  "main_input": {
+    "tag": "c:ingots/platinum"
+  },
+  "output": {
+    "id": "mechaniya:enderium_ingot",
+    "count": 2
+  }
+}

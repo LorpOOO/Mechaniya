@@ -1,0 +1,36 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "mechaniya:steel_mix"
+    },
+    {
+      "item": "mechaniya:steel_mix"
+    },
+    {
+      "item": "mechaniya:steel_mix"
+    },
+    {
+      "item": "mechaniya:steel_mix"
+    },
+    {
+      "item": "mechaniya:steel_mix"
+    },
+    {
+      "item": "mechaniya:steel_mix"
+    },
+    {
+      "item": "mechaniya:steel_mix"
+    },
+    {
+      "item": "mechaniya:steel_mix"
+    },
+    {
+      "item": "mechaniya:steel_mix"
+    }
+  ],
+  "result": {
+    "id": "mechaniya:steel_mix_block",
+    "count": 1
+  }
+}

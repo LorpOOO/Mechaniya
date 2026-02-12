@@ -1,0 +1,27 @@
+{
+  "type": "create:mixing",
+  "heat_requirement": "superheated",
+  "ingredients": [
+    {
+      "item": "create:powdered_obsidian"
+    },
+	{
+      "item": "create:powdered_obsidian"
+    },
+	{
+      "item": "create:powdered_obsidian"
+    },
+	{
+      "item": "architects_palette:wardstone_brick"
+    },
+    {
+      "item": "create:polished_rose_quartz"
+    }
+  ],
+  "results": [
+    {
+      "count": 2,
+      "id": "createcompounds:chromatic_compound"
+    }
+  ]
+}

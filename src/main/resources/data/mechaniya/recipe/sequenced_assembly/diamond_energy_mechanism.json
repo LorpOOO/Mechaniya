@@ -1,0 +1,70 @@
+{
+  "type": "create:sequenced_assembly",
+  "ingredient": {
+    "item": "createmechanisms:golden_energy_mechanism"
+  },
+  "loops": 1,
+  "results": [
+    {
+      "chance": 100,
+      "id": "createmechanisms:diamond_energy_mechanism"
+    }
+  ],
+  "sequence": [
+    {
+      "type": "create:filling",
+      "ingredients": [
+        {
+          "item": "createmechanisms:incomplete_diamond_energy_mechanism"
+        },
+        {
+          "type": "fluid_stack",
+          "amount": 270,
+          "fluid": "evolvedmekanism:molten_diamond"
+        }
+      ],
+      "results": [
+        {
+          "item": {
+            "id": "createmechanisms:incomplete_diamond_energy_mechanism"
+          }
+        }
+      ]
+    },
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "createmechanisms:incomplete_diamond_energy_mechanism"
+        },
+        {
+          "item": "mechaniya:polished_lapis_lazuli_crystal"
+        }
+      ],
+      "results": [
+        {
+          "id": "createmechanisms:incomplete_diamond_energy_mechanism"
+        }
+      ]
+    },
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "createmechanisms:incomplete_diamond_energy_mechanism"
+        },
+        {
+          "item": "mekanism:elite_control_circuit"
+        }
+      ],
+      "results": [
+        {
+          "id": "createmechanisms:incomplete_diamond_energy_mechanism"
+        }
+      ]
+    }
+  ],
+  "transitional_item": {
+    "id": "createmechanisms:incomplete_diamond_energy_mechanism"
+  }
+}

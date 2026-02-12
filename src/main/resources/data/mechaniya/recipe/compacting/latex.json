@@ -1,0 +1,35 @@
+{
+  "type": "create:compacting",
+  "ingredients": [
+    {
+      "tag": "minecraft:jungle_logs"
+    },
+    {
+      "tag": "minecraft:jungle_logs"
+    },
+    {
+      "tag": "minecraft:jungle_logs"
+    },
+    {
+      "tag": "minecraft:jungle_logs"
+    },
+	{
+      "tag": "minecraft:jungle_logs"
+    },
+	{
+      "tag": "minecraft:jungle_logs"
+    },
+	{
+      "tag": "minecraft:jungle_logs"
+    },
+	{
+      "tag": "minecraft:jungle_logs"
+    }
+  ],
+  "results": [
+    {
+      "amount": 25,
+      "id": "mechaniya:latex"
+    }
+  ]
+}

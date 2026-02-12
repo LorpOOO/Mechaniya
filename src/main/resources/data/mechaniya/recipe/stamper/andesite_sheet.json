@@ -1,0 +1,15 @@
+{
+  "type": "mekmm:stamper",
+  "input": {
+    "count": 1,
+    "item": "create:andesite_alloy"
+  },
+  "mold": {
+    "count": 1,
+    "item": "immersiveengineering:mold_plate"
+  },
+  "output": {
+    "count": 1,
+    "id": "createdeco:andesite_sheet"
+  }
+}

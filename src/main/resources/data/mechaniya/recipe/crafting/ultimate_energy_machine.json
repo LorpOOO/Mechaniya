@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "III",
+    "IbI",
+    "III"
+  ],
+  "key": {
+    "I": {
+      "item": "mechaniya:netherite_energy_mechanism"
+    },
+    "b": {
+      "item": "dndesires:overburden_casing"
+    }
+  },
+  "result": {
+    "id": "mechaniya:ultimate_energy_machine"
+  }
+}

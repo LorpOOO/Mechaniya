@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "III",
+    "IbI",
+    "III"
+  ],
+  "key": {
+    "I": {
+      "item": "createmechanisms:heat_mechanism"
+    },
+    "b": {
+      "item": "create:railway_casing"
+    }
+  },
+  "result": {
+    "id": "mechaniya:heatproof_machine"
+  }
+}

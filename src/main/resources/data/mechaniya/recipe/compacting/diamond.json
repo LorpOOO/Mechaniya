@@ -1,0 +1,36 @@
+{
+  "type": "create:compacting",
+  "heat_requirement": "superheated",
+  "ingredients": [
+    {
+      "item": "mekanism:enriched_carbon"
+    },
+    {
+      "item": "mekanism:enriched_carbon"
+    },
+    {
+      "item": "mekanism:enriched_carbon"
+    },
+    {
+      "item": "mekanism:enriched_carbon"
+    },
+    {
+      "item": "mekanism:enriched_carbon"
+    },
+    {
+      "item": "mekanism:enriched_carbon"
+    },
+    {
+      "item": "mekanism:enriched_carbon"
+    },
+    {
+      "item": "mekanism:enriched_carbon"
+    }
+  ],
+  "results": [
+    {
+      "id": "minecraft:diamond",
+      "count": 1
+    }
+  ]
+}

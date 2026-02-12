@@ -1,0 +1,98 @@
+{
+  "type": "create:sequenced_assembly",
+  "ingredient": {
+    "item": "createmechanisms:diamond_energy_mechanism"
+  },
+  "loops": 1,
+  "results": [
+    {
+      "chance": 100,
+      "id": "mechaniya:netherite_energy_mechanism"
+    }
+  ],
+  "sequence": [
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "mechaniya:incomplete_netherite_energy_mechanism"
+        },
+        {
+          "item": "createcompounds:shadow_steel"
+        }
+      ],
+      "results": [
+        {
+          "id": "mechaniya:incomplete_netherite_energy_mechanism"
+        }
+      ]
+    },
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "mechaniya:incomplete_netherite_energy_mechanism"
+        },
+        {
+          "item": "minecraft:netherite_ingot"
+        }
+      ],
+      "results": [
+        {
+          "id": "mechaniya:incomplete_netherite_energy_mechanism"
+        }
+      ]
+    },
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "mechaniya:incomplete_netherite_energy_mechanism"
+        },
+        {
+          "item": "minecraft:gold_ingot"
+        }
+      ],
+      "results": [
+        {
+          "id": "mechaniya:incomplete_netherite_energy_mechanism"
+        }
+      ]
+    },
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "mechaniya:incomplete_netherite_energy_mechanism"
+        },
+        {
+          "item": "mechaniya:overcharged_alloy"
+        }
+      ],
+      "results": [
+        {
+          "id": "mechaniya:incomplete_netherite_energy_mechanism"
+        }
+      ]
+    },
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "mechaniya:incomplete_netherite_energy_mechanism"
+        },
+        {
+          "item": "mekanism:ultimate_control_circuit"
+        }
+      ],
+      "results": [
+        {
+          "id": "mechaniya:incomplete_netherite_energy_mechanism"
+        }
+      ]
+    }
+  ],
+  "transitional_item": {
+    "id": "mechaniya:incomplete_netherite_energy_mechanism"
+  }
+}

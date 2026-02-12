@@ -1,0 +1,15 @@
+{
+  "type": "createaddition:charging",
+  "energy": 40000,
+  "ingredients": [
+    {
+      "item": "mechaniya:raw_lapis_lazuli_crystal"
+    }
+  ],
+  "max_charge_rate": 400,
+  "results": [
+    {
+      "id": "mechaniya:overcharged_raw_lapis_lazuli_crystal"
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "type": "create:splashing",
+  "ingredients": [
+    {
+      "item": "mechaniya:asurine_gravel"
+    }
+  ],
+  "results": [
+    {
+      "chance": 0.12,
+      "id": "unify:zinc_nugget"
+    },
+    {
+      "chance": 0.08,
+      "id": "unify:silver_nugget"
+    },
+    {
+      "chance": 0.25,
+      "id": "minecraft:flint"
+    }
+  ]
+}

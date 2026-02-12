@@ -1,0 +1,22 @@
+{
+  "type": "create:splashing",
+  "ingredients": [
+    {
+      "item": "mechaniya:deepslate_gravel"
+    }
+  ],
+  "results": [
+    {
+      "chance": 0.10,
+      "id": "unify:uranium_nugget"
+    },
+	{
+      "chance": 0.10,
+      "id": "unify:nickel_nugget"
+    },
+	{
+      "chance": 0.10,
+      "id": "unify:lead_nugget"
+    }
+  ]
+}

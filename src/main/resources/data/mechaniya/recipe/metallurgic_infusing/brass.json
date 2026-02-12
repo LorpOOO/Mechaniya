@@ -1,0 +1,16 @@
+{
+  "type": "mekanism:metallurgic_infusing",
+  "chemical_input": {
+    "amount": 10,
+    "tag": "mechaniya:zinc"
+  },
+  "item_input": {
+    "count": 1,
+    "tag": "c:ingots/copper"
+  },
+  "output": {
+    "count": 2,
+    "id": "create:brass_ingot"
+  },
+  "per_tick_usage": false
+}

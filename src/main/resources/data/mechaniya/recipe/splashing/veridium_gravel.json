@@ -1,0 +1,22 @@
+{
+  "type": "create:splashing",
+  "ingredients": [
+    {
+      "item": "mechaniya:veridium_gravel"
+    }
+  ],
+  "results": [
+    {
+      "chance": 0.12,
+      "id": "unify:copper_nugget"
+    },
+    {
+      "chance": 0.08,
+      "id": "unify:aluminum_nugget"
+    },
+	{
+      "chance": 0.25,
+      "id": "minecraft:flint"
+    }
+  ]
+}

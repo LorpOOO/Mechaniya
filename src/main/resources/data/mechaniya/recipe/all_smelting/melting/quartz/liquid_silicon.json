@@ -1,0 +1,10 @@
+{
+  "type": "evolvedmekanism:melting",
+  "input": {
+    "tag": "c:gems/quartz"
+  },
+  "output": {
+    "id": "tfmg:liquid_silicon",
+    "amount": 40
+  }
+}

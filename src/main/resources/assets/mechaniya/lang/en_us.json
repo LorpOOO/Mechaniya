@@ -1,0 +1,101 @@
+{
+  // --- Creative Tabs ---
+  "creativetab.mechaniya.mechaniya_tab": "Mechaniya",
+
+  // --- Blocks: Machines ---
+  "block.mechaniya.andesite_machine": "Andesite Machine",
+  "block.mechaniya.brass_machine": "Brass Machine",
+  "block.mechaniya.advanced_brass_machine": "Advanced Brass Machine",
+  "block.mechaniya.zinc_machine": "Zinc Machine",
+  "block.mechaniya.steel_machine": "Steel Machine",
+  "block.mechaniya.rubber_machine": "Rubber Machine",
+  "block.mechaniya.rocket_machine": "Rocket Machine",
+  "block.mechaniya.heatproof_machine": "Heatproof Machine",
+  "block.mechaniya.ender_machine": "Ender Machine",
+  "block.mechaniya.radiant_machine": "Radiant Machine",
+
+  // --- Blocks: Energy Machines ---
+  "block.mechaniya.basic_energy_machine": "Basic Energy Machine",
+  "block.mechaniya.simple_energy_machine": "Simple Energy Machine",
+  "block.mechaniya.advanced_energy_machine": "Advanced Energy Machine",
+  "block.mechaniya.elite_energy_machine": "Elite Energy Machine",
+  "block.mechaniya.ultimate_energy_machine": "Ultimate Energy Machine",
+  "block.mechaniya.enderiam_energy_machine": "Enderiam Energy Machine",
+
+  // --- Blocks: Ores & Resources ---
+  "block.mechaniya.titanium_ore": "Titanium Ore",
+  "block.mechaniya.deepslate_titanium_ore": "Deepslate Titanium Ore",
+  "block.mechaniya.silver_ore": "Silver Ore",
+  "block.mechaniya.steel_mix_block": "Steel Mix Block",
+  "block.mechaniya.deepslate_silver_ore": "Deepslate Silver Ore",
+  "block.mechaniya.end_platinum_ore": "End Platinum Ore",
+  "block.mechaniya.asurine_gravel": "Asurine Gravel",
+  "block.mechaniya.veridium_gravel": "Veridium Gravel",
+  "block.mechaniya.deepslate_gravel": "Deepslate Gravel",
+  "block.mechaniya.deepleeted_veridium": "Deepleeted Veridium",
+  "block.mechaniya.deepleeted_asurine": "Deepleeted Asurine",
+  "block.mechaniya.end_sand": "End Sand",
+  "block.mechaniya.mithril_block": "Mithril Block",
+  "block.mechaniya.blaze_gold_block": "Blaze Gold Block",
+  "block.mechaniya.huper_experience_block": "Huper Experience Block",
+
+  // --- Items: Components & Materials ---
+  "item.mechaniya.netherite_energy_mechanism": "Netherite Energy Mechanism",
+  "item.mechaniya.incomplete_netherite_energy_mechanism": "Incomplete Netherite Energy Mechanism",
+  "item.mechaniya.steel_mechanism": "Steel Mechanism",
+  "item.mechaniya.incomplete_steel_mechanism": "Incomplete Steel Mechanism",
+  "item.mechaniya.certus_quartz_tube": "Certus Quartz Tube",
+  "item.mechaniya.steel_mix": "Steel Mix",
+  "item.mechaniya.radiant_rod": "Radiant Rod",
+  "item.mechaniya.radiant_sheet": "Radiant Sheet",
+  "item.mechaniya.enderium_ingot": "Enderium Ingot",
+  "item.mechaniya.enriched_zinc": "Enriched Zinc",
+  "item.mechaniya.enriched_blaze": "Enriched Blaze",
+  "item.mechaniya.warped_rubber": "Warped Rubber",
+  "item.mechaniya.cured_warped_rubber": "Cured Warped Rubber",
+  "item.mechaniya.polished_lapis_lazuli_crystal": "Polished Lapis Lazuli Crystal",
+  "item.mechaniya.overcharged_raw_lapis_lazuli_crystal": "Overcharged Raw Lapis Lazuli Crystal",
+  "item.mechaniya.raw_lapis_lazuli_crystal": "Raw Lapis Lazuli Crystal",
+  "item.mechaniya.overcharged_alloy": "Overcharged Alloy",
+  "item.mechaniya.shimmer": "Shimmer Bucket",
+  "item.mechaniya.latex_bucket": "Latex Bucket",
+  "item.mechaniya.warped_latex_bucket": "Warped Latex Bucket",
+  "item.mechaniya.super_experience_heap": "Super Experience Heap",
+  "item.mechaniya.huper_experience_nugget": "Huper Experience Nugget",
+  "item.mechaniya.huper_experience_heap": "Huper Experience Heap",
+  "item.mechaniya.incomplete_elite_control_circuit": "Incomplete Elite Control Circuit",
+  "item.mechaniya.incomplete_advanced_control_circuit": "Incomplete Advanced Control Circuit",
+  "item.mechaniya.incomplete_ultimate_control_circuit": "Incomplete Ultimate Control Circuit",
+  "item.mechaniya.incomplete_basic_control_circuit": "Incomplete Basic Control Circuit",
+  "item.mechaniya.osmium_sheet": "Osmium Sheet",
+  "item.mechaniya.rainbow_alloy": "Rainbow Alloy",
+  "item.mechaniya.superconductor_sheet": "Superconductor Sheet",
+  "item.mechaniya.superconductor_ingot": "Superconductor Ingot",
+  "item.mechaniya.superconductor_wire": "Superconductor Wire",
+  "item.mechaniya.superconductor_nugget": "Superconductor Nugget",
+  "block.mechaniya.superconductor_block": "Superconductor Block",
+
+  // --- Fluids ---
+  "fluid.mechaniya.shimmer": "Shimmer",
+  "block.mechaniya.shimmer_block": "Shimmer",
+  "fluid_type.mechaniya.latex": "Latex",
+  "block.mechaniya.latex_block": "Latex",
+  "fluid_type.mechaniya.warped_latex": "Warped Latex",
+  "block.mechaniya.warped_latex_block": "Warped Latex",
+
+  // --- Items: Special & Easter Eggs ---
+  "item.mechaniya.minestar_logo": "Minestar Logo",
+  "item.mechaniya.roll_of_rolls": "Roll of Rolls",
+  "item.mechaniya.ledok": "Ledok",
+
+  // --- Chemicals ---
+  "chemical.mechaniya.zinc": "Zinc",
+  "chemical.mechaniya.blaze": "Blaze",
+  "chemical.mechaniya.liquefied_lapis_lazuli": "Liquefied Lapis Lazuli",
+
+  // --- Lore & Tooltips ---
+  "item.lore_roll_of_rolls": "§dTastes like gears, with 3 smaller rolls arguing inside",
+  "item.lore_ledok": "§bA strange ice cube. It looks... familiar.",
+  "item.lore_rainbow_alloy": "Texture is from Avaritia mod.",
+  "item.lore_minestar_logo": "§dLogo of the best server Minecraft server in the world"
+}

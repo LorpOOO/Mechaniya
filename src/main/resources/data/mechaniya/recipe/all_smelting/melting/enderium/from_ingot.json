@@ -1,0 +1,10 @@
+{
+  "type": "evolvedmekanism:melting",
+  "input": {
+    "item": "mechaniya:enderium_ingot"
+  },
+  "output": {
+    "id": "evolvedmekanism:molten_enderium",
+    "amount": 90
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "type": "mekanism:chemical_conversion",
+  "input": {
+    "count": 1,
+    "item": "mechaniya:enriched_zinc"
+  },
+  "output": {
+    "amount": 80,
+    "id": "mechaniya:zinc"
+  }
+}

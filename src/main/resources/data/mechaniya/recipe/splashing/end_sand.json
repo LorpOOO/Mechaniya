@@ -1,0 +1,14 @@
+{
+  "type": "create:splashing",
+  "ingredients": [
+    {
+      "item": "mechaniya:end_Sand"
+    }
+  ],
+  "results": [
+    {
+      "chance": 0.10,
+      "id": "unify:platinum_nugget"
+    }
+  ]
+}

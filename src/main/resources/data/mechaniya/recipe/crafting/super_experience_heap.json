@@ -1,0 +1,26 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "AB ",
+    "CD ",
+    "   "
+  ],
+  "key": {
+    "A": {
+      "item": "create_enchantment_industry:super_experience_nugget"
+    },
+    "B": {
+      "item": "create_enchantment_industry:super_experience_nugget"
+    },
+    "C": {
+      "item": "create_enchantment_industry:super_experience_nugget"
+    },
+    "D": {
+      "item": "create_enchantment_industry:super_experience_nugget"
+    }
+  },
+  "result": {
+    "id": "mechaniya:super_experience_heap",
+    "count": 1
+  }
+}

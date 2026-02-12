@@ -1,0 +1,114 @@
+{
+  "type": "create:sequenced_assembly",
+  "ingredient": {
+    "item": "createmechanisms:zinc_mechanism"
+  },
+  "loops": 1,
+  "results": [
+    {
+      "chance": 100,
+      "id": "mechaniya:steel_mechanism"
+    }
+  ],
+  "sequence": [
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "mechaniya:incomplete_steel_mechanism"
+        },
+        {
+          "item": "unify:steel_ingot"
+        }
+      ],
+      "results": [
+        {
+          "id": "mechaniya:incomplete_steel_mechanism"
+        }
+      ]
+    },
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "mechaniya:incomplete_steel_mechanism"
+        },
+        {
+          "item": "immersiveengineering:wirecoil_copper"
+        }
+      ],
+      "results": [
+        {
+          "id": "mechaniya:incomplete_steel_mechanism"
+        }
+      ]
+    },
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "mechaniya:incomplete_steel_mechanism"
+        },
+        {
+          "item": "unify:nickel_nugget"
+        }
+      ],
+      "results": [
+        {
+          "id": "mechaniya:incomplete_steel_mechanism"
+        }
+      ]
+    },
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "mechaniya:incomplete_steel_mechanism"
+        },
+        {
+          "item": "unify:zinc_nugget"
+        }
+      ],
+      "results": [
+        {
+          "id": "mechaniya:incomplete_steel_mechanism"
+        }
+      ]
+    },
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "mechaniya:incomplete_steel_mechanism"
+        },
+        {
+          "item": "unify:lead_nugget"
+        }
+      ],
+      "results": [
+        {
+          "id": "mechaniya:incomplete_steel_mechanism"
+        }
+      ]
+    },
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "mechaniya:incomplete_steel_mechanism"
+        },
+        {
+          "item": "create:electron_tube"
+        }
+      ],
+      "results": [
+        {
+          "id": "mechaniya:incomplete_steel_mechanism"
+        }
+      ]
+    }
+  ],
+  "transitional_item": {
+    "id": "mechaniya:incomplete_steel_mechanism"
+  }
+}

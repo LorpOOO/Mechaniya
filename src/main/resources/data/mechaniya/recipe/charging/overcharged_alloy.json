@@ -1,0 +1,15 @@
+{
+  "type": "createaddition:charging",
+  "energy": 100000,
+  "ingredients": [
+    {
+      "item": "createcompounds:chromatic_compound"
+    }
+  ],
+  "max_charge_rate": 400,
+  "results": [
+    {
+      "id": "mechaniya:overcharged_alloy"
+    }
+  ]
+}

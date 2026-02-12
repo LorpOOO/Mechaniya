@@ -1,0 +1,11 @@
+{
+  "type": "mekanism:enriching",
+  "input": {
+    "count": 1,
+    "item": "mechaniya:overcharged_raw_lapis_lazuli_crystal"
+  },
+  "output": {
+    "count": 1,
+    "id": "mechaniya:polished_lapis_lazuli_crystal"
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "III",
+    "IbI",
+    "III"
+  ],
+  "key": {
+    "I": {
+      "item": "createmechanisms:wooden_mechanism"
+    },
+    "b": {
+      "item": "create:andesite_casing"
+    }
+  },
+  "result": {
+    "id": "mechaniya:andesite_machine"
+  }
+}

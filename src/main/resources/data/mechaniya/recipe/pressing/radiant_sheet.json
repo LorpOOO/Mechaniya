@@ -1,0 +1,13 @@
+{
+  "type": "create:pressing",
+  "ingredients": [
+    {
+      "item": "createcompounds:refined_radiance"
+    }
+  ],
+  "results": [
+    {
+      "id": "mechaniya:radiant_sheet"
+    }
+  ]
+}

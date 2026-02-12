@@ -1,0 +1,16 @@
+{
+  "type": "evolvedmekanism:alloying",
+  "extra_input": {
+    "tag": "c:ingots/electrum"
+  },
+  "second_extra_input": {
+    "item": "minecraft:netherite_scrap"
+  },
+  "main_input": {
+    "tag": "c:ingots/platinum"
+  },
+  "output": {
+    "id": "mechaniya:superconductor_ingot",
+    "count": 2
+  }
+}

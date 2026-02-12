@@ -1,0 +1,81 @@
+{
+  "type": "create:sequenced_assembly",
+  "ingredient": {
+    "item": "mechaniya:steel_mechanism"
+  },
+  "transitional_item": {
+    "item": "createmechanisms:incomplete_basic_energy_mechanism"
+  },
+  "results": [
+    {
+      "item": "createmechanisms:basic_energy_mechanism",
+      "chance": 100.0
+    }
+  ],
+  "loops": 1,
+  "sequence": [
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        { "item": "createmechanisms:incomplete_basic_energy_mechanism" },
+        { "item": "unify:constantan_nugget" }
+      ],
+      "results": [
+        { "item": "createmechanisms:incomplete_basic_energy_mechanism" }
+      ]
+    },
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        { "item": "createmechanisms:incomplete_basic_energy_mechanism" },
+        { "item": "immersiveengineering:plate_duroplast" }
+      ],
+      "results": [
+        { "item": "createmechanisms:incomplete_basic_energy_mechanism" }
+      ]
+    },
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        { "item": "createmechanisms:incomplete_basic_energy_mechanism" },
+        { "item": "immersiveengineering:component_iron" }
+      ],
+      "results": [
+        { "item": "createmechanisms:incomplete_basic_energy_mechanism" }
+      ]
+    },
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        { "item": "createmechanisms:incomplete_basic_energy_mechanism" },
+        { "item": "immersiveengineering:light_bulb" }
+      ],
+      "results": [
+        { "item": "createmechanisms:incomplete_basic_energy_mechanism" }
+      ]
+    },
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        { "item": "createmechanisms:incomplete_basic_energy_mechanism" },
+        { "item": "immersiveengineering:electron_tube" }
+      ],
+      "results": [
+        { "item": "createmechanisms:incomplete_basic_energy_mechanism" }
+      ]
+    },
+    {
+      "type": "create:filling",
+      "ingredients": [
+        { "item": "createmechanisms:incomplete_basic_energy_mechanism" },
+        {
+          "fluid": "immersivepetroleum:lubricant",
+          "amount": 1000
+        }
+      ],
+      "results": [
+        { "item": "createmechanisms:incomplete_basic_energy_mechanism" }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "type": "create:pressing",
+  "ingredients": [
+    {
+      "item": "mechaniya:blaze_gold_ingot"
+    }
+  ],
+  "results": [
+    {
+      "id": "mechaniya:blaze_gold_sheet"
+    }
+  ]
+}
