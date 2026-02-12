@@ -18,7 +18,6 @@ import java.util.stream.Collectors;
 import static net.lorp.mechaniya.Mechaniya.LOGGER;
 
 @SuppressWarnings("all")
-@EventBusSubscriber(modid = Mechaniya.MOD_ID)
 public class ChatHandler {
 
     private static final char GLOBAL_PREFIX = '!';

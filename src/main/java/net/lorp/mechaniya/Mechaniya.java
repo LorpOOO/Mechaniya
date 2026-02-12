@@ -4,6 +4,7 @@ import com.mojang.logging.LogUtils;
 import net.lorp.mechaniya.block.ModBlocks;
 import net.lorp.mechaniya.fluid.ModFluid;
 import net.lorp.mechaniya.fluid.ModFluidType;
+import net.lorp.mechaniya.handler.ChatHandler;
 import net.lorp.mechaniya.item.ModCreativeModeTabs;
 import net.lorp.mechaniya.item.ModItems;
 import net.lorp.mechaniya.chemical.MechaniyaChemicals;
@@ -26,6 +27,7 @@ public class Mechaniya {
     public Mechaniya(IEventBus modEventBus, ModContainer modContainer) {
 
         NeoForge.EVENT_BUS.register(this);
+        NeoForge.EVENT_BUS.register(ChatHandler.class);
 
         ModCreativeModeTabs.register(modEventBus);
 
