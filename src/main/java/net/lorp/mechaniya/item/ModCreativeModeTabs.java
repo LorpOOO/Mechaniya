@@ -61,6 +61,8 @@ public class ModCreativeModeTabs {
                         output.accept(ModBlocks.DEEPLEETED_VERIDIUM.get());
                         output.accept(ModBlocks.DEEPLEETED_ASURINE.get());
                         output.accept(ModBlocks.END_SAND.get());
+                        output.accept(ModBlocks.DEEPSLATE_TITANIUM_ORE.get());
+                        output.accept(ModBlocks.TITANIUM_ORE.get());
 
                         // Метали та сплави
                         output.accept(ModItems.MITHRIL_INGOT.get());
