@@ -2,12 +2,10 @@ package net.lorp.mechaniya.block;
 
 import net.lorp.mechaniya.Mechaniya;
 import net.lorp.mechaniya.fluid.ModFluid;
-import net.lorp.mechaniya.item.ModItems;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.Rarity;
 import net.minecraft.world.level.block.Block;
-import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.block.LiquidBlock;
 import net.minecraft.world.level.block.SoundType;
 import net.minecraft.world.level.block.state.BlockBehaviour;

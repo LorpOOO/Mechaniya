@@ -35,7 +35,7 @@ public class ModItems {
                     .component(DataComponents.LORE, new ItemLore
                             (List.of(Component.translatable("item.lore_rainbow_alloy"))))
             ));
-    public static final DeferredItem<Item> INCOMPLЕTE_STEEL_MECHANISM = ITEMS.register("incomplete_steel_mechanism",
+    public static final DeferredItem<Item> INCOMPLETE_STEEL_MECHANISM = ITEMS.register("incomplete_steel_mechanism",
             () -> new Item(new Item.Properties()
                     .fireResistant()
             ));
@@ -140,7 +140,7 @@ public class ModItems {
             () -> new Item(new Item.Properties()));
     public static final DeferredItem<Item> ENRICHED_ZINC = ITEMS.register("enriched_zinc",
             () -> new Item(new Item.Properties()));
-    public static final DeferredItem<Item> INCOMPLЕTE_NETHERITE_ENERGY_MECHANISM = ITEMS.register("incomplete_netherite_energy_mechanism",
+    public static final DeferredItem<Item> INCOMPLETE_NETHERITE_ENERGY_MECHANISM = ITEMS.register("incomplete_netherite_energy_mechanism",
             () -> new Item(new Item.Properties()));
     public static final DeferredItem<Item> ENDERIUM_INGOT = ITEMS.register("enderium_ingot",
             () -> new Item(new Item.Properties()));

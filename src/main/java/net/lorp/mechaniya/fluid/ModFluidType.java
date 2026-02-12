@@ -8,9 +8,11 @@ import net.neoforged.neoforge.fluids.FluidType;
 import net.neoforged.neoforge.registries.DeferredHolder;
 import net.neoforged.neoforge.registries.DeferredRegister;
 import net.neoforged.neoforge.registries.NeoForgeRegistries;
+import org.jetbrains.annotations.NotNull;
 
 import java.util.function.Consumer;
 
+@SuppressWarnings("all")
 public class ModFluidType {
     public static final DeferredRegister<FluidType> FLUID_TYPES =
             DeferredRegister.create(NeoForgeRegistries.FLUID_TYPES, Mechaniya.MOD_ID);
@@ -24,14 +26,15 @@ public class ModFluidType {
                     .canHydrate(false)
                     .supportsBoating(true) // Дозволяє плавати на човнах
             ) {
+                @SuppressWarnings("removal")
                 @Override
                 public void initializeClient(Consumer<IClientFluidTypeExtensions> consumer) {
                     consumer.accept(new IClientFluidTypeExtensions() {
                         private static final ResourceLocation STILL = ResourceLocation.fromNamespaceAndPath(Mechaniya.MOD_ID, "block/shimmer_still");
                         private static final ResourceLocation FLOW = ResourceLocation.fromNamespaceAndPath(Mechaniya.MOD_ID, "block/shimmer_flow");
 
-                        @Override public ResourceLocation getStillTexture() { return STILL; }
-                        @Override public ResourceLocation getFlowingTexture() { return FLOW; }
+                        @Override public @NotNull ResourceLocation getStillTexture() { return STILL; }
+                        @Override public @NotNull ResourceLocation getFlowingTexture() { return FLOW; }
                     });
                 }
             }
@@ -46,14 +49,15 @@ public class ModFluidType {
                     .canHydrate(false)
                     .supportsBoating(true)
             ) {
+                @SuppressWarnings("removal")
                 @Override
-                public void initializeClient(Consumer<IClientFluidTypeExtensions> consumer) {
+                public void initializeClient(@NotNull Consumer<IClientFluidTypeExtensions> consumer) {
                     consumer.accept(new IClientFluidTypeExtensions() {
                         private static final ResourceLocation STILL = ResourceLocation.fromNamespaceAndPath(Mechaniya.MOD_ID, "block/latex_still");
                         private static final ResourceLocation FLOW = ResourceLocation.fromNamespaceAndPath(Mechaniya.MOD_ID, "block/latex_flow");
 
-                        @Override public ResourceLocation getStillTexture() { return STILL; }
-                        @Override public ResourceLocation getFlowingTexture() { return FLOW; }
+                        @Override public @NotNull ResourceLocation getStillTexture() { return STILL; }
+                        @Override public @NotNull ResourceLocation getFlowingTexture() { return FLOW; }
                     });
                 }
             }
@@ -68,14 +72,15 @@ public class ModFluidType {
                     .canHydrate(false)
                     .supportsBoating(true)
             ) {
+                @SuppressWarnings("removal")
                 @Override
-                public void initializeClient(Consumer<IClientFluidTypeExtensions> consumer) {
+                public void initializeClient(@NotNull Consumer<IClientFluidTypeExtensions> consumer) {
                     consumer.accept(new IClientFluidTypeExtensions() {
                         private static final ResourceLocation STILL = ResourceLocation.fromNamespaceAndPath(Mechaniya.MOD_ID, "block/warped_latex_still");
                         private static final ResourceLocation FLOW = ResourceLocation.fromNamespaceAndPath(Mechaniya.MOD_ID, "block/warped_latex_flow");
 
-                        @Override public ResourceLocation getStillTexture() { return STILL; }
-                        @Override public ResourceLocation getFlowingTexture() { return FLOW; }
+                        @Override public @NotNull ResourceLocation getStillTexture() { return STILL; }
+                        @Override public @NotNull ResourceLocation getFlowingTexture() { return FLOW; }
                     });
                 }
             }

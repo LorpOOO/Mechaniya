@@ -15,15 +15,16 @@ public class ModCreativeModeTabs {
     public static final DeferredRegister<CreativeModeTab> CREATIVE_MODE_TAB =
             DeferredRegister.create(Registries.CREATIVE_MODE_TAB, Mechaniya.MOD_ID);
 
+    @SuppressWarnings("all")
     public static final Supplier<CreativeModeTab> MECHANIYA_TAB = CREATIVE_MODE_TAB.register("mechaniya_tab",
             () -> CreativeModeTab.builder().icon(() -> new ItemStack(ModItems.OVERCHARGED_RAW_LAPIS_LAZULI_CRYSTAL.get()))
                     .title(Component.translatable("creativetab.mechaniya.mechaniya_tab"))
                     .displayItems((itemDisplayParameters, output) -> {
                         // Механізми
                         output.accept(ModItems.STEEL_MECHANISM.get());
-                        output.accept(ModItems.INCOMPLЕTE_STEEL_MECHANISM.get());
+                        output.accept(ModItems.INCOMPLETE_STEEL_MECHANISM.get());
                         output.accept(ModItems.NETHERITE_ENERGY_MECHANISM.get());
-                        output.accept(ModItems.INCOMPLЕTE_NETHERITE_ENERGY_MECHANISM.get());
+                        output.accept(ModItems.INCOMPLETE_NETHERITE_ENERGY_MECHANISM.get());
                         output.accept(ModItems.CERTUS_QUARTZ_TUBE.get());
 
                         // Корпуси машин
