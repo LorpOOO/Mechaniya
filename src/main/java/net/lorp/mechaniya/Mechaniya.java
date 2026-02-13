@@ -1,13 +1,13 @@
 package net.lorp.mechaniya;
 
 import com.mojang.logging.LogUtils;
-import net.lorp.mechaniya.block.ModBlocks;
-import net.lorp.mechaniya.fluid.ModFluid;
-import net.lorp.mechaniya.fluid.ModFluidType;
-import net.lorp.mechaniya.handler.ChatHandler;
-import net.lorp.mechaniya.item.ModCreativeModeTabs;
-import net.lorp.mechaniya.item.ModItems;
-import net.lorp.mechaniya.chemical.MechaniyaChemicals;
+import net.lorp.mechaniya.common.register.ModBlocks;
+import net.lorp.mechaniya.common.register.ModFluid;
+import net.lorp.mechaniya.common.register.ModFluidType;
+import net.lorp.mechaniya.server.handler.ChatHandler;
+import net.lorp.mechaniya.common.register.ModCreativeModeTabs;
+import net.lorp.mechaniya.common.register.ModItems;
+import net.lorp.mechaniya.common.register.ModChemicals;
 import net.minecraft.world.item.CreativeModeTabs;
 import net.neoforged.api.distmarker.Dist;
 import net.neoforged.bus.api.IEventBus;
@@ -35,7 +35,7 @@ public class Mechaniya {
 
         ModItems.register(modEventBus);
         ModBlocks.register(modEventBus);
-        MechaniyaChemicals.CHEMICALS.register(modEventBus);
+        ModChemicals.CHEMICALS.register(modEventBus);
         ModFluidType.register(modEventBus);
         ModFluid.register(modEventBus);
         modContainer.registerConfig(ModConfig.Type.COMMON, Config.SPEC);

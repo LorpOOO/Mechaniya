@@ -2,7 +2,7 @@ package net.lorp.mechaniya;
 
 import com.mojang.blaze3d.shaders.FogShape;
 import com.mojang.blaze3d.systems.RenderSystem;
-import net.lorp.mechaniya.fluid.ModFluidType;
+import net.lorp.mechaniya.common.register.ModFluidType;
 import net.minecraft.client.Camera;
 import net.minecraft.client.multiplayer.ClientLevel;
 import net.minecraft.client.renderer.FogRenderer;

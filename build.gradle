@@ -12,18 +12,23 @@ tasks.named('wrapper', Wrapper).configure {
 version = mod_version
 group = mod_group_id
 
+
 repositories {
-    mavenCentral()
-    maven { url = "https://cursemaven.com" }
+    mavenLocal()
+    flatDir {
+        dirs 'libs'
+    }
 }
 
 dependencies {
-    implementation 'curse.maven:mekanism-268560:7132168'
+    implementation name: 'architectury-13.0.8'
 
-    implementation "curse.maven:ftb-essentials-410811:6979622"
-    implementation "curse.maven:ftb-ranks-forge-314905:6431744"
-    implementation "curse.maven:ftb-library-forge-404465:7134093"
-    implementation "curse.maven:architectury-api-419699:5786327"
+
+    implementation name: 'create-1.21.1-6.0.10'
+    implementation name: 'ftb-essentials-2101.1.9'
+    implementation name: 'ftb-library-2101.1.30'
+    implementation name: 'createmechanisms-3.0.0'
+    implementation name: 'Mekanism-1.21.1-10.7.17.homebaked'
 }
 
 
@@ -88,13 +93,6 @@ configurations {
     runtimeClasspath.extendsFrom localRuntime
 }
 
-dependencies {
-
-    implementation "curse.maven:mekanism-268560:7132168"
-
-
-
-}
 
 var generateModMetadata = tasks.register("generateModMetadata", ProcessResources) {
     var replaceProperties = [
