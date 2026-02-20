@@ -1,0 +1,12 @@
+{
+  "type": "immersiveengineering:metal_press",
+  "energy": 2400,
+  "input": {
+    "item": "mechaniya:radiant_sheet"
+  },
+  "mold": "immersiveengineering:mold_rod",
+  "result": {
+    "count": 2,
+    "item": "mechaniya:radiant_rod"
+  }
+}

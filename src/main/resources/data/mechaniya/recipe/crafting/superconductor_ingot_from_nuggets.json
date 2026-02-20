@@ -1,15 +1,18 @@
 {
   "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "#": {
+      "item": "mechaniya:superconductor_nugget"
+    }
+  },
   "pattern": [
     "###",
     "###",
     "###"
   ],
-  "key": {
-    "#": { "item": "mechaniya:superconductor_nugget" }
-  },
   "result": {
     "count": 1,
-    "item": "mechaniya:superconductor_ingot"
+    "id": "mechaniya:superconductor_ingot"
   }
 }

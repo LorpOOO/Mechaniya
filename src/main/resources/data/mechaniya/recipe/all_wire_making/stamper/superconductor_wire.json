@@ -1,0 +1,15 @@
+{
+  "type": "mekmm:stamper",
+  "input": {
+    "count": 1,
+    "item": "mechaniya:superconductor_sheet"
+  },
+  "mold": {
+    "count": 1,
+    "item": "immersiveengineering:mold_wire"
+  },
+  "output": {
+    "count": 2,
+    "id": "mechaniya:superconductor_wire"
+  }
+}

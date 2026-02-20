@@ -1,10 +1,13 @@
 {
   "type": "minecraft:crafting_shapeless",
+  "category": "misc",
   "ingredients": [
-    { "item": "mechaniya:superconductor_ingot" }
+    {
+      "item": "mechaniya:superconductor_ingot"
+    }
   ],
   "result": {
     "count": 9,
-    "item": "mechaniya:superconductor_nugget"
+    "id": "mechaniya:superconductor_nugget"
   }
 }

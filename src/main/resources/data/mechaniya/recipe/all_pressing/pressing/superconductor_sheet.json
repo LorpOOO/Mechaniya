@@ -2,12 +2,12 @@
   "type": "create:pressing",
   "ingredients": [
     {
-      "item": "createcompounds:refined_radiance"
+      "item": "mechaniya:superconductor_ingot"
     }
   ],
   "results": [
     {
-      "id": "mechaniya:radiant_sheet"
+      "id": "mechaniya:superconductor_sheet"
     }
   ]
 }

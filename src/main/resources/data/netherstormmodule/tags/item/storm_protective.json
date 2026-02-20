@@ -1,0 +1,12 @@
+{
+  "values": [
+    "netherstormmodule:hazmat_helmet",
+    "netherstormmodule:hazmat_chestplate",
+    "netherstormmodule:hazmat_leggings",
+    "netherstormmodule:hazmat_boots",
+    "mekanism:mekasuit_helmet",
+    "mekanism:mekasuit_bodyarmor",
+    "mekanism:mekasuit_pants",
+    "mekanism:mekasuit_boots"
+  ]
+}

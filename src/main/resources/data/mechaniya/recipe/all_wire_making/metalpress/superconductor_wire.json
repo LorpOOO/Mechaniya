@@ -1,0 +1,12 @@
+{
+  "type": "immersiveengineering:metal_press",
+  "energy": 2400,
+  "input": {
+    "item": "mechaniya:superconductor_sheet"
+  },
+  "mold": "immersiveengineering:mold_wire",
+  "result": {
+    "count": 2,
+    "item": "mechaniya:superconductor_wire"
+  }
+}

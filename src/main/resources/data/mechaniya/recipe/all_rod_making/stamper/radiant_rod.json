@@ -1,0 +1,15 @@
+{
+  "type": "mekmm:stamper",
+  "input": {
+    "count": 1,
+    "item": "mechaniya:radiant_sheet"
+  },
+  "mold": {
+    "count": 1,
+    "item": "immersiveengineering:mold_rod"
+  },
+  "output": {
+    "count": 2,
+    "id": "mechaniya:radiant_rod"
+  }
+}
