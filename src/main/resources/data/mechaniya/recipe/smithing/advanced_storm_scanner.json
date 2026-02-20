@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:smithing_transform",
+  "addition": {
+    "item": "netherstormmodule:sulfur_berry"
+  },
+  "base": [
+    {
+      "item": "netherstormmodule:lv_storm_scanner"
+    }
+  ],
+  "result": {
+    "count": 1,
+    "id": "netherstormmodule:hv_storm_scanner"
+  },
+  "template": {
+    "item": "mechaniya:advanced_energy_machine"
+  }
+}

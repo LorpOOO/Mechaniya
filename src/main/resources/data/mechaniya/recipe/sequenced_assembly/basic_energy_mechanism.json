@@ -3,79 +3,116 @@
   "ingredient": {
     "item": "mechaniya:steel_mechanism"
   },
-  "transitional_item": {
-    "item": "createmechanisms:incomplete_basic_energy_mechanism"
-  },
+  "loops": 1,
   "results": [
     {
-      "chance": 100.0,
-      "item": "createmechanisms:basic_energy_mechanism"
+      "chance": 100,
+      "id": "createmechanisms:basic_energy_mechanism"
     }
   ],
-  "loops": 1,
   "sequence": [
     {
       "type": "create:deploying",
       "ingredients": [
-        { "item": "createmechanisms:incomplete_basic_energy_mechanism" },
-        { "item": "unify:constantan_nugget" }
+        {
+          "item": "createmechanisms:incomplete_basic_energy_mechanism"
+        },
+        {
+          "item": "unify:constantan_nugget"
+        }
       ],
       "results": [
-        { "item": "createmechanisms:incomplete_basic_energy_mechanism" }
+        {
+          "id": "createmechanisms:incomplete_basic_energy_mechanism"
+        }
       ]
     },
     {
       "type": "create:deploying",
       "ingredients": [
-        { "item": "createmechanisms:incomplete_basic_energy_mechanism" },
-        { "item": "immersiveengineering:plate_duroplast" }
+        {
+          "item": "createmechanisms:incomplete_basic_energy_mechanism"
+        },
+        {
+          "item": "immersiveengineering:plate_duroplast"
+        }
       ],
       "results": [
-        { "item": "createmechanisms:incomplete_basic_energy_mechanism" }
+        {
+          "id": "createmechanisms:incomplete_basic_energy_mechanism"
+        }
       ]
     },
     {
       "type": "create:deploying",
       "ingredients": [
-        { "item": "createmechanisms:incomplete_basic_energy_mechanism" },
-        { "item": "immersiveengineering:component_iron" }
+        {
+          "item": "createmechanisms:incomplete_basic_energy_mechanism"
+        },
+        {
+          "item": "immersiveengineering:component_iron"
+        }
       ],
       "results": [
-        { "item": "createmechanisms:incomplete_basic_energy_mechanism" }
+        {
+          "id": "createmechanisms:incomplete_basic_energy_mechanism"
+        }
       ]
     },
     {
       "type": "create:deploying",
       "ingredients": [
-        { "item": "createmechanisms:incomplete_basic_energy_mechanism" },
-        { "item": "immersiveengineering:light_bulb" }
+        {
+          "item": "createmechanisms:incomplete_basic_energy_mechanism"
+        },
+        {
+          "item": "immersiveengineering:light_bulb"
+        }
       ],
       "results": [
-        { "item": "createmechanisms:incomplete_basic_energy_mechanism" }
+        {
+          "id": "createmechanisms:incomplete_basic_energy_mechanism"
+        }
       ]
     },
     {
       "type": "create:deploying",
       "ingredients": [
-        { "item": "createmechanisms:incomplete_basic_energy_mechanism" },
-        { "item": "immersiveengineering:electron_tube" }
+        {
+          "item": "createmechanisms:incomplete_basic_energy_mechanism"
+        },
+        {
+          "item": "immersiveengineering:electron_tube"
+        }
       ],
       "results": [
-        { "item": "createmechanisms:incomplete_basic_energy_mechanism" }
+        {
+          "id": "createmechanisms:incomplete_basic_energy_mechanism"
+        }
       ]
     },
     {
       "type": "create:filling",
       "ingredients": [
-        { "item": "createmechanisms:incomplete_basic_energy_mechanism" },
         {
-          "fluid": "immersivepetroleum:lubricant",
-          "amount": 1000
+          "item": "createmechanisms:incomplete_basic_energy_mechanism"
+        },
+        {
+          "type": "fluid_stack",
+          "amount": 1000,
+          "fluid": "immersivepetroleum:lubricant"
         }
       ],
       "results": [
-        { "item": "createmechanisms:incomplete_basic_energy_mechanism" }
+        {
+          "item": {
+            "id": "createmechanisms:incomplete_basic_energy_mechanism"
+          }
+        }
       ]
     }
-  ]
+  ],
+  "transitional_item": {
+    "id": "createmechanisms:incomplete_basic_energy_mechanism"
+  }
 }
