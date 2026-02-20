@@ -8,8 +8,8 @@
   },
   "results": [
     {
-      "item": "createmechanisms:basic_energy_mechanism",
-      "chance": 100.0
+      "chance": 100.0,
+      "item": "createmechanisms:basic_energy_mechanism"
     }
   ],
   "loops": 1,

@@ -7,43 +7,10 @@
   "results": [
     {
       "chance": 100,
-      "count": 2,
       "id": "createmechanisms:rubber_mechanism"
     }
   ],
   "sequence": [
-    {
-      "type": "create:deploying",
-      "ingredients": [
-        {
-          "item": "createmechanisms:incomplete_rubber_mechanism"
-        },
-        {
-          "item": "createmechanisms:cured_rubber"
-        }
-      ],
-      "results": [
-        {
-          "id": "createmechanisms:incomplete_rubber_mechanism"
-        }
-      ]
-    },
-    {
-      "type": "create:deploying",
-      "ingredients": [
-        {
-          "item": "createmechanisms:incomplete_rubber_mechanism"
-        },
-        {
-          "item": "createmechanisms:cured_rubber"
-        }
-      ],
-      "results": [
-        {
-          "id": "createmechanisms:incomplete_rubber_mechanism"
-        }
-      ]
-    },
     {
       "type": "create:deploying",
       "ingredients": [

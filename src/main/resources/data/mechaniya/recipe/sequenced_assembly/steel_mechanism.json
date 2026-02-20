@@ -6,7 +6,7 @@
   "loops": 1,
   "results": [
     {
-      "chance": 100,
+      "chance": 100.0,
       "id": "mechaniya:steel_mechanism"
     }
   ],
