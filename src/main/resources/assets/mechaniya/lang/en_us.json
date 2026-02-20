@@ -37,7 +37,7 @@
   "block.mechaniya.end_sand": "End Sand",
   "block.mechaniya.mithril_block": "Mithril Block",
   "block.mechaniya.blaze_gold_block": "Blaze Gold Block",
-  "block.mechaniya.huper_experience_block": "Huper Experience Block",
+  "block.mechaniya.huper_experience_block": "Hyper Experience Block",
 
   // --- Items: Components & Materials ---
   "item.mechaniya.netherite_energy_mechanism": "Netherite Energy Mechanism",
@@ -45,8 +45,8 @@
   "item.mechaniya.steel_mechanism": "Steel Mechanism",
   "item.mechaniya.incomplete_steel_mechanism": "Incomplete Steel Mechanism",
   "item.mechaniya.certus_quartz_tube": "Certus Quartz Tube",
-  "item.mechaniya.steel_mix": "Steel Mix",
   "item.mechaniya.radiant_rod": "Radiant Rod",
+  "item.mechaniya.steel_mix": "Steel Mix",
   "item.mechaniya.radiant_sheet": "Radiant Sheet",
   "item.mechaniya.enderium_ingot": "Enderium Ingot",
   "item.mechaniya.enriched_zinc": "Enriched Zinc",
@@ -57,12 +57,18 @@
   "item.mechaniya.overcharged_raw_lapis_lazuli_crystal": "Overcharged Raw Lapis Lazuli Crystal",
   "item.mechaniya.raw_lapis_lazuli_crystal": "Raw Lapis Lazuli Crystal",
   "item.mechaniya.overcharged_alloy": "Overcharged Alloy",
-  "item.mechaniya.shimmer": "Shimmer Bucket",
+  "item.mechaniya.blaze_gold_sheet": "Blaze Gold Sheet",
+  "item.mechaniya.blaze_gold_nugget": "Blaze Gold Nugget",
+  "item.mechaniya.blaze_gold_ingot": "Blaze Gold Ingot",
+  "item.mechaniya.mithril_ingot": "Mithril Ingot",
+  "item.mechaniya.mithril_nugget": "Mithril Nugget",
+  "item.mechaniya.mithril_sheet": "Mithril Sheet",
+  "item.mechaniya.shimmer_bucket": "Shimmer Bucket",
   "item.mechaniya.latex_bucket": "Latex Bucket",
   "item.mechaniya.warped_latex_bucket": "Warped Latex Bucket",
   "item.mechaniya.super_experience_heap": "Super Experience Heap",
-  "item.mechaniya.huper_experience_nugget": "Huper Experience Nugget",
-  "item.mechaniya.huper_experience_heap": "Huper Experience Heap",
+  "item.mechaniya.huper_experience_nugget": "Hyper Experience Nugget",
+  "item.mechaniya.huper_experience_heap": "Hyper Experience Heap",
   "item.mechaniya.incomplete_elite_control_circuit": "Incomplete Elite Control Circuit",
   "item.mechaniya.incomplete_advanced_control_circuit": "Incomplete Advanced Control Circuit",
   "item.mechaniya.incomplete_ultimate_control_circuit": "Incomplete Ultimate Control Circuit",
@@ -74,9 +80,10 @@
   "item.mechaniya.superconductor_wire": "Superconductor Wire",
   "item.mechaniya.superconductor_nugget": "Superconductor Nugget",
   "block.mechaniya.superconductor_block": "Superconductor Block",
+  "item.mechaniya.dense_fabric": "Dense Fabric",
 
   // --- Fluids ---
-  "fluid.mechaniya.shimmer": "Shimmer",
+  "fluid_type.mechaniya.shimmer": "Shimmer",
   "block.mechaniya.shimmer_block": "Shimmer",
   "fluid_type.mechaniya.latex": "Latex",
   "block.mechaniya.latex_block": "Latex",
@@ -94,8 +101,10 @@
   "chemical.mechaniya.liquefied_lapis_lazuli": "Liquefied Lapis Lazuli",
 
   // --- Lore & Tooltips ---
-  "item.lore_roll_of_rolls": "§dTastes like gears, with 3 smaller rolls arguing inside",
+  "lore.mechaniya.roll_of_rolls": "§dTastes like gears, with 3 smaller rolls arguing inside.",
+  "item.lore_roll_of_rolls": "§dTastes like gears, with 3 smaller rolls arguing inside.",
+  "lore.mechaniya.ledok_lore": "§bA strange ice cube. It looks... familiar.",
   "item.lore_ledok": "§bA strange ice cube. It looks... familiar.",
   "item.lore_rainbow_alloy": "Texture is from Avaritia mod.",
-  "item.lore_minestar_logo": "§dLogo of the best server Minecraft server in the world"
+  "item.lore_minestar_logo": "§dLogo of the best Minecraft server in the world"
 }

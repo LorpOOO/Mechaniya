@@ -1,0 +1,26 @@
+{
+  "type": "create:mechanical_crafting",
+  "accept_mirrored": false,
+  "category": "misc",
+  "key": {
+    "A": {
+      "item": "mechaniya:dense_fabric"
+    },
+	"R": {
+      "item": "cosmeticarmoursmod:steampunkers_attire_leggings"
+    },
+    "Z": {
+      "tag": "c:ingots/steel"
+    }
+  },
+  "pattern": [
+    "ARA",
+    "A A",
+    "Z Z"
+  ],
+  "result": {
+    "count": 1,
+    "id": "netherstormmodule:hazmat_leggings"
+  },
+  "show_notification": false
+}

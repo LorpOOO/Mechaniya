@@ -1,0 +1,29 @@
+{
+  "type": "create:mechanical_crafting",
+  "accept_mirrored": false,
+  "category": "misc",
+  "key": {
+    "A": {
+      "item": "mechaniya:dense_fabric"
+    },
+    "B": {
+      "item": "cosmeticarmoursmod:steampunkers_goggles_helmet"
+    },
+	"R": {
+      "item": "create:attribute_filter"
+    },
+    "Z": {
+      "tag": "c:ingots/steel"
+    }
+  },
+  "pattern": [
+    "AAA",
+    "ABA",
+    "ZRZ"
+  ],
+  "result": {
+    "count": 1,
+    "id": "netherstormmodule:hazmat_helmet"
+  },
+  "show_notification": false
+}

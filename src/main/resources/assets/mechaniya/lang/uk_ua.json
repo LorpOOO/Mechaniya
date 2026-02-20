@@ -17,7 +17,7 @@
   // --- Blocks: Energy Machines ---
   "block.mechaniya.basic_energy_machine": "Базова енергетична машина",
   "block.mechaniya.simple_energy_machine": "Проста енергетична машина",
-    "block.mechaniya.advanced_energy_machine": "Розширена енергетична машина",
+  "block.mechaniya.advanced_energy_machine": "Розширена енергетична машина",
   "block.mechaniya.elite_energy_machine": "Елітна енергетична машина",
   "block.mechaniya.ultimate_energy_machine": "Остаточна енергетична машина",
   "block.mechaniya.enderiam_energy_machine": "Ендеріамова енергетична машина",
@@ -37,7 +37,7 @@
   "block.mechaniya.end_sand": "Пісок Енду",
   "block.mechaniya.mithril_block": "Мітриловий блок",
   "block.mechaniya.blaze_gold_block": "Блок пломеневого золота",
-  "block.mechaniya.huper_experience_block": "Блок гіпер досвіду",
+  "block.mechaniya.huper_experience_block": "Блок гіпер-досвіду",
 
   // --- Items: Components & Materials ---
   "item.mechaniya.netherite_energy_mechanism": "Незеритовий енергетичний механізм",
@@ -80,6 +80,7 @@
   "item.mechaniya.superconductor_wire": "Надпровідний дріт",
   "item.mechaniya.superconductor_nugget": "Надпровідний самородок",
   "block.mechaniya.superconductor_block": "Надпровідний блок",
+  "item.mechaniya.dense_fabric": "Щільна тканина",
 
   // --- Fluids ---
   "fluid_type.mechaniya.shimmer": "Мерехтіння",
@@ -91,7 +92,7 @@
 
   // --- Items: Special & Easter Eggs ---
   "item.mechaniya.minestar_logo": "Лого Майнстару",
-  "item.mechaniya.roll_of_rolls": "Ролл Ролів",
+  "item.mechaniya.roll_of_rolls": "Рол Ролів",
   "item.mechaniya.ledok": "Ledok",
 
   // --- Chemicals ---
@@ -100,8 +101,8 @@
   "chemical.mechaniya.liquefied_lapis_lazuli": "Сірчано-лазуритова суміш",
 
   // --- Lore & Tooltips ---
-  "lore.mechaniya.roll_of_rolls": "§dНа, смак як шестерні, у середині сперечаються 3 маленькі роли.",
-  "item.lore_roll_of_rolls": "§dНа, смак як шестерні, у середині сперечаються 3 маленькі роли.",
+  "lore.mechaniya.roll_of_rolls": "§dНа смак як шестерні, у середині сперечаються 3 маленькі роли.",
+  "item.lore_roll_of_rolls": "§dНа смак як шестерні, у середині сперечаються 3 маленькі роли.",
   "lore.mechaniya.ledok_lore": "§bДивний кубик льоду. Виглядає... знайомо.",
   "item.lore_ledok": "§bДивний кубик льоду. Виглядає... знайомо.",
   "item.lore_rainbow_alloy": "Текстура з моду Avaritia.",

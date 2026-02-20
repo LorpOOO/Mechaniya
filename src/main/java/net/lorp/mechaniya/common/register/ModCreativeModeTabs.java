@@ -96,6 +96,7 @@ public class ModCreativeModeTabs {
                         output.accept(ModItems.RADIANT_SHEET.get());
                         output.accept(ModItems.ENRICHED_BLAZE.get());
                         output.accept(ModItems.ENRICHED_ZINC.get());
+                        output.accept(ModItems.DENSE_FABRIC.get());
 
                         // Гума
                         output.accept(ModItems.WARPED_RUBBER.get());

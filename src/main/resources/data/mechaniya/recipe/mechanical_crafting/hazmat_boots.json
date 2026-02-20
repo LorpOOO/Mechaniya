@@ -1,0 +1,29 @@
+{
+  "type": "create:mechanical_crafting",
+  "accept_mirrored": false,
+  "category": "misc",
+  "key": {
+    "A": {
+      "item": "mechaniya:dense_fabric"
+    },
+    "B": {
+      "item": "cosmeticarmoursmod:steampunkers_attire_boots"
+    },
+	"R": {
+      "item": "mechaniya:cured_warped_rubber"
+    },
+    "Z": {
+      "tag": "c:ingots/steel"
+    }
+  },
+  "pattern": [
+    "ZAZ",
+    "ABA",
+    "R R"
+  ],
+  "result": {
+    "count": 1,
+    "id": "netherstormmodule:hazmat_boots"
+  },
+  "show_notification": false
+}

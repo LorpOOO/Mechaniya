@@ -1,0 +1,143 @@
+{
+  "type": "create:sequenced_assembly",
+  "ingredient": {
+    "item": "minecraft:leather"
+  },
+  "loops": 1,
+  "results": [
+    {
+      "chance": 100,
+      "id": "mechaniya:dense_fabric"
+    }
+  ],
+  "sequence": [
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "mechaniya:incomplete_dense_fabric"
+        },
+        {
+          "item": "immersiveengineering:ersatz_leather"
+        }
+      ],
+      "results": [
+        {
+          "id": "mechaniya:incomplete_dense_fabric"
+        }
+      ]
+    },
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "mechaniya:incomplete_dense_fabric"
+        },
+        {
+          "item": "cosmeticarmoursmod:cloth_cyan"
+        }
+      ],
+      "results": [
+        {
+          "id": "mechaniya:incomplete_dense_fabric"
+        }
+      ]
+    },
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "mechaniya:incomplete_dense_fabric"
+        },
+        {
+          "item": "createmechanisms:cured_rubber"
+        }
+      ],
+      "results": [
+        {
+          "id": "mechaniya:incomplete_dense_fabric"
+        }
+      ]
+    },
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "mechaniya:incomplete_dense_fabric"
+        },
+        {
+          "item": "cosmeticarmoursmod:cloth_light_blue"
+        }
+      ],
+      "results": [
+        {
+          "id": "mechaniya:incomplete_dense_fabric"
+        }
+      ]
+    },
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "mechaniya:incomplete_dense_fabric"
+        },
+        {
+          "tag": "c:dusts/coal_coke"
+        }
+      ],
+      "results": [
+        {
+          "id": "mechaniya:incomplete_dense_fabric"
+        }
+      ]
+    },
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "mechaniya:incomplete_dense_fabric"
+        },
+        {
+          "item": "mechaniya:cured_warped_rubber"
+        }
+      ],
+      "results": [
+        {
+          "id": "mechaniya:incomplete_dense_fabric"
+        }
+      ]
+    },
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "mechaniya:incomplete_dense_fabric"
+        },
+        {
+          "item": "cosmeticarmoursmod:cloth_blue"
+        }
+      ],
+      "results": [
+        {
+          "id": "mechaniya:incomplete_dense_fabric"
+        }
+      ]
+    },
+    {
+      "type": "create:pressing",
+      "ingredients": [
+        {
+          "item": "mechaniya:incomplete_dense_fabric"
+        }
+      ],
+      "results": [
+        {
+          "id": "mechaniya:incomplete_dense_fabric"
+        }
+      ]
+    }
+  ],
+  "transitional_item": {
+    "id": "mechaniya:incomplete_dense_fabric"
+  }
+}

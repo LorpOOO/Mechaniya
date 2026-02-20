@@ -1,0 +1,29 @@
+{
+  "type": "create:mechanical_crafting",
+  "accept_mirrored": false,
+  "category": "misc",
+  "key": {
+    "A": {
+      "item": "mechaniya:dense_fabric"
+    },
+    "B": {
+      "item": "create:copper_backtank"
+    },
+	"R": {
+      "item": "mynethersdelight:hoglin_hide"
+    },
+    "Z": {
+      "tag": "c:ingots/steel"
+    }
+  },
+  "pattern": [
+    "ZAZ",
+    "ABA",
+    "ARA"
+  ],
+  "result": {
+    "count": 1,
+    "id": "netherstormmodule:hazmat_chestplate"
+  },
+  "show_notification": false
+}
