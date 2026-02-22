@@ -18,7 +18,7 @@ public class ModFluidType {
                     .canDrown(true)
                     .canPushEntity(true)
                     .canHydrate(false)
-                    .supportsBoating(true) // Дозволяє плавати на човнах
+                    .supportsBoating(true)
             )
 
     );
@@ -39,6 +39,18 @@ public class ModFluidType {
     public static final DeferredHolder<FluidType, FluidType> WARPED_LATEX = FLUID_TYPES.register("warped_latex",
             () -> new FluidType(FluidType.Properties.create()
                     .density(5)
+                    .canSwim(true)
+                    .canDrown(true)
+                    .canPushEntity(true)
+                    .canHydrate(false)
+                    .supportsBoating(true)
+            )
+
+    );
+
+    public static final DeferredHolder<FluidType, FluidType> PROPYLENE = FLUID_TYPES.register("propylene",
+            () -> new FluidType(FluidType.Properties.create()
+                    .density(1)
                     .canSwim(true)
                     .canDrown(true)
                     .canPushEntity(true)

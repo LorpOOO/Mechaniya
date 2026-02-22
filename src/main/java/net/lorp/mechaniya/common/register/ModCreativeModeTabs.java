@@ -107,6 +107,7 @@ public class ModCreativeModeTabs {
                         output.accept(ModItems.LATEX_BUCKET.get());
                         output.accept(ModItems.WARPED_LATEX_BUCKET.get());
                         output.accept(ModItems.SHIMMER_BUCKET.get());
+                        output.accept(ModItems.PROPYLENE_BUCKET.get());
 
                         // Інше
                         output.accept(ModItems.LEDOK.get());

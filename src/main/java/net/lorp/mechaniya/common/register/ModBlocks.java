@@ -156,6 +156,18 @@ public class ModBlocks {
                             .replaceable()
             ));
 
+    public static final DeferredBlock<LiquidBlock> PROPYLENE_BLOCK = BLOCKS.register("propylene_block",
+            () -> new LiquidBlock(
+                    ModFluid.SOURCE_PROPYLENE.get(), // Перевірте, щоб тут було саме SOURCE
+                    BlockBehaviour.Properties.of()
+                            .mapColor(MapColor.WATER)
+                            .noCollission()
+                            .strength(100.0F)
+                            .pushReaction(PushReaction.DESTROY)
+                            .noLootTable()
+                            .replaceable()
+            ));
+
     public static final DeferredBlock<LiquidBlock> LATEX_BLOCK = BLOCKS.register("latex_block",
             () -> new LiquidBlock(
                     ModFluid.SOURCE_LATEX.get(),

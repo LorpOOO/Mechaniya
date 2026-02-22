@@ -94,6 +94,10 @@ public class ModItems {
                     new Item.Properties().craftRemainder(Items.BUCKET).stacksTo(1)
                             .component(DataComponents.RARITY, Rarity.EPIC)));
 
+    public static final DeferredItem<Item> PROPYLENE_BUCKET = ITEMS.register("propylene_bucket",
+            () -> new BucketItem(ModFluid.SOURCE_PROPYLENE.get(),
+                    new Item.Properties().craftRemainder(Items.BUCKET).stacksTo(1)));
+
     public static final DeferredItem<Item> LATEX_BUCKET = ITEMS.register("latex_bucket",
             () -> new BucketItem(ModFluid.SOURCE_LATEX.get(),
                     new Item.Properties().craftRemainder(Items.BUCKET).stacksTo(1)));

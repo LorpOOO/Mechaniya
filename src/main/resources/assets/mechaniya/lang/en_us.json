@@ -52,6 +52,7 @@
   "item.mechaniya.enriched_zinc": "Enriched Zinc",
   "item.mechaniya.enriched_blaze": "Enriched Blaze",
   "item.mechaniya.warped_rubber": "Warped Rubber",
+  "item.mechaniya.propylene_bucket": "Propylene Bucket",
   "item.mechaniya.cured_warped_rubber": "Cured Warped Rubber",
   "item.mechaniya.polished_lapis_lazuli_crystal": "Polished Lapis Lazuli Crystal",
   "item.mechaniya.overcharged_raw_lapis_lazuli_crystal": "Overcharged Raw Lapis Lazuli Crystal",
@@ -90,6 +91,8 @@
   "block.mechaniya.latex_block": "Latex",
   "fluid_type.mechaniya.warped_latex": "Warped Latex",
   "block.mechaniya.warped_latex_block": "Warped Latex",
+  "fluid_type.mechaniya.propylene": "Propylene",
+  "block.mechaniya.propylene_block": "Propylene",
 
   // --- Items: Special & Easter Eggs ---
   "item.mechaniya.minestar_logo": "Minestar Logo",

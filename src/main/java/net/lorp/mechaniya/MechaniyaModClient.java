@@ -28,6 +28,7 @@ public class MechaniyaModClient {
         registerFluidRender(event, ModFluidType.SHIMMER.get(), "shimmer");
         registerFluidRender(event, ModFluidType.LATEX.get(), "latex");
         registerFluidRender(event, ModFluidType.WARPED_LATEX.get(), "warped_latex");
+        registerFluidRender(event, ModFluidType.PROPYLENE.get(), "propylene");
     }
 
     private static void registerFluidRender(RegisterClientExtensionsEvent event, FluidType type, String textureName) {
@@ -58,6 +59,10 @@ public class MechaniyaModClient {
 
                 if (textureName.contains("latex")) {
                     return new Vector3f(0.991111111111f,0.502222222222f , 0.149019607843f);
+                }
+
+                if (textureName.contains("propylene")) {
+                    return new Vector3f(0.0f,0.138f , 0.149f);
                 }
 
                 return fluidFogColor;

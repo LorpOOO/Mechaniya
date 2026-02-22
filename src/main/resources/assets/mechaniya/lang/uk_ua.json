@@ -64,6 +64,7 @@
   "item.mechaniya.mithril_nugget": "Мітриловий самородок",
   "item.mechaniya.mithril_sheet": "Мітриловий лист",
   "item.mechaniya.shimmer_bucket": "Відро мерехтіння",
+  "item.mechaniya.propylene_bucket": "Відро пропілену",
   "item.mechaniya.latex_bucket": "Відро латексу",
   "item.mechaniya.warped_latex_bucket": "Відро химерного латексу",
   "item.mechaniya.super_experience_heap": "Cупер купа досвіду",
@@ -90,6 +91,8 @@
   "block.mechaniya.latex_block": "Латекс",
   "fluid_type.mechaniya.warped_latex": "Химерний латекс",
   "block.mechaniya.warped_latex_block": "Химерний латекс",
+  "fluid_type.mechaniya.propylene": "Пропілен",
+  "block.mechaniya.propylene_block": "Пропілен",
 
   // --- Items: Special & Easter Eggs ---
   "item.mechaniya.minestar_logo": "Лого Майнстару",
