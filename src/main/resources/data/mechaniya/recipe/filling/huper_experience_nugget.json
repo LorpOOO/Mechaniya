@@ -7,7 +7,7 @@
     {
       "type": "fluid_stack",
       "amount": 100,
-      "fluid": "mechaniya:shimmer"
+      "fluid": "create_dragons_plus:dragon_breath"
     }
   ],
   "results": [
