@@ -22,6 +22,8 @@ public class ModItems {
 
     public static final DeferredItem<Item> NETHERITE_ENERGY_MECHANISM = ITEMS.register("netherite_energy_mechanism",
             () -> new Item(new Item.Properties().fireResistant()));
+    public static final DeferredItem<Item> RAW_PLATINUM_NUGGET = ITEMS.register("raw_platinum_nugget",
+            () -> new Item(new Item.Properties().fireResistant()));
     public static final DeferredItem<Item> DENSE_FABRIC = ITEMS.register("dense_fabric",
             () -> new Item(new Item.Properties().fireResistant()));
     public static final DeferredItem<Item> INCOMPLETE_DENSE_FABRIC = ITEMS.register("incomplete_dense_fabric",

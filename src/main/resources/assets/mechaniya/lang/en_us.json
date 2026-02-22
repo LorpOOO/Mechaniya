@@ -81,6 +81,7 @@
   "item.mechaniya.superconductor_nugget": "Superconductor Nugget",
   "block.mechaniya.superconductor_block": "Superconductor Block",
   "item.mechaniya.dense_fabric": "Dense Fabric",
+  "item.mechaniya.raw_platinum_nugget": "Raw Platinum Nugget",
 
   // --- Fluids ---
   "fluid_type.mechaniya.shimmer": "Shimmer",
