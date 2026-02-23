@@ -28,6 +28,8 @@ public class ModItems {
             () -> new Item(new Item.Properties().fireResistant()));
     public static final DeferredItem<Item> INCOMPLETE_DENSE_FABRIC = ITEMS.register("incomplete_dense_fabric",
             () -> new Item(new Item.Properties().fireResistant()));
+    public static final DeferredItem<Item> ENTRO_PLATINUM_INGOT = ITEMS.register("entro_platinum_ingot",
+            () -> new Item(new Item.Properties().fireResistant()));
     public static final DeferredItem<Item> STEEL_MECHANISM = ITEMS.register("steel_mechanism",
             () -> new Item(new Item.Properties()));
 

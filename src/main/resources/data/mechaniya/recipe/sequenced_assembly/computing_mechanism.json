@@ -1,7 +1,7 @@
 {
   "type": "create:sequenced_assembly",
   "ingredient": {
-    "item": "createmechanisms:iron_energy_mechanism"
+    "item": "mechaniya:steel_mechanism"
   },
   "loops": 1,
   "results": [
