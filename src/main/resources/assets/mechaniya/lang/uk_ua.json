@@ -84,6 +84,7 @@
   "item.mechaniya.dense_fabric": "Щільна тканина",
   "item.mechaniya.raw_platinum_nugget": "Необроблений платиновий самородок",
   "item.mechaniya.entro_platinum_ingot": "Енропіїзований платиновий злиток",
+  "item.mechaniya.entro_platinum_block": "Енропіїзований платиновий блок",
 
   // --- Fluids ---
   "fluid_type.mechaniya.shimmer": "Мерехтіння",

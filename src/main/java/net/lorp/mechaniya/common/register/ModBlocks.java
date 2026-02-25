@@ -143,6 +143,9 @@ public class ModBlocks {
     public static final DeferredBlock<Block> SIMPLE_ENERGY_MACHINE = registerBlock("simple_energy_machine",
             () -> new FaceBlock(BlockBehaviour.Properties.of()
                     .strength(4f).requiresCorrectToolForDrops().sound(SoundType.METAL).noOcclusion()));
+    public static final DeferredBlock<Block> ENTRO_PLATINUM_BLOCK = registerBlock("entro_platinum_block",
+            () -> new Block(BlockBehaviour.Properties.of()
+                    .strength(4f).requiresCorrectToolForDrops().sound(SoundType.METAL)));
 
     public static final DeferredBlock<LiquidBlock> SHIMMER_BLOCK = BLOCKS.register("shimmer_block",
             () -> new LiquidBlock(
