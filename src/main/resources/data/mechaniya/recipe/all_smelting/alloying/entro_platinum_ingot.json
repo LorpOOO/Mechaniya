@@ -1,0 +1,17 @@
+{
+  "type": "evolvedmekanism:alloying",
+  "extra_input": {
+    "count": 2,
+    "item": "ae2:fluix_dust"
+  },
+  "second_extra_input": {
+    "item": "unify:platinum_ingot"
+  },
+  "main_input": {
+    "item": "extendedae:entro_ingot"
+  },
+  "output": {
+    "id": "mechaniya:entro_platinum_ingot",
+    "count": 2
+  }
+}

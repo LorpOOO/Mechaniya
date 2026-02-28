@@ -1,0 +1,36 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "unify:raw_platinum"
+    },
+    {
+      "item": "unify:raw_platinum"
+    },
+    {
+      "item": "unify:raw_platinum"
+    },
+    {
+      "item": "unify:raw_platinum"
+    },
+    {
+      "item": "unify:raw_platinum"
+    },
+    {
+      "item": "unify:raw_platinum"
+    },
+    {
+      "item": "unify:raw_platinum"
+    },
+    {
+      "item": "unify:raw_platinum"
+    },
+    {
+      "item": "unify:raw_platinum"
+    }
+  ],
+  "result": {
+    "id": "unify:raw_platinum_block",
+    "count": 1
+  }
+}
