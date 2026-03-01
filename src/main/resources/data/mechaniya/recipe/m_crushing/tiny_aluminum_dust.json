@@ -1,0 +1,11 @@
+{
+  "type": "mekanism:crushing",
+  "input": {
+    "count": 1,
+    "item": "mechaniya:dirty_tiny_aluminum_dust"
+  },
+  "output": {
+    "count": 1,
+    "id": "mechaniya:tiny_aluminum_dust"
+  }
+}

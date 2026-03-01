@@ -32,6 +32,10 @@ public class ModItems {
             () -> new Item(new Item.Properties().fireResistant()));
     public static final DeferredItem<Item> STEEL_MECHANISM = ITEMS.register("steel_mechanism",
             () -> new Item(new Item.Properties()));
+    public static final DeferredItem<Item> TINY_ALUMINUM_DUST = ITEMS.register("tiny_aluminum_dust.json",
+            () -> new Item(new Item.Properties()));
+    public static final DeferredItem<Item> DIRTY_TINY_ALUMINUM_DUST = ITEMS.register("dirty_tiny_aluminum_dust",
+            () -> new Item(new Item.Properties()));
 
     public static final DeferredItem<Item> RAINBOW_ALLOY = ITEMS.register("rainbow_alloy",
             () -> new Item(new Item.Properties()

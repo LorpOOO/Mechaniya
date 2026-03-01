@@ -88,6 +88,8 @@ public class ModCreativeModeTabs {
                         output.accept(ModBlocks.SUPERCONDUCTOR_BLOCK.get());
                         output.accept(ModItems.RAINBOW_ALLOY.get());
                         output.accept(ModItems.RAW_PLATINUM_NUGGET.get());
+                        output.accept(ModItems.TINY_ALUMINUM_DUST.get());
+                        output.accept(ModItems.DIRTY_TINY_ALUMINUM_DUST.get());
 
                         // Кристали та спец. ресурси
                         output.accept(ModItems.RAW_LAPIS_LAZULI_CRYSTAL.get());
