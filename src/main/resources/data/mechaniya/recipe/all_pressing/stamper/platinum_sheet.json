@@ -1,0 +1,15 @@
+{
+  "type": "mekmm:stamper",
+  "input": {
+    "count": 1,
+    "tag": "c:ingots/platinum"
+  },
+  "mold": {
+    "count": 1,
+    "item": "immersiveengineering:mold_plate"
+  },
+  "output": {
+    "count": 1,
+    "id": "unify:platinum_sheet"
+  }
+}

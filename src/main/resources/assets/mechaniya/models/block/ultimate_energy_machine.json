@@ -8,7 +8,7 @@
 		"3": "mechaniya:block/machines/ultimate_energy/framed_glass",
 		"4": "mechaniya:block/machines/ultimate_energy/framed_glass_side",
 		"5": "mechaniya:block/machines/ultimate_energy/ultimate_control_circuit",
-		"particle": "mechaniya:block/machines/ultimate/ultimate_control_circuit"
+		"particle": "mechaniya:block/machines/ultimate_energy/ultimate_control_circuit"
     },
   "elements": [
     {

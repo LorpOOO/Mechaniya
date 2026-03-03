@@ -24,6 +24,8 @@ public class ModCreativeModeTabs {
                         output.accept(ModItems.INCOMPLETE_STEEL_MECHANISM.get());
                         output.accept(ModItems.NETHERITE_ENERGY_MECHANISM.get());
                         output.accept(ModItems.INCOMPLETE_NETHERITE_ENERGY_MECHANISM.get());
+                        output.accept(ModItems.MITHRIL_ENERGY_MECHANISM.get());
+                        output.accept(ModItems.INCOMPLETE_MITHRIL_ENERGY_MECHANISM.get());
                         output.accept(ModItems.CERTUS_QUARTZ_TUBE.get());
 
                         // Корпуси машин
@@ -42,6 +44,7 @@ public class ModCreativeModeTabs {
                         output.accept(ModBlocks.ADVANCED_ENERGY_MACHINE.get());
                         output.accept(ModBlocks.ELITE_ENERGY_MACHINE.get());
                         output.accept(ModBlocks.ULTIMATE_ENERGY_MACHINE.get());
+                        output.accept(ModBlocks.OVERCLOCKED_ENERGY_MACHINE.get());
                         output.accept(ModBlocks.ENDERIAM_ENERGY_MACHINE.get());
 
                         // Незавершені схеми
@@ -49,6 +52,8 @@ public class ModCreativeModeTabs {
                         output.accept(ModItems.INCOMPLETE_ADVANCED_CONTROL_CIRCUIT.get());
                         output.accept(ModItems.INCOMPLETE_ULTIMATE_CONTROL_CIRCUIT.get());
                         output.accept(ModItems.INCOMPLETE_BASIC_CONTROL_CIRCUIT.get());
+                        output.accept(ModItems.INCOMPLETE_OVERCLOCKED_CONTROL_CIRCUIT.get());
+
 
                         // Руди та гравій
                         output.accept(ModBlocks.SILVER_ORE.get());

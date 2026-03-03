@@ -22,6 +22,10 @@ public class ModItems {
 
     public static final DeferredItem<Item> NETHERITE_ENERGY_MECHANISM = ITEMS.register("netherite_energy_mechanism",
             () -> new Item(new Item.Properties().fireResistant()));
+    public static final DeferredItem<Item> MITHRIL_ENERGY_MECHANISM = ITEMS.register("mithril_energy_mechanism",
+            () -> new Item(new Item.Properties().fireResistant()));
+    public static final DeferredItem<Item> INCOMPLETE_MITHRIL_ENERGY_MECHANISM = ITEMS.register("incomplete_mithril_energy_mechanism",
+            () -> new Item(new Item.Properties().fireResistant()));
     public static final DeferredItem<Item> RAW_PLATINUM_NUGGET = ITEMS.register("raw_platinum_nugget",
             () -> new Item(new Item.Properties().fireResistant()));
     public static final DeferredItem<Item> DENSE_FABRIC = ITEMS.register("dense_fabric",
@@ -32,7 +36,7 @@ public class ModItems {
             () -> new Item(new Item.Properties().fireResistant()));
     public static final DeferredItem<Item> STEEL_MECHANISM = ITEMS.register("steel_mechanism",
             () -> new Item(new Item.Properties()));
-    public static final DeferredItem<Item> TINY_ALUMINUM_DUST = ITEMS.register("tiny_aluminum_dust.json",
+    public static final DeferredItem<Item> TINY_ALUMINUM_DUST = ITEMS.register("tiny_aluminum_dust",
             () -> new Item(new Item.Properties()));
     public static final DeferredItem<Item> DIRTY_TINY_ALUMINUM_DUST = ITEMS.register("dirty_tiny_aluminum_dust",
             () -> new Item(new Item.Properties()));
@@ -73,6 +77,8 @@ public class ModItems {
     public static final DeferredItem<Item> INCOMPLETE_ULTIMATE_CONTROL_CIRCUIT = ITEMS.register("incomplete_ultimate_control_circuit",
             () -> new Item(new Item.Properties()));
     public static final DeferredItem<Item> INCOMPLETE_BASIC_CONTROL_CIRCUIT = ITEMS.register("incomplete_basic_control_circuit",
+            () -> new Item(new Item.Properties()));
+    public static final DeferredItem<Item> INCOMPLETE_OVERCLOCKED_CONTROL_CIRCUIT = ITEMS.register("incomplete_overclocked_control_circuit",
             () -> new Item(new Item.Properties()));
 
     public static final DeferredItem<Item> SUPER_EXPERIENCE_HEAP = ITEMS.register("super_experience_heap",

@@ -128,6 +128,10 @@ public class ModBlocks {
             () -> new FaceBlock(BlockBehaviour.Properties.of()
                     .strength(4f).requiresCorrectToolForDrops().sound(SoundType.METAL).noOcclusion()));
 
+    public static final DeferredBlock<Block> OVERCLOCKED_ENERGY_MACHINE = registerBlock("overclocked_energy_machine",
+            () -> new FaceBlock(BlockBehaviour.Properties.of()
+                    .strength(4f).requiresCorrectToolForDrops().sound(SoundType.METAL).noOcclusion()));
+
     public static final DeferredBlock<Block> ROCKET_MACHINE = registerBlock("rocket_machine",
             () -> new Block(BlockBehaviour.Properties.of()
                     .strength(4f).requiresCorrectToolForDrops().sound(SoundType.METAL)));

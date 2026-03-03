@@ -20,6 +20,7 @@
   "block.mechaniya.advanced_energy_machine": "Розширена енергетична машина",
   "block.mechaniya.elite_energy_machine": "Елітна енергетична машина",
   "block.mechaniya.ultimate_energy_machine": "Остаточна енергетична машина",
+  "block.mechaniya.overclocked_energy_machine": "Наднавантажений енергетична машина",
   "block.mechaniya.enderiam_energy_machine": "Ендеріамова енергетична машина",
 
   // --- Blocks: Ores & Resources ---
@@ -41,7 +42,9 @@
 
   // --- Items: Components & Materials ---
   "item.mechaniya.netherite_energy_mechanism": "Незеритовий енергетичний механізм",
-  "item.mechaniya.incomplete_netherite_energy_mechanism": "Незавершений незеритовий енергетичний механізм",
+  "item.mechaniya.incomplete_netherite_energy_mechanism": "Мітриловий енергетичний механізм",
+  "item.mechaniya.mithril_energy_mechanism": "Mithril Energy Mechanism",
+  "item.mechaniya.incomplete_mithril_energy_mechanism": "Незавершений мітриловий енергетичний механізм",
   "item.mechaniya.steel_mechanism": "Сталевий механізм",
   "item.mechaniya.incomplete_steel_mechanism": "Незавершений сталевий механізм",
   "item.mechaniya.certus_quartz_tube": "Лампа з істинного кварцу",
@@ -74,6 +77,7 @@
   "item.mechaniya.incomplete_advanced_control_circuit": "Незавершена просунута схема управління",
   "item.mechaniya.incomplete_ultimate_control_circuit": "Незавершена остаточна схема управління",
   "item.mechaniya.incomplete_basic_control_circuit": "Незавершена базова схема управління",
+  "item.mechaniya.incomplete_overclocked_control_circuit": "Незавершена наднавантажена схема управління",
   "item.mechaniya.osmium_sheet": "Осмієвий лист",
   "item.mechaniya.rainbow_alloy": "Веселковий сплав",
   "item.mechaniya.superconductor_sheet": "Надпровідний лист",

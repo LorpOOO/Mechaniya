@@ -1,0 +1,82 @@
+{
+  "type": "create:sequenced_assembly",
+  "ingredient": {
+    "item": "mechaniya:netherite_energy_mechanism"
+  },
+  "loops": 1,
+  "results": [
+    {
+      "chance": 100,
+      "id": "mechaniya:mithril_energy_mechanism"
+    }
+  ],
+  "sequence": [
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "mechaniya:incomplete_mithril_energy_mechanism"
+        },
+        {
+          "item": "mechaniya:mithril_ingot"
+        }
+      ],
+      "results": [
+        {
+          "id": "mechaniya:incomplete_mithril_energy_mechanism"
+        }
+      ]
+    },
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "mechaniya:incomplete_mithril_energy_mechanism"
+        },
+        {
+          "item": "mekanism:pellet_polonium"
+        }
+      ],
+      "results": [
+        {
+          "id": "mechaniya:incomplete_mithril_energy_mechanism"
+        }
+      ]
+    },
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "mechaniya:incomplete_mithril_energy_mechanism"
+        },
+        {
+          "item": "mekanism:pellet_plutonium"
+        }
+      ],
+      "results": [
+        {
+          "id": "mechaniya:incomplete_mithril_energy_mechanism"
+        }
+      ]
+    },
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "mechaniya:incomplete_mithril_energy_mechanism"
+        },
+        {
+          "item": "evolvedmekanism:overclocked_control_circuit"
+        }
+      ],
+      "results": [
+        {
+          "id": "mechaniya:incomplete_mithril_energy_mechanism"
+        }
+      ]
+    }
+  ],
+  "transitional_item": {
+    "id": "mechaniya:incomplete_mithril_energy_mechanism"
+  }
+}

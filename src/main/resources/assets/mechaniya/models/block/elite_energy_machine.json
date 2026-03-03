@@ -8,7 +8,7 @@
 		"3": "mechaniya:block/machines/elite_energy/framed_glass",
 		"4": "mechaniya:block/machines/elite_energy/framed_glass_side",
 		"5": "mechaniya:block/machines/elite_energy/elite_control_circuit",
-		"particle": "mechaniya:block/machines/elite/elite_control_circuit"
+		"particle": "mechaniya:block/machines/elite_energy/elite_control_circuit"
     },
   "elements": [
     {
