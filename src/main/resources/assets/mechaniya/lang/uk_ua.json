@@ -42,8 +42,8 @@
 
   // --- Items: Components & Materials ---
   "item.mechaniya.netherite_energy_mechanism": "Незеритовий енергетичний механізм",
-  "item.mechaniya.incomplete_netherite_energy_mechanism": "Мітриловий енергетичний механізм",
-  "item.mechaniya.mithril_energy_mechanism": "Mithril Energy Mechanism",
+  "item.mechaniya.incomplete_netherite_energy_mechanism": "Незавершений незеритовий енергетичний механізм",
+  "item.mechaniya.mithril_energy_mechanism": "Мітриловий енергетичний механізм",
   "item.mechaniya.incomplete_mithril_energy_mechanism": "Незавершений мітриловий енергетичний механізм",
   "item.mechaniya.steel_mechanism": "Сталевий механізм",
   "item.mechaniya.incomplete_steel_mechanism": "Незавершений сталевий механізм",

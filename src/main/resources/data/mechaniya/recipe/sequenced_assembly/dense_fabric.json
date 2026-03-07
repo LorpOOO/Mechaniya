@@ -82,22 +82,6 @@
           "item": "mechaniya:incomplete_dense_fabric"
         },
         {
-          "tag": "c:dusts/coal_coke"
-        }
-      ],
-      "results": [
-        {
-          "id": "mechaniya:incomplete_dense_fabric"
-        }
-      ]
-    },
-    {
-      "type": "create:deploying",
-      "ingredients": [
-        {
-          "item": "mechaniya:incomplete_dense_fabric"
-        },
-        {
           "item": "mechaniya:cured_warped_rubber"
         }
       ],
@@ -115,19 +99,6 @@
         },
         {
           "item": "cosmeticarmoursmod:cloth_blue"
-        }
-      ],
-      "results": [
-        {
-          "id": "mechaniya:incomplete_dense_fabric"
-        }
-      ]
-    },
-    {
-      "type": "create:pressing",
-      "ingredients": [
-        {
-          "item": "mechaniya:incomplete_dense_fabric"
         }
       ],
       "results": [
