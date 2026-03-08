@@ -23,7 +23,6 @@ repositories {
 dependencies {
     implementation name: 'architectury-13.0.8'
 
-
     implementation name: 'create-1.21.1-6.0.10'
     implementation name: 'ftb-essentials-2101.1.9'
     implementation name: 'ftb-library-2101.1.30'

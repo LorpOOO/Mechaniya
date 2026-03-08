@@ -6,7 +6,7 @@
   "loops": 1,
   "results": [
     {
-      "chance": 100.0,
+      "chance": 100,
       "id": "mechaniya:steel_mechanism"
     }
   ],
@@ -50,7 +50,7 @@
           "item": "mechaniya:incomplete_steel_mechanism"
         },
         {
-          "item": "unify:nickel_nugget"
+          "tag": "c:nuggets/nickel"
         }
       ],
       "results": [
@@ -66,7 +66,7 @@
           "item": "mechaniya:incomplete_steel_mechanism"
         },
         {
-          "item": "unify:zinc_nugget"
+          "tag": "c:nuggets/zinc"
         }
       ],
       "results": [
@@ -82,7 +82,7 @@
           "item": "mechaniya:incomplete_steel_mechanism"
         },
         {
-          "item": "unify:lead_nugget"
+          "tag": "c:nuggets/lead"
         }
       ],
       "results": [
