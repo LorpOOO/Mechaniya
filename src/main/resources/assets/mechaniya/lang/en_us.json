@@ -78,6 +78,7 @@
   "item.mechaniya.incomplete_ultimate_control_circuit": "Incomplete Ultimate Control Circuit",
   "item.mechaniya.incomplete_basic_control_circuit": "Incomplete Basic Control Circuit",
   "item.mechaniya.incomplete_overclocked_control_circuit": "Incomplete Overclocked Control Circuit",
+  "item.mechaniya.incomplete_conveyor_basic": "Incomplete Conveyor Basic",
   "item.mechaniya.osmium_sheet": "Osmium Sheet",
   "item.mechaniya.rainbow_alloy": "Rainbow Alloy",
   "item.mechaniya.superconductor_sheet": "Superconductor Sheet",
@@ -106,6 +107,7 @@
   "item.mechaniya.minestar_logo": "Minestar Logo",
   "item.mechaniya.roll_of_rolls": "Roll of Rolls",
   "item.mechaniya.ledok": "Ledok",
+  "block.mechaniya.trophy": "Trophy for finishing the modpack",
 
   // --- Chemicals ---
   "chemical.mechaniya.zinc": "Zinc",

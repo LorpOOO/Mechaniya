@@ -20,7 +20,7 @@
   "block.mechaniya.advanced_energy_machine": "Розширена енергетична машина",
   "block.mechaniya.elite_energy_machine": "Елітна енергетична машина",
   "block.mechaniya.ultimate_energy_machine": "Остаточна енергетична машина",
-  "block.mechaniya.overclocked_energy_machine": "Наднавантажений енергетична машина",
+  "block.mechaniya.overclocked_energy_machine": "Розігнана енергетична машина",
   "block.mechaniya.enderiam_energy_machine": "Ендеріамова енергетична машина",
 
   // --- Blocks: Ores & Resources ---
@@ -77,7 +77,8 @@
   "item.mechaniya.incomplete_advanced_control_circuit": "Незавершена просунута схема управління",
   "item.mechaniya.incomplete_ultimate_control_circuit": "Незавершена остаточна схема управління",
   "item.mechaniya.incomplete_basic_control_circuit": "Незавершена базова схема управління",
-  "item.mechaniya.incomplete_overclocked_control_circuit": "Незавершена наднавантажена схема управління",
+  "item.mechaniya.incomplete_overclocked_control_circuit": "Незавершена розіганна схема управління",
+  "item.mechaniya.incomplete_conveyor_basic": "Незавершений конвеєр",
   "item.mechaniya.osmium_sheet": "Осмієвий лист",
   "item.mechaniya.rainbow_alloy": "Веселковий сплав",
   "item.mechaniya.superconductor_sheet": "Надпровідний лист",
@@ -106,6 +107,7 @@
   "item.mechaniya.minestar_logo": "Лого Майнстару",
   "item.mechaniya.roll_of_rolls": "Ролл Ролів",
   "item.mechaniya.ledok": "Ledok",
+  "block.mechaniya.trophy": "Кубок за проходження збірки",
 
   // --- Chemicals ---
   "chemical.mechaniya.zinc": "Цинк",

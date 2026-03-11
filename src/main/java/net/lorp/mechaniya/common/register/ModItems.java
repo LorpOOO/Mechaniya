@@ -40,6 +40,8 @@ public class ModItems {
             () -> new Item(new Item.Properties()));
     public static final DeferredItem<Item> DIRTY_TINY_ALUMINUM_DUST = ITEMS.register("dirty_tiny_aluminum_dust",
             () -> new Item(new Item.Properties()));
+    public static final DeferredItem<Item> INCOMPLETE_CONVEYOR = ITEMS.register("incomplete_conveyor_basic",
+            () -> new Item(new Item.Properties()));
 
     public static final DeferredItem<Item> RAINBOW_ALLOY = ITEMS.register("rainbow_alloy",
             () -> new Item(new Item.Properties()

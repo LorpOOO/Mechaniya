@@ -5,6 +5,7 @@ import net.minecraft.core.registries.Registries;
 import net.minecraft.network.chat.Component;
 import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.level.block.Block;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.neoforge.registries.DeferredRegister;
 
@@ -19,6 +20,8 @@ public class ModCreativeModeTabs {
             () -> CreativeModeTab.builder().icon(() -> new ItemStack(ModItems.OVERCHARGED_RAW_LAPIS_LAZULI_CRYSTAL.get()))
                     .title(Component.translatable("creativetab.mechaniya.mechaniya_tab"))
                     .displayItems((itemDisplayParameters, output) -> {
+                        //Кубок
+                        output.accept(ModBlocks.TROPHY.get());
                         // Механізми
                         output.accept(ModItems.STEEL_MECHANISM.get());
                         output.accept(ModItems.INCOMPLETE_STEEL_MECHANISM.get());
@@ -47,12 +50,14 @@ public class ModCreativeModeTabs {
                         output.accept(ModBlocks.OVERCLOCKED_ENERGY_MACHINE.get());
                         output.accept(ModBlocks.ENDERIAM_ENERGY_MACHINE.get());
 
-                        // Незавершені схеми
+                        // Незавершені штуки
                         output.accept(ModItems.INCOMPLETE_ELITE_CONTROL_CIRCUIT.get());
                         output.accept(ModItems.INCOMPLETE_ADVANCED_CONTROL_CIRCUIT.get());
                         output.accept(ModItems.INCOMPLETE_ULTIMATE_CONTROL_CIRCUIT.get());
                         output.accept(ModItems.INCOMPLETE_BASIC_CONTROL_CIRCUIT.get());
                         output.accept(ModItems.INCOMPLETE_OVERCLOCKED_CONTROL_CIRCUIT.get());
+                        output.accept(ModItems.INCOMPLETE_CONVEYOR.get());
+                        output.accept(ModItems.INCOMPLETE_DENSE_FABRIC.get());
 
 
                         // Руди та гравій
@@ -103,6 +108,8 @@ public class ModCreativeModeTabs {
                         output.accept(ModItems.RADIANT_ROD.get());
                         output.accept(ModItems.RADIANT_SHEET.get());
                         output.accept(ModItems.ENRICHED_BLAZE.get());
+                        output.accept(ModItems.ENTRO_PLATINUM_INGOT.get());
+                        output.accept(ModBlocks.ENTRO_PLATINUM_BLOCK.get());
                         output.accept(ModItems.ENRICHED_ZINC.get());
                         output.accept(ModItems.DENSE_FABRIC.get());
 

@@ -1,8 +1,7 @@
 package net.lorp.mechaniya.common.register;
 
 import net.lorp.mechaniya.Mechaniya;
-import net.lorp.mechaniya.common.block.FaceBlock;
-import net.lorp.mechaniya.common.block.ModFallingBlocks;
+import net.lorp.mechaniya.common.block.*;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.Rarity;
@@ -23,16 +22,16 @@ public class ModBlocks {
             DeferredRegister.createBlocks(Mechaniya.MOD_ID);
 
     public static final DeferredBlock<Block> ANDESITE_MACHINE = registerBlock("andesite_machine",
-            () -> new FaceBlock(BlockBehaviour.Properties.of()
-                    .strength(4f).requiresCorrectToolForDrops().sound(SoundType.WOOD).noOcclusion()));
+            () -> new CustomMachineBlock(BlockBehaviour.Properties.of().strength(4f).noOcclusion(),
+                    MachineShapes.ANDESITE));
 
     public static final DeferredBlock<Block> RUBBER_MACHINE = registerBlock("rubber_machine",
-            () -> new FaceBlock(BlockBehaviour.Properties.of()
-                    .strength(4f).requiresCorrectToolForDrops().sound(SoundType.COPPER).noOcclusion()));
+            () -> new CustomMachineBlock(BlockBehaviour.Properties.of()
+                    .strength(4f).noOcclusion().sound(SoundType.COPPER), MachineShapes.RUBBER));
 
     public static final DeferredBlock<Block> BRASS_MACHINE = registerBlock("brass_machine",
-            () -> new FaceBlock(BlockBehaviour.Properties.of()
-                    .strength(4f).requiresCorrectToolForDrops().sound(SoundType.METAL).noOcclusion()));
+            () -> new CustomShapeBlock(BlockBehaviour.Properties.of()
+                    .strength(4f).noOcclusion(), MachineShapes.BRASS));
 
     public static final DeferredBlock<Block> END_PLATINUM_ORE = registerBlock("end_platinum_ore",
             () -> new Block(BlockBehaviour.Properties.of()
@@ -56,6 +55,12 @@ public class ModBlocks {
                     .strength(4f).requiresCorrectToolForDrops().sound(SoundType.AMETHYST)),
             new Item.Properties().rarity(Rarity.EPIC));
 
+    public static final DeferredBlock<Block> TROPHY = registerBlock("trophy",
+            () -> new CustomShapeBlock(
+                    BlockBehaviour.Properties.of().noOcclusion(),
+                    Block.box(4, 0, 4, 12, 14, 12) // Форма для трофея
+            ));
+
     public static final DeferredBlock<Block> SILVER_ORE = registerBlock("silver_ore",
             () -> new Block(BlockBehaviour.Properties.of()
                     .strength(3f).requiresCorrectToolForDrops().sound(SoundType.STONE)));
@@ -65,8 +70,8 @@ public class ModBlocks {
                     .strength(3f).requiresCorrectToolForDrops().sound(SoundType.STONE)));
 
     public static final DeferredBlock<Block> HEATPROOF_MACHINE = registerBlock("heatproof_machine",
-            () -> new FaceBlock(BlockBehaviour.Properties.of()
-                    .strength(4f).requiresCorrectToolForDrops().sound(SoundType.METAL).noOcclusion()));
+            () -> new CustomMachineBlock(BlockBehaviour.Properties.of()
+                    .strength(4f).noOcclusion().sound(SoundType.METAL), MachineShapes.HEATPROOF));
 
     public static final DeferredBlock<Block> DEEPSLATE_GRAVEL = registerBlock("deepslate_gravel",
             () -> new ModFallingBlocks(BlockBehaviour.Properties.of()
@@ -93,8 +98,8 @@ public class ModBlocks {
                     .strength(2f).requiresCorrectToolForDrops().sound(SoundType.GRAVEL)));
 
     public static final DeferredBlock<Block> ZINC_MACHINE = registerBlock("zinc_machine",
-            () -> new FaceBlock(BlockBehaviour.Properties.of()
-                    .strength(4f).requiresCorrectToolForDrops().sound(SoundType.METAL).noOcclusion()));
+            () -> new CustomMachineBlock(BlockBehaviour.Properties.of().strength(4f).noOcclusion(),
+                    MachineShapes.ZINC));
 
     public static final DeferredBlock<Block> DEEPLEETED_ASURINE = registerBlock("deepleeted_asurine",
             () -> new Block(BlockBehaviour.Properties.of()
@@ -111,6 +116,10 @@ public class ModBlocks {
     public static final DeferredBlock<Block> STEEL_MIX_BLOCK = registerBlock("steel_mix_block",
             () -> new Block(BlockBehaviour.Properties.of()
                     .strength(4f).requiresCorrectToolForDrops().sound(SoundType.METAL)));
+
+    public static final DeferredBlock<Block> SIMPLE_ENERGY_MACHINE = registerBlock("simple_energy_machine",
+            () -> new CustomMachineBlock(BlockBehaviour.Properties.of().strength(4f).noOcclusion(),
+                    MachineShapes.SIMPLE_ENERGY));
 
     public static final DeferredBlock<Block> BASIC_ENERGY_MACHINE = registerBlock("basic_energy_machine",
             () -> new FaceBlock(BlockBehaviour.Properties.of()
@@ -144,9 +153,6 @@ public class ModBlocks {
             () -> new FaceBlock(BlockBehaviour.Properties.of()
                     .strength(4f).requiresCorrectToolForDrops().sound(SoundType.METAL).noOcclusion()));
 
-    public static final DeferredBlock<Block> SIMPLE_ENERGY_MACHINE = registerBlock("simple_energy_machine",
-            () -> new FaceBlock(BlockBehaviour.Properties.of()
-                    .strength(4f).requiresCorrectToolForDrops().sound(SoundType.METAL).noOcclusion()));
     public static final DeferredBlock<Block> ENTRO_PLATINUM_BLOCK = registerBlock("entro_platinum_block",
             () -> new Block(BlockBehaviour.Properties.of()
                     .strength(4f).requiresCorrectToolForDrops().sound(SoundType.METAL)));
