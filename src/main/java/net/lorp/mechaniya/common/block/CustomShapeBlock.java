@@ -16,7 +16,6 @@ public class CustomShapeBlock extends FaceBlock {
 
     @Override
     public VoxelShape getShape(BlockState state, BlockGetter world, BlockPos pos, CollisionContext context) {
-        // Логіка повороту форми залежно від напрямку (Direction)
         return switch (state.getValue(FACING)) {
             case NORTH -> shape;
             case SOUTH -> rotateShape(shape, 180);
@@ -26,10 +25,7 @@ public class CustomShapeBlock extends FaceBlock {
         };
     }
 
-    // Проста функція для повороту (можна спростити, але для наочності так)
     private VoxelShape rotateShape(VoxelShape source, int angle) {
-        // Це спрощений приклад. На практиці для складних форм
-        // зазвичай створюють Map<Direction, VoxelShape> заздалегідь.
         return source;
     }
 }
