@@ -120,5 +120,6 @@
   "lore.mechaniya.ledok_lore": "§bA strange ice cube. It looks... familiar.",
   "item.lore_ledok": "§bA strange ice cube. It looks... familiar.",
   "item.lore_rainbow_alloy": "Texture is from Avaritia mod.",
-  "item.lore_minestar_logo": "§dLogo of the best Minecraft server in the world"
+  "item.lore_minestar_logo": "§dLogo of the best Minecraft server in the world",
+  "chat.mechaniya.fixed_cd": "fixed cd %s%%"
 }

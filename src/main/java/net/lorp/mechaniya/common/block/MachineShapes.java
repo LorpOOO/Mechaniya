@@ -64,4 +64,5 @@ public class MachineShapes {
             Block.box(5.35, 9.1, 1.85, 20.65, 12.9, 5.65),
             Block.box(3.35, 3.1, 1.85, 18.65, 6.9, 5.65)
     );
+
 }
