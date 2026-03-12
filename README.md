@@ -3,4 +3,4 @@
 
 Mechaniya is a new tech Modpack with magic elements, which adds new custom crafts and many new items, blocks, fluids, and Mekanism chemicals. It focuses on adding and combining mods that have incredibly beautiful visuals and everyone's favorite gameplay; if you wish to play an enjoyable modpack, you are right at the address!
 
-Version mod and modpack: ```Beta 0.0.8```
+Version mod and modpack: ```Beta 0.0.9```
