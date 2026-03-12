@@ -30,7 +30,7 @@ public class ModBlocks {
                     .strength(4f).noOcclusion().sound(SoundType.COPPER), MachineShapes.RUBBER));
 
     public static final DeferredBlock<Block> BRASS_MACHINE = registerBlock("brass_machine",
-            () -> new CustomShapeBlock(BlockBehaviour.Properties.of()
+            () -> new CustomMachineBlock(BlockBehaviour.Properties.of()
                     .strength(4f).noOcclusion(), MachineShapes.BRASS));
 
     public static final DeferredBlock<Block> END_PLATINUM_ORE = registerBlock("end_platinum_ore",
@@ -58,7 +58,7 @@ public class ModBlocks {
     public static final DeferredBlock<Block> TROPHY = registerBlock("trophy",
             () -> new CustomShapeBlock(
                     BlockBehaviour.Properties.of().noOcclusion(),
-                    Block.box(4, 0, 4, 12, 14, 12) // Форма для трофея
+                    Block.box(4, 0, 4, 12, 14, 12)
             ));
 
     public static final DeferredBlock<Block> SILVER_ORE = registerBlock("silver_ore",
@@ -98,7 +98,7 @@ public class ModBlocks {
                     .strength(2f).requiresCorrectToolForDrops().sound(SoundType.GRAVEL)));
 
     public static final DeferredBlock<Block> ZINC_MACHINE = registerBlock("zinc_machine",
-            () -> new CustomMachineBlock(BlockBehaviour.Properties.of().strength(4f).noOcclusion(),
+            () -> new CustomMachineBlock(BlockBehaviour.Properties.of().sound(SoundType.METAL).strength(4f).noOcclusion(),
                     MachineShapes.ZINC));
 
     public static final DeferredBlock<Block> DEEPLEETED_ASURINE = registerBlock("deepleeted_asurine",
@@ -171,7 +171,7 @@ public class ModBlocks {
 
     public static final DeferredBlock<LiquidBlock> PROPYLENE_BLOCK = BLOCKS.register("propylene_block",
             () -> new LiquidBlock(
-                    ModFluid.SOURCE_PROPYLENE.get(), // Перевірте, щоб тут було саме SOURCE
+                    ModFluid.SOURCE_PROPYLENE.get(),
                     BlockBehaviour.Properties.of()
                             .mapColor(MapColor.WATER)
                             .noCollission()
