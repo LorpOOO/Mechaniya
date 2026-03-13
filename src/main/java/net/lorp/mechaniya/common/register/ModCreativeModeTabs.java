@@ -112,6 +112,7 @@ public class ModCreativeModeTabs {
                         output.accept(ModBlocks.ENTRO_PLATINUM_BLOCK.get());
                         output.accept(ModItems.ENRICHED_ZINC.get());
                         output.accept(ModItems.DENSE_FABRIC.get());
+                        output.accept(ModItems.MEKA_CHIP.get());
 
                         // Гума
                         output.accept(ModItems.WARPED_RUBBER.get());

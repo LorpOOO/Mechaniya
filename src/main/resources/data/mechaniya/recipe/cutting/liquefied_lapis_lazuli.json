@@ -1,0 +1,5 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": { "item": "mechaniya:overclocked_energy_machine" },
+  "result": { "id": "mechaniya:meka_chip", "count": 2 }
+}

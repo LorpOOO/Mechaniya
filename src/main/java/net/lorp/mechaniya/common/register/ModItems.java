@@ -42,6 +42,8 @@ public class ModItems {
             () -> new Item(new Item.Properties()));
     public static final DeferredItem<Item> INCOMPLETE_CONVEYOR = ITEMS.register("incomplete_conveyor_basic",
             () -> new Item(new Item.Properties()));
+    public static final DeferredItem<Item> MEKA_CHIP = ITEMS.register("meka_chip",
+            () -> new Item(new Item.Properties()));
 
     public static final DeferredItem<Item> RAINBOW_ALLOY = ITEMS.register("rainbow_alloy",
             () -> new Item(new Item.Properties()
