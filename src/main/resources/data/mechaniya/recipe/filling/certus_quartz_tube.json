@@ -1,0 +1,18 @@
+{
+  "type": "create:filling",
+  "ingredients": [
+    {
+      "item": "ae2:certus_quartz_crystal"
+    },
+    {
+      "type": "neoforge:single",
+      "amount": 250,
+      "fluid": "evolvedmekanism:molten_gold"
+    }
+  ],
+  "results": [
+    {
+      "id": "mechaniya:certus_quartz_tube"
+    }
+  ]
+}

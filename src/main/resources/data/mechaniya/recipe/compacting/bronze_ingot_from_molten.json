@@ -1,0 +1,16 @@
+{
+  "type": "create:compacting",
+  "heat_requirement": "heated",
+  "ingredients": [
+    {
+      "type": "fluid_stack",
+      "amount": 90,
+      "fluid": "evolvedmekanism:molten_bronze"
+    }
+  ],
+  "results": [
+    {
+      "id": "unify:bronze_ingot"
+    }
+  ]
+}

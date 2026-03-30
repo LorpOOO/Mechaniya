@@ -21,45 +21,47 @@ public class ModBlocks {
     public static final DeferredRegister.Blocks BLOCKS =
             DeferredRegister.createBlocks(Mechaniya.MOD_ID);
 
+    // --- Machine Casings & Bases ---
     public static final DeferredBlock<Block> ANDESITE_MACHINE = registerBlock("andesite_machine",
-            () -> new CustomMachineBlock(BlockBehaviour.Properties.of().strength(4f).noOcclusion(),
+            () -> new CustomMachineBlock(BlockBehaviour.Properties.of().requiresCorrectToolForDrops().strength(4f).noOcclusion(),
                     MachineShapes.ANDESITE));
+
+    public static final DeferredBlock<Block> OIL_PIPE = registerBlock("oil_pipe",
+            () -> new CustomMachineBlock(BlockBehaviour.Properties.of().requiresCorrectToolForDrops()
+                    .strength(4f).noOcclusion(), MachineShapes.OIL_PIPE));
+
+    public static final DeferredBlock<Block> BRASS_MACHINE = registerBlock("brass_machine",
+            () -> new CustomMachineBlock(BlockBehaviour.Properties.of().requiresCorrectToolForDrops()
+                    .strength(4f).noOcclusion(), MachineShapes.BRASS));
+
+    public static final DeferredBlock<Block> ZINC_MACHINE = registerBlock("zinc_machine",
+            () -> new CustomMachineBlock(BlockBehaviour.Properties.of().sound(SoundType.METAL).strength(4f).requiresCorrectToolForDrops().noOcclusion(),
+                    MachineShapes.ZINC));
 
     public static final DeferredBlock<Block> RUBBER_MACHINE = registerBlock("rubber_machine",
             () -> new CustomMachineBlock(BlockBehaviour.Properties.of()
-                    .strength(4f).noOcclusion().sound(SoundType.COPPER), MachineShapes.RUBBER));
+                    .strength(4f).noOcclusion().requiresCorrectToolForDrops().sound(SoundType.COPPER), MachineShapes.RUBBER));
 
-    public static final DeferredBlock<Block> BRASS_MACHINE = registerBlock("brass_machine",
+    public static final DeferredBlock<Block> HEATPROOF_MACHINE = registerBlock("heatproof_machine",
             () -> new CustomMachineBlock(BlockBehaviour.Properties.of()
-                    .strength(4f).noOcclusion(), MachineShapes.BRASS));
+                    .strength(4f).noOcclusion().requiresCorrectToolForDrops().sound(SoundType.METAL), MachineShapes.HEATPROOF));
 
+    public static final DeferredBlock<Block> ENDER_MACHINE = registerBlock("ender_machine",
+            () -> new Block(BlockBehaviour.Properties.of()
+                    .strength(4f).requiresCorrectToolForDrops().sound(SoundType.STONE)));
+
+    public static final DeferredBlock<Block> RADIANT_MACHINE = registerBlock("radiant_machine",
+            () -> new FaceBlock(BlockBehaviour.Properties.of()
+                    .strength(4f).requiresCorrectToolForDrops().sound(SoundType.METAL).noOcclusion()));
+
+    // --- Ores and Natural Resources ---
     public static final DeferredBlock<Block> END_PLATINUM_ORE = registerBlock("end_platinum_ore",
             () -> new Block(BlockBehaviour.Properties.of()
                     .strength(4f).requiresCorrectToolForDrops().sound(SoundType.STONE)));
 
-    public static final DeferredBlock<Block> BLAZE_GOLD_BLOCK = registerBlock("blaze_gold_block",
+    public static final DeferredBlock<Block> OIL_DEPOSIT = registerBlock("oil_deposit",
             () -> new Block(BlockBehaviour.Properties.of()
-                    .strength(4f).requiresCorrectToolForDrops().sound(SoundType.METAL)));
-
-    public static final DeferredBlock<Block> MITHRIL_BLOCK = registerSpecificBlock("mithril_block",
-            () -> new Block(BlockBehaviour.Properties.of()
-                    .strength(4f).requiresCorrectToolForDrops().sound(SoundType.METAL)),
-            new Item.Properties().rarity(Rarity.RARE));
-
-    public static final DeferredBlock<Block> HUPER_EXPERIENCE_BLOCK = registerSpecificBlock("huper_experience_block",
-            () -> new Block(BlockBehaviour.Properties.of()
-                    .strength(4f).requiresCorrectToolForDrops().sound(SoundType.AMETHYST)),
-            new Item.Properties().rarity(Rarity.EPIC));
-
-    public static final DeferredBlock<Block> TROPHY = registerBlock("trophy",
-            () -> new CustomShapeBlock(
-                    BlockBehaviour.Properties.of().noOcclusion(),
-                    Block.box(4, 0, 4, 12, 14, 12)
-            ));
-
-    public static final DeferredBlock<Block> HEATPROOF_MACHINE = registerBlock("heatproof_machine",
-            () -> new CustomMachineBlock(BlockBehaviour.Properties.of()
-                    .strength(4f).noOcclusion().sound(SoundType.METAL), MachineShapes.HEATPROOF));
+                    .strength(10f).sound(SoundType.STONE)));
 
     public static final DeferredBlock<Block> DEEPSLATE_GRAVEL = registerBlock("deepslate_gravel",
             () -> new ModFallingBlocks(BlockBehaviour.Properties.of()
@@ -69,17 +71,13 @@ public class ModBlocks {
             () -> new ModFallingBlocks(BlockBehaviour.Properties.of()
                     .strength(2f).requiresCorrectToolForDrops().sound(SoundType.GRAVEL)));
 
-    public static final DeferredBlock<Block> END_SAND = registerBlock("end_sand",
-            () -> new ModFallingBlocks(BlockBehaviour.Properties.of()
-                    .strength(2f).requiresCorrectToolForDrops().sound(SoundType.GRAVEL)));
-
     public static final DeferredBlock<Block> VERIDIUM_GRAVEL = registerBlock("veridium_gravel",
             () -> new ModFallingBlocks(BlockBehaviour.Properties.of()
                     .strength(2f).requiresCorrectToolForDrops().sound(SoundType.GRAVEL)));
 
-    public static final DeferredBlock<Block> ZINC_MACHINE = registerBlock("zinc_machine",
-            () -> new CustomMachineBlock(BlockBehaviour.Properties.of().sound(SoundType.METAL).strength(4f).noOcclusion(),
-                    MachineShapes.ZINC));
+    public static final DeferredBlock<Block> END_SAND = registerBlock("end_sand",
+            () -> new ModFallingBlocks(BlockBehaviour.Properties.of()
+                    .strength(2f).requiresCorrectToolForDrops().sound(SoundType.GRAVEL)));
 
     public static final DeferredBlock<Block> DEEPLEETED_ASURINE = registerBlock("deepleeted_asurine",
             () -> new Block(BlockBehaviour.Properties.of()
@@ -89,70 +87,88 @@ public class ModBlocks {
             () -> new Block(BlockBehaviour.Properties.of()
                     .strength(2f).requiresCorrectToolForDrops().sound(SoundType.STONE)));
 
-    public static final DeferredBlock<Block> ENDER_MACHINE = registerBlock("ender_machine",
+    public static final DeferredBlock<Block> PARAFFIN_WAX_BLOCK = registerBlock("paraffin_wax_block",
             () -> new Block(BlockBehaviour.Properties.of()
-                    .strength(4f).requiresCorrectToolForDrops().sound(SoundType.STONE)));
+                    .strength(1.5f).sound(SoundType.CANDLE)));
 
-    public static final DeferredBlock<Block> ENDERIAM_ENERGY_MACHINE = registerBlock("enderiam_energy_machine",
+    // --- Storage Blocks ---
+    public static final DeferredBlock<Block> MITHRIL_BLOCK = registerSpecificBlock("mithril_block",
+            () -> new Block(BlockBehaviour.Properties.of()
+                    .strength(4f).requiresCorrectToolForDrops().sound(SoundType.METAL)),
+            new Item.Properties().rarity(Rarity.RARE));
+
+    public static final DeferredBlock<Block> BLAZE_GOLD_BLOCK = registerBlock("blaze_gold_block",
             () -> new Block(BlockBehaviour.Properties.of()
                     .strength(4f).requiresCorrectToolForDrops().sound(SoundType.METAL)));
-
-    public static final DeferredBlock<Block> RADIANT_MACHINE = registerBlock("radiant_machine",
-            () -> new FaceBlock(BlockBehaviour.Properties.of()
-                    .strength(4f).requiresCorrectToolForDrops().sound(SoundType.METAL).noOcclusion()));
 
     public static final DeferredBlock<Block> ENTRO_PLATINUM_BLOCK = registerBlock("entro_platinum_block",
             () -> new Block(BlockBehaviour.Properties.of()
                     .strength(4f).requiresCorrectToolForDrops().sound(SoundType.METAL)));
 
-    public static final DeferredBlock<LiquidBlock> SHIMMER_BLOCK = BLOCKS.register("shimmer_block",
-            () -> new LiquidBlock(
-                    ModFluid.SOURCE_SHIMMER.get(), // Перевірте, щоб тут було саме SOURCE
-                    BlockBehaviour.Properties.of()
-                            .mapColor(MapColor.TERRACOTTA_WHITE)
-                            .noCollission()
-                            .strength(100.0F)
-                            .pushReaction(PushReaction.DESTROY)
-                            .noLootTable()
-                            .replaceable()
+    public static final DeferredBlock<Block> HUPER_EXPERIENCE_BLOCK = registerSpecificBlock("huper_experience_block",
+            () -> new Block(BlockBehaviour.Properties.of()
+                    .strength(4f).requiresCorrectToolForDrops().sound(SoundType.AMETHYST)),
+            new Item.Properties().rarity(Rarity.EPIC));
+
+    // --- Special & Decorative ---
+    public static final DeferredBlock<Block> TROPHY = registerBlock("trophy",
+            () -> new CustomShapeBlock(
+                    BlockBehaviour.Properties.of().noOcclusion(),
+                    Block.box(4, 0, 4, 12, 14, 12)
             ));
+
+    // --- Fluid Blocks ---
+    public static final DeferredBlock<LiquidBlock> SHIMMER_BLOCK = BLOCKS.register("shimmer_block",
+            () -> new LiquidBlock(ModFluid.SOURCE_SHIMMER.get(), BlockBehaviour.Properties.of()
+                    .mapColor(MapColor.TERRACOTTA_WHITE).noCollission().strength(100.0F)
+                    .pushReaction(PushReaction.DESTROY).noLootTable().replaceable()));
 
     public static final DeferredBlock<LiquidBlock> CRUDE_OIL_BLOCK = BLOCKS.register("crude_oil_block",
-            () -> new LiquidBlock(
-                    ModFluid.SOURCE_CRUDE_OIL.get(), // Перевірте, щоб тут було саме SOURCE
-                    BlockBehaviour.Properties.of()
-                            .mapColor(MapColor.COLOR_BLACK)
-                            .noCollission()
-                            .strength(100.0F)
-                            .pushReaction(PushReaction.DESTROY)
-                            .noLootTable()
-                            .replaceable()
-            ));
+            () -> new LiquidBlock(ModFluid.SOURCE_CRUDE_OIL.get(), BlockBehaviour.Properties.of()
+                    .mapColor(MapColor.COLOR_BLACK).noCollission().strength(100.0F)
+                    .pushReaction(PushReaction.DESTROY).noLootTable().replaceable()));
 
     public static final DeferredBlock<LiquidBlock> LATEX_BLOCK = BLOCKS.register("latex_block",
-            () -> new LiquidBlock(
-                    ModFluid.SOURCE_LATEX.get(),
-                    BlockBehaviour.Properties.of()
-                            .mapColor(MapColor.WOOD)
-                            .noCollission()
-                            .strength(100.0F)
-                            .pushReaction(PushReaction.DESTROY)
-                            .noLootTable()
-                            .replaceable()
-            ));
+            () -> new LiquidBlock(ModFluid.SOURCE_LATEX.get(), BlockBehaviour.Properties.of()
+                    .mapColor(MapColor.WOOD).noCollission().strength(100.0F)
+                    .pushReaction(PushReaction.DESTROY).noLootTable().replaceable()));
 
     public static final DeferredBlock<LiquidBlock> WARPED_LATEX_BLOCK = BLOCKS.register("warped_latex_block",
-            () -> new LiquidBlock(
-                    ModFluid.SOURCE_WARPED_LATEX.get(),
-                    BlockBehaviour.Properties.of()
-                            .mapColor(MapColor.COLOR_CYAN)
-                            .noCollission()
-                            .strength(100.0F)
-                            .pushReaction(PushReaction.DESTROY)
-                            .noLootTable()
-                            .replaceable()
-            ));
+            () -> new LiquidBlock(ModFluid.SOURCE_WARPED_LATEX.get(), BlockBehaviour.Properties.of()
+                    .mapColor(MapColor.COLOR_CYAN).noCollission().strength(100.0F)
+                    .pushReaction(PushReaction.DESTROY).noLootTable().replaceable()));
 
+    public static final DeferredBlock<LiquidBlock> STEAM_CRACKED_FUEL_BLOCK = BLOCKS.register("steam_cracked_fuel_block",
+            () -> new LiquidBlock(ModFluid.SOURCE_STEAM_CRACKED_FUEL.get(), BlockBehaviour.Properties.of()
+                    .mapColor(MapColor.COLOR_GRAY).noCollission().strength(100.0F)
+                    .pushReaction(PushReaction.DESTROY).noLootTable().replaceable()));
+
+    public static final DeferredBlock<LiquidBlock> SULFURIC_FUEL_BLOCK = BLOCKS.register("sulfuric_fuel_block",
+            () -> new LiquidBlock(ModFluid.SOURCE_SULFURIC_FUEL.get(), BlockBehaviour.Properties.of()
+                    .mapColor(MapColor.COLOR_YELLOW).noCollission().strength(100.0F)
+                    .pushReaction(PushReaction.DESTROY).noLootTable().replaceable()));
+
+    public static final DeferredBlock<LiquidBlock> FUEL_BLOCK = BLOCKS.register("fuel_block",
+            () -> new LiquidBlock(ModFluid.SOURCE_FUEL.get(), BlockBehaviour.Properties.of()
+                    .mapColor(MapColor.GOLD).noCollission().strength(100.0F)
+                    .pushReaction(PushReaction.DESTROY).noLootTable().replaceable()));
+
+    public static final DeferredBlock<LiquidBlock> OIL_FUEL_BLOCK = BLOCKS.register("oil_fuel_block",
+            () -> new LiquidBlock(ModFluid.SOURCE_OIL_FUEL.get(), BlockBehaviour.Properties.of()
+                    .mapColor(MapColor.COLOR_BLACK).noCollission().strength(100.0F)
+                    .pushReaction(PushReaction.DESTROY).noLootTable().replaceable()));
+
+    public static final DeferredBlock<LiquidBlock> ETHYLENE_BLOCK = BLOCKS.register("ethylene_block",
+            () -> new LiquidBlock(ModFluid.SOURCE_ETHYLENE.get(), BlockBehaviour.Properties.of()
+                    .mapColor(MapColor.SNOW).noCollission().strength(100.0F)
+                    .pushReaction(PushReaction.DESTROY).noLootTable().replaceable()));
+
+    public static final DeferredBlock<LiquidBlock> MOLTEN_PLASTIC_BLOCK = BLOCKS.register("molten_plastic_block",
+            () -> new LiquidBlock(ModFluid.SOURCE_MOLTEN_PLASTIC.get(), BlockBehaviour.Properties.of()
+                    .mapColor(MapColor.CLAY).noCollission().strength(100.0F)
+                    .pushReaction(PushReaction.DESTROY).noLootTable().replaceable()));
+
+    // --- Helper Methods ---
     private static <T extends Block> DeferredBlock<T> registerBlock(String name, Supplier<T> block) {
         DeferredBlock<T> toReturn = BLOCKS.register(name, block);
         registerBlockItem(name, toReturn);

@@ -1,0 +1,13 @@
+{
+  "type": "create:pressing",
+  "ingredients": [
+    {
+      "tag": "c:ingots/rose_gold"
+    }
+  ],
+  "results": [
+    {
+      "id": "unify:rose_gold_sheet"
+    }
+  ]
+}

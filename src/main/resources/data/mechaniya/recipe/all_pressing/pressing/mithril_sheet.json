@@ -1,0 +1,13 @@
+{
+  "type": "create:pressing",
+  "ingredients": [
+    {
+      "item": "mechaniya:mithril_ingot"
+    }
+  ],
+  "results": [
+    {
+      "id": "mechaniya:mithril_sheet"
+    }
+  ]
+}

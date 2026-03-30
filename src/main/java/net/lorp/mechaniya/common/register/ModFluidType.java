@@ -44,17 +44,83 @@ public class ModFluidType {
             )
     );
 
-    // --- CRUDE OIL (НОВЕ) ---
     public static final DeferredHolder<FluidType, FluidType> CRUDE_OIL = FLUID_TYPES.register("crude_oil",
             () -> new FluidType(FluidType.Properties.create()
-                    .density(2000)     // Важча за воду
-                    .viscosity(3000)   // Тече повільніше
-                    .canSwim(true)
+                    .motionScale(0.002)
+                    .viscosity(5000)
+                    .density(2000)
+                    .canSwim(false)
                     .canDrown(true)
                     .canPushEntity(true)
                     .canHydrate(false)
-                    .supportsBoating(false) // Човни в нафті зазвичай не плавають
+                    .supportsBoating(true)
             )
+    );
+
+    public static final DeferredHolder<FluidType, FluidType> STEAM_CRACKED_FUEL = FLUID_TYPES.register("steam_cracked_fuel",
+            () -> new FluidType(FluidType.Properties.create()
+                    .motionScale(0.007)
+                    .viscosity(1000)
+                    .density(800)
+                    .canSwim(false)
+                    .canDrown(true)
+                    .canPushEntity(true)
+                    .supportsBoating(true))
+    );
+
+    public static final DeferredHolder<FluidType, FluidType> SULFURIC_FUEL = FLUID_TYPES.register("sulfuric_fuel",
+            () -> new FluidType(FluidType.Properties.create()
+                    .motionScale(0.005)
+                    .viscosity(2000)
+                    .density(1200)
+                    .canSwim(false)
+                    .canDrown(true)
+                    .canPushEntity(true)
+                    .supportsBoating(true))
+    );
+
+    public static final DeferredHolder<FluidType, FluidType> FUEL = FLUID_TYPES.register("fuel",
+            () -> new FluidType(FluidType.Properties.create()
+                    .motionScale(0.008)
+                    .viscosity(800)
+                    .density(700)
+                    .canSwim(false)
+                    .canDrown(true)
+                    .canPushEntity(true)
+                    .supportsBoating(true))
+    );
+
+    public static final DeferredHolder<FluidType, FluidType> OIL_FUEL = FLUID_TYPES.register("oil_fuel",
+            () -> new FluidType(FluidType.Properties.create()
+                    .motionScale(0.004)
+                    .viscosity(4000)
+                    .density(1500)
+                    .canSwim(false)
+                    .canDrown(true)
+                    .canPushEntity(true)
+                    .supportsBoating(true))
+    );
+
+    public static final DeferredHolder<FluidType, FluidType> ETHYLENE = FLUID_TYPES.register("ethylene",
+            () -> new FluidType(FluidType.Properties.create()
+                    .motionScale(0.01)
+                    .viscosity(200)
+                    .density(500)
+                    .canSwim(false)
+                    .canDrown(true)
+                    .canPushEntity(true)
+                    .supportsBoating(false))
+    );
+
+    public static final DeferredHolder<FluidType, FluidType> MOLTEN_PLASTIC = FLUID_TYPES.register("molten_plastic",
+            () -> new FluidType(FluidType.Properties.create()
+                    .motionScale(0.001)
+                    .viscosity(8000)
+                    .density(3000)
+                    .canSwim(false)
+                    .canDrown(true)
+                    .canPushEntity(true)
+                    .supportsBoating(false))
     );
 
     public static void register(IEventBus eventBus) {

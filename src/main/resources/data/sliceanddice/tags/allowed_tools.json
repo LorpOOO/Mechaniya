@@ -1,0 +1,8 @@
+{
+  "replace": false,
+  "values": [
+    "mekanism:meka_tool",
+    "mekanism:atomic_disassembler",
+	"expandeddelight:crushing_tools"
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "AB ",
+    "CD ",
+    "   "
+  ],
+  "key": {
+    "A": {
+      "item": "mechaniya:huper_experience_nugget"
+    },
+    "B": {
+      "item": "mechaniya:huper_experience_nugget"
+    },
+    "C": {
+      "item": "mechaniya:huper_experience_nugget"
+    },
+    "D": {
+      "item": "mechaniya:huper_experience_nugget"
+    }
+  },
+  "result": {
+    "id": "mechaniya:huper_experience_heap",
+    "count": 1
+  }
+}

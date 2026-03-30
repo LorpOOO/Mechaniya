@@ -78,6 +78,90 @@ public class ModFluid {
             () -> new BaseFlowingFluid.Flowing(CRUDE_OIL_PROPERTIES.get()));
 
 
+    private static final Supplier<BaseFlowingFluid.Properties> STEAM_CRACKED_FUEL_PROPERTIES = Suppliers.memoize(() ->
+            new BaseFlowingFluid.Properties(
+                    ModFluidType.STEAM_CRACKED_FUEL,
+                    ModFluid.SOURCE_STEAM_CRACKED_FUEL,
+                    ModFluid.FLOWING_STEAM_CRACKED_FUEL)
+                    .block(ModBlocks.STEAM_CRACKED_FUEL_BLOCK)
+                    .bucket(ModItems.STEAM_CRACKED_FUEL_BUCKET)
+    );
+    public static final DeferredHolder<Fluid, BaseFlowingFluid> SOURCE_STEAM_CRACKED_FUEL = FLUIDS.register("steam_cracked_fuel",
+            () -> new BaseFlowingFluid.Source(STEAM_CRACKED_FUEL_PROPERTIES.get()));
+    public static final DeferredHolder<Fluid, BaseFlowingFluid> FLOWING_STEAM_CRACKED_FUEL = FLUIDS.register("steam_cracked_fuel_flow",
+            () -> new BaseFlowingFluid.Flowing(STEAM_CRACKED_FUEL_PROPERTIES.get()));
+
+
+    private static final Supplier<BaseFlowingFluid.Properties> SULFURIC_FUEL_PROPERTIES = Suppliers.memoize(() ->
+            new BaseFlowingFluid.Properties(
+                    ModFluidType.SULFURIC_FUEL,
+                    ModFluid.SOURCE_SULFURIC_FUEL,
+                    ModFluid.FLOWING_SULFURIC_FUEL)
+                    .block(ModBlocks.SULFURIC_FUEL_BLOCK)
+                    .bucket(ModItems.SULFURIC_FUEL_BUCKET)
+    );
+    public static final DeferredHolder<Fluid, BaseFlowingFluid> SOURCE_SULFURIC_FUEL = FLUIDS.register("sulfuric_fuel",
+            () -> new BaseFlowingFluid.Source(SULFURIC_FUEL_PROPERTIES.get()));
+    public static final DeferredHolder<Fluid, BaseFlowingFluid> FLOWING_SULFURIC_FUEL = FLUIDS.register("sulfuric_fuel_flow",
+            () -> new BaseFlowingFluid.Flowing(SULFURIC_FUEL_PROPERTIES.get()));
+
+
+    private static final Supplier<BaseFlowingFluid.Properties> FUEL_PROPERTIES = Suppliers.memoize(() ->
+            new BaseFlowingFluid.Properties(
+                    ModFluidType.FUEL,
+                    ModFluid.SOURCE_FUEL,
+                    ModFluid.FLOWING_FUEL)
+                    .block(ModBlocks.FUEL_BLOCK)
+                    .bucket(ModItems.FUEL_BUCKET)
+    );
+    public static final DeferredHolder<Fluid, BaseFlowingFluid> SOURCE_FUEL = FLUIDS.register("fuel",
+            () -> new BaseFlowingFluid.Source(FUEL_PROPERTIES.get()));
+    public static final DeferredHolder<Fluid, BaseFlowingFluid> FLOWING_FUEL = FLUIDS.register("fuel_flow",
+            () -> new BaseFlowingFluid.Flowing(FUEL_PROPERTIES.get()));
+
+
+    private static final Supplier<BaseFlowingFluid.Properties> OIL_FUEL_PROPERTIES = Suppliers.memoize(() ->
+            new BaseFlowingFluid.Properties(
+                    ModFluidType.OIL_FUEL,
+                    ModFluid.SOURCE_OIL_FUEL,
+                    ModFluid.FLOWING_OIL_FUEL)
+                    .block(ModBlocks.OIL_FUEL_BLOCK)
+                    .bucket(ModItems.OIL_FUEL_BUCKET)
+    );
+    public static final DeferredHolder<Fluid, BaseFlowingFluid> SOURCE_OIL_FUEL = FLUIDS.register("oil_fuel",
+            () -> new BaseFlowingFluid.Source(OIL_FUEL_PROPERTIES.get()));
+    public static final DeferredHolder<Fluid, BaseFlowingFluid> FLOWING_OIL_FUEL = FLUIDS.register("oil_fuel_flow",
+            () -> new BaseFlowingFluid.Flowing(OIL_FUEL_PROPERTIES.get()));
+
+
+    private static final Supplier<BaseFlowingFluid.Properties> ETHYLENE_PROPERTIES = Suppliers.memoize(() ->
+            new BaseFlowingFluid.Properties(
+                    ModFluidType.ETHYLENE,
+                    ModFluid.SOURCE_ETHYLENE,
+                    ModFluid.FLOWING_ETHYLENE)
+                    .block(ModBlocks.ETHYLENE_BLOCK)
+                    .bucket(ModItems.ETHYLENE_BUCKET)
+    );
+    public static final DeferredHolder<Fluid, BaseFlowingFluid> SOURCE_ETHYLENE = FLUIDS.register("ethylene",
+            () -> new BaseFlowingFluid.Source(ETHYLENE_PROPERTIES.get()));
+    public static final DeferredHolder<Fluid, BaseFlowingFluid> FLOWING_ETHYLENE = FLUIDS.register("ethylene_flow",
+            () -> new BaseFlowingFluid.Flowing(ETHYLENE_PROPERTIES.get()));
+
+
+    private static final Supplier<BaseFlowingFluid.Properties> MOLTEN_PLASTIC_PROPERTIES = Suppliers.memoize(() ->
+            new BaseFlowingFluid.Properties(
+                    ModFluidType.MOLTEN_PLASTIC,
+                    ModFluid.SOURCE_MOLTEN_PLASTIC,
+                    ModFluid.FLOWING_MOLTEN_PLASTIC)
+                    .block(ModBlocks.MOLTEN_PLASTIC_BLOCK)
+                    .bucket(ModItems.MOLTEN_PLASTIC_BUCKET)
+    );
+    public static final DeferredHolder<Fluid, BaseFlowingFluid> SOURCE_MOLTEN_PLASTIC = FLUIDS.register("molten_plastic",
+            () -> new BaseFlowingFluid.Source(MOLTEN_PLASTIC_PROPERTIES.get()));
+    public static final DeferredHolder<Fluid, BaseFlowingFluid> FLOWING_MOLTEN_PLASTIC = FLUIDS.register("molten_plastic_flow",
+            () -> new BaseFlowingFluid.Flowing(MOLTEN_PLASTIC_PROPERTIES.get()));
+
+
     public static void register(IEventBus eventBus) {
         FLUIDS.register(eventBus);
     }

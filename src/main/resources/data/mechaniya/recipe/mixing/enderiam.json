@@ -1,0 +1,28 @@
+{
+  "type": "create:mixing",
+  "heat_requirement": "superheated",
+  "ingredients": [
+    {
+      "item": "ae2:ender_dust"
+    },
+    {
+      "item": "ae2:ender_dust"
+    },
+    {
+      "type": "fluid_stack",
+      "amount": 250,
+      "fluid": "minecraft:water"
+    },
+    {
+      "type": "fluid_stack",
+      "amount": 250,
+      "fluid": "evolvedmekanism:molten_platinum"
+    }
+  ],
+  "results": [
+    {
+      "amount": 250,
+      "id": "createmechanisms:enderiam"
+    }
+  ]
+}

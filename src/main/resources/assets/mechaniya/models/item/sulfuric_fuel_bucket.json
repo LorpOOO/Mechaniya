@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "mechaniya:item/sulfuric_fuel_bucket"
+  }
+}

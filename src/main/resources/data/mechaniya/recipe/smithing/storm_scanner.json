@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:smithing_transform",
+  "addition": {
+    "tag": "c:dusts/sulfur"
+  },
+  "base": [
+    {
+      "item": "mekanism:energy_tablet"
+    }
+  ],
+  "result": {
+    "count": 1,
+    "id": "netherstormmodule:lv_storm_scanner"
+  },
+  "template": {
+    "item": "mechaniya:basic_energy_machine"
+  }
+}

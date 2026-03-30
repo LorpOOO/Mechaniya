@@ -1,0 +1,14 @@
+{
+  "type": "create:milling",
+  "ingredients": [
+    {
+      "item": "minecraft:cobbled_deepslate"
+    }
+  ],
+  "processing_time": 150,
+  "results": [
+    {
+      "id": "mechaniya:deepslate_gravel"
+    }
+  ]
+}

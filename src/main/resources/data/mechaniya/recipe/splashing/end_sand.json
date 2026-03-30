@@ -1,0 +1,14 @@
+{
+  "type": "create:splashing",
+  "ingredients": [
+    {
+      "item": "mechaniya:end_sand"
+    }
+  ],
+  "results": [
+    {
+      "chance": 0.01,
+      "id": "mechaniya:raw_platinum_nugget"
+    }
+  ]
+}

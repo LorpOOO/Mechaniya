@@ -1,0 +1,106 @@
+{
+  // --- Creative Tabs ---
+  "creativetab.mechaniya.mechaniya_tab": "Mechaniya",
+
+  // --- Blocks: Machines ---
+  "block.mechaniya.andesite_machine": "Андезитова машина",
+  "block.mechaniya.brass_machine": "Латунна машина",
+  "block.mechaniya.zinc_machine": "Цинкова машина",
+  "block.mechaniya.rubber_machine": "Гумова машина",
+  "block.mechaniya.heatproof_machine": "Термостійка машина",
+  "block.mechaniya.steel_machine": "Сталева машина",
+  "block.mechaniya.ender_machine": "Ендер машина",
+  "block.mechaniya.radiant_machine": "Осяяна машина",
+
+  // --- Blocks: Ores & Resources ---
+  "block.mechaniya.end_platinum_ore": "Платинова руда Енду",
+  "block.mechaniya.oil_deposit": "Поклад нафти",
+  "block.mechaniya.deepslate_gravel": "Глибосланцевий гравій",
+  "block.mechaniya.asurine_gravel": "Азуриновий гравій",
+  "block.mechaniya.veridium_gravel": "Веридієвий гравій",
+  "block.mechaniya.end_sand": "Пісок Енду",
+  "block.mechaniya.deepleeted_asurine": "Низькозбагачений азурин",
+  "block.mechaniya.deepleeted_veridium": "Низькозбагачений веридій",
+
+  // --- Blocks: Materials & Storage ---
+  "block.mechaniya.mithril_block": "Мітриловий блок",
+  "block.mechaniya.blaze_gold_block": "Блок пломеневого золота",
+  "block.mechaniya.entro_platinum_block": "Ентропіїзований платиновий блок",
+  "block.mechaniya.huper_experience_block": "Блок гіпер-досвіду",
+
+  // --- Items: Metals & Alloys ---
+  "item.mechaniya.mithril_ingot": "Мітриловий злиток",
+  "item.mechaniya.mithril_sheet": "Мітриловий лист",
+  "item.mechaniya.mithril_nugget": "Мітриловий самородок",
+  "item.mechaniya.blaze_gold_ingot": "Пломеневий золотий злиток",
+  "item.mechaniya.blaze_gold_sheet": "Пломеневий золотий лист",
+  "item.mechaniya.blaze_gold_nugget": "Пломеневий золотий самородок",
+  "item.mechaniya.entro_platinum_ingot": "Ентропіїзований платиновий злиток",
+  "item.mechaniya.raw_platinum_nugget": "Необроблений платиновий самородок",
+  "item.mechaniya.radiant_rod": "Осяяний стрижень",
+  "item.mechaniya.radiant_sheet": "Осяяний лист",
+  "item.mechaniya.enderium_ingot": "Ендерієвий злиток",
+  "item.mechaniya.overcharged_alloy": "Надзаряджений сплав",
+
+  // --- Items: Experience ---
+  "item.mechaniya.super_experience_heap": "Супер купа досвіду",
+  "item.mechaniya.huper_experience_heap": "Гіпер купа досвіду",
+  "item.mechaniya.huper_experience_nugget": "Гіпер шматочок досвіду",
+
+  // --- Items: Technical Components ---
+  "item.mechaniya.certus_quartz_tube": "Лампа з істинного кварцу",
+  "item.mechaniya.dense_fabric": "Щільна тканина",
+  "item.mechaniya.incomplete_dense_fabric": "Незавершена щільна тканина",
+  "item.mechaniya.warped_rubber": "Химерна гума",
+  "item.mechaniya.cured_warped_rubber": "Оброблена химерна гума",
+  "block.mechaniya.paraffin_wax_block": "Блок парафінового воску",
+  "item.mechaniya.plastic_sheet": "Пластиковий лист",
+  "item.mechaniya.bitumen": "Бітум",
+  "item.mechaniya.oil_fuel_ball": "Згусток нафтового палива",
+  "item.mechaniya.sulfur_dust": "Сірчаний пил",
+  "item.mechaniya.paraffin_wax": "Парафіновий віск",
+  "block.mechaniya.oil_pipe": "Нафтова труба",
+
+  // --- Items: Buckets & Fluids ---
+  "item.mechaniya.crude_oil_bucket": "Відро сирої нафти",
+  "item.mechaniya.latex_bucket": "Відро латексу",
+  "item.mechaniya.warped_latex_bucket": "Відро химерного латексу",
+  "item.mechaniya.steam_cracked_fuel_bucket": "Відро паро-крекінгового палива",
+  "item.mechaniya.sulfuric_fuel_bucket": "Відро сірчистого палива",
+  "item.mechaniya.fuel_bucket": "Відро палива",
+  "item.mechaniya.oil_fuel_bucket": "Відро нафтового палива",
+  "item.mechaniya.ethylene_bucket": "Відро етилену",
+  "item.mechaniya.molten_plastic_bucket": "Відро розплавленого пластику",
+  "item.mechaniya.shimmer_bucket": "<rainb>Відро мерехтіння",
+  "fluid_type.mechaniya.crude_oil": "Сира нафта",
+  "block.mechaniya.crude_oil_block": "Сира нафта",
+  "fluid_type.mechaniya.latex": "Латекс",
+  "block.mechaniya.latex_block": "Латекс",
+  "fluid_type.mechaniya.warped_latex": "Химерний латекс",
+  "block.mechaniya.warped_latex_block": "Химерний латекс",
+  "fluid_type.mechaniya.shimmer": "<rainb>Мерехтіння",
+  "block.mechaniya.shimmer_block": "<rainb>Мерехтіння",
+  "fluid_type.mechaniya.steam_cracked_fuel": "Паро-крекінгове паливо",
+  "block.mechaniya.steam_cracked_fuel_block": "Паро-крекінгове паливо",
+  "fluid_type.mechaniya.sulfuric_fuel": "Сірчисте паливо",
+  "block.mechaniya.sulfuric_fuel_block": "Сірчисте паливо",
+  "fluid_type.mechaniya.fuel": "Паливо",
+  "block.mechaniya.fuel_block": "Паливо",
+  "fluid_type.mechaniya.oil_fuel": "Нафтове паливо",
+  "block.mechaniya.oil_fuel_block": "Нафтове паливо",
+  "fluid_type.mechaniya.ethylene": "Етилен",
+  "block.mechaniya.ethylene_block": "Етилен",
+  "fluid_type.mechaniya.molten_plastic": "Розплавлений пластик",
+  "block.mechaniya.molten_plastic_block": "Розплавлений пластик",
+
+  // --- Items: Special & Easter Eggs ---
+  "item.mechaniya.minestar_logo": "Лого Minestar",
+  "item.mechaniya.roll_of_rolls": "Рол Ролів",
+  "item.mechaniya.ledok": "Ledok",
+  "block.mechaniya.trophy": "§6Кубок за Проходження Збірки",
+
+  // --- Lore & Tooltips ---
+  "item.lore_minestar_logo": "§7Символ великої спільноти.",
+  "item.lore_roll_of_rolls": "§dНа смак як шестерні, у середині сперечаються 3 маленькі роли.",
+  "item.lore_ledok": "§bДивний кубик льоду. Виглядає... знайомо."
+}

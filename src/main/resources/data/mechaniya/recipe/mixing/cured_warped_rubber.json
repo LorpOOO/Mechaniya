@@ -1,0 +1,15 @@
+{
+  "type": "create:mixing",
+  "heat_requirement": "superheated",
+  "ingredients": [
+    {
+      "item": "mechaniya:warped_rubber"
+    }
+  ],
+  "results": [
+    {
+      "count": 1,
+      "id": "mechaniya:cured_warped_rubber"
+    }
+  ]
+}

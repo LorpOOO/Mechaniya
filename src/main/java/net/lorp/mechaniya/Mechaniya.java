@@ -43,13 +43,6 @@ public class Mechaniya {
         }
     }
 
-    @SuppressWarnings("all")
-    private void addCreative(BuildCreativeModeTabContentsEvent event) {
-        if(event.getTabKey() == CreativeModeTabs.INGREDIENTS) {
-            event.accept(ModItems.OVERCHARGED_RAW_LAPIS_LAZULI_CRYSTAL);
-        }
-    }
-
     @SubscribeEvent
     public void onServerStarting(ServerStartingEvent event) {
 

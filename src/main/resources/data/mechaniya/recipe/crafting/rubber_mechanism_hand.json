@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "IbI"
+  ],
+  "key": {
+    "I": {
+      "item": "createmechanisms:cured_rubber"
+    },
+    "b": {
+      "item": "createmechanisms:wooden_mechanism"
+    }
+  },
+  "result": {
+    "id": "createmechanisms:rubber_mechanism"
+  }
+}

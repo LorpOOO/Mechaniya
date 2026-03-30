@@ -1,0 +1,41 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "ABC",
+    "DEF",
+    "GHI"
+  ],
+  "key": {
+    "A": {
+      "item": "mechaniya:huper_experience_nugget"
+    },
+    "B": {
+      "item": "mechaniya:huper_experience_nugget"
+    },
+    "C": {
+      "item": "mechaniya:huper_experience_nugget"
+    },
+    "D": {
+      "item": "mechaniya:huper_experience_nugget"
+    },
+    "E": {
+      "item": "mechaniya:huper_experience_nugget"
+    },
+    "F": {
+      "item": "mechaniya:huper_experience_nugget"
+    },
+    "G": {
+      "item": "mechaniya:huper_experience_nugget"
+    },
+    "H": {
+      "item": "mechaniya:huper_experience_nugget"
+    },
+    "I": {
+      "item": "mechaniya:huper_experience_nugget"
+    }
+  },
+  "result": {
+    "id": "mechaniya:huper_experience_block",
+    "count": 1
+  }
+}

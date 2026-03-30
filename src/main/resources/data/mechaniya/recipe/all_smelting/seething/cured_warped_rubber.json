@@ -1,0 +1,13 @@
+{
+  "type": "dndesires:seething",
+  "ingredients": [
+    {
+      "item": "mechaniya:warped_rubber"
+    }
+  ],
+  "results": [
+    {
+      "id": "mechaniya:cured_warped_rubber"
+    }
+  ]
+}

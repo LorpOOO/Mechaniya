@@ -1,0 +1,14 @@
+{
+  "type": "create:milling",
+  "ingredients": [
+    {
+      "item": "mechaniya:deepleeted_asurine"
+    }
+  ],
+  "processing_time": 150,
+  "results": [
+    {
+      "id": "mechaniya:asurine_gravel"
+    }
+  ]
+}

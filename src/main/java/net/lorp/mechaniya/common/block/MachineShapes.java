@@ -23,6 +23,10 @@ public class MachineShapes {
             Block.box(1.6, 7, 8, 12.6, 8, 17)
     );
 
+    public static final VoxelShape OIL_PIPE = Shapes.or(
+            Block.box(5, 0, 5, 11, 16, 11)
+    );
+
     public static final VoxelShape HEATPROOF = Shapes.or(
             Block.box(-3, 6, 1, 5, 18, 9),
             Block.box(1, 6, 10, 9, 21, 11),

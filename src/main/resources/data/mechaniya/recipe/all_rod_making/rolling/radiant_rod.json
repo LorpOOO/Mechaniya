@@ -1,0 +1,14 @@
+{
+  "type": "createaddition:rolling",
+  "ingredients": [
+    {
+      "item": "mechaniya:radiant_sheet"
+    }
+  ],
+  "results": [
+    {
+      "count": 2,
+      "id": "mechaniya:radiant_rod"
+    }
+  ]
+}

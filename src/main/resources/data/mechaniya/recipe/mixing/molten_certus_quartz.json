@@ -1,0 +1,15 @@
+{
+  "type": "create:mixing",
+  "heat_requirement": "heated",
+  "ingredients": [
+    {
+      "item": "ae2:certus_quartz_crystal"
+    }
+  ],
+  "results": [
+    {
+      "amount": 90,
+      "id": "evolvedmekanism:molten_certus_quartz"
+    }
+  ]
+}

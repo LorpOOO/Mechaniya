@@ -28,6 +28,13 @@ public class MechaniyaModClient {
         registerFluidRender(event, ModFluidType.SHIMMER.get(), "shimmer");
         registerFluidRender(event, ModFluidType.LATEX.get(), "latex");
         registerFluidRender(event, ModFluidType.WARPED_LATEX.get(), "warped_latex");
+        registerFluidRender(event, ModFluidType.CRUDE_OIL.get(), "crude_oil");
+        registerFluidRender(event, ModFluidType.STEAM_CRACKED_FUEL.get(), "steam_cracked_fuel");
+        registerFluidRender(event, ModFluidType.SULFURIC_FUEL.get(), "sulfuric_fuel");
+        registerFluidRender(event, ModFluidType.FUEL.get(), "fuel");
+        registerFluidRender(event, ModFluidType.OIL_FUEL.get(), "oil_fuel");
+        registerFluidRender(event, ModFluidType.ETHYLENE.get(), "ethylene");
+        registerFluidRender(event, ModFluidType.MOLTEN_PLASTIC.get(), "molten_plastic");
     }
 
     private static void registerFluidRender(RegisterClientExtensionsEvent event, FluidType type, String textureName) {
@@ -62,6 +69,30 @@ public class MechaniyaModClient {
 
                 if (textureName.contains("crude_oil")) {
                     return new Vector3f(0.0f, 0.0f, 0.0f);
+                }
+
+                if (textureName.contains("steam_cracked_fuel")) {
+                    return new Vector3f(0.5f, 0.5f, 0.5f); // Сірий/паровий
+                }
+
+                if (textureName.contains("sulfuric_fuel")) {
+                    return new Vector3f(0.8f, 0.8f, 0.0f); // Жовтуватий (сірка)
+                }
+
+                if (textureName.contains("fuel")) {
+                    return new Vector3f(1.0f, 0.8f, 0.0f); // Золотистий/паливо
+                }
+
+                if (textureName.contains("oil_fuel")) {
+                    return new Vector3f(0.1f, 0.1f, 0.1f); // Темно-сірий
+                }
+
+                if (textureName.contains("ethylene")) {
+                    return new Vector3f(0.9f, 0.9f, 0.9f); // Світлий/газоподібний
+                }
+
+                if (textureName.contains("molten_plastic")) {
+                    return new Vector3f(0.8f, 0.8f, 0.8f); // Білий/сірий пластик
                 }
 
                 return fluidFogColor;

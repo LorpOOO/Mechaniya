@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "III",
+    "IbI",
+    "III"
+  ],
+  "key": {
+    "I": {
+      "item": "createmechanisms:rubber_mechanism"
+    },
+    "b": {
+      "item": "create:copper_casing"
+    }
+  },
+  "result": {
+    "id": "mechaniya:rubber_machine"
+  }
+}

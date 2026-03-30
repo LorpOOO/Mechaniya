@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "mechaniya:block/radiant_machine"
+    },
+    "facing=south": {
+      "model": "mechaniya:block/radiant_machine",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "mechaniya:block/radiant_machine",
+      "y": 270
+    },
+    "facing=east": {
+      "model": "mechaniya:block/radiant_machine",
+      "y": 90
+    }
+  }
+}

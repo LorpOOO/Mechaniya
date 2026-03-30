@@ -1,0 +1,48 @@
+{
+	"format_version": "1.9.0",
+	"credit": "Made with Blockbench",
+	"textures": {
+		"0": "mechaniya:block/machines/oil_pipe/oil_pipe",
+		"particle": "mechaniya:block/machines/oil_pipe/oil_pipe"
+	},
+	"elements": [
+		{
+			"from": [5, 0, 5],
+			"to": [11, 16, 11],
+			"rotation": {"angle": 0, "axis": "y", "origin": [6, 0, 6]},
+			"faces": {
+				"north": {"uv": [10, 0, 16, 16], "texture": "#0"},
+				"east": {"uv": [10, 0, 16, 16], "texture": "#0"},
+				"south": {"uv": [10, 0, 16, 16], "texture": "#0"},
+				"west": {"uv": [10, 0, 16, 16], "texture": "#0"},
+				"up": {"uv": [0, 0, 6, 6], "texture": "#0"},
+				"down": {"uv": [0, 0, 6, 6], "texture": "#0"}
+			}
+		}
+	],
+	"display": {
+		"thirdperson_righthand": {
+			"scale": [0.5, 0.5, 0.5]
+		},
+		"thirdperson_lefthand": {
+			"scale": [0.5, 0, 0.5]
+		},
+		"firstperson_righthand": {
+			"scale": [0.5, 1, 0.5]
+		},
+		"firstperson_lefthand": {
+			"scale": [0.5, 1, 0.5]
+		},
+		"ground": {
+			"scale": [0.5, 0.8, 0.5]
+		},
+		"gui": {
+			"rotation": [30, 45, 0],
+			"scale": [1, 0.8, 1]
+		},
+		"head": {
+			"rotation": [0, 0, 90],
+			"scale": [1, 1.67188, 1]
+		}
+	}
+}

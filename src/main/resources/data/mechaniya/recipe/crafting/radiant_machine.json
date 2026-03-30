@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "III",
+    "IbI",
+    "III"
+  ],
+  "key": {
+    "I": {
+      "item": "createmechanisms:zinc_mechanism"
+    },
+    "b": {
+      "item": "create:brass_casing"
+    }
+  },
+  "result": {
+    "id": "mechaniya:radiant_machine"
+  }
+}
