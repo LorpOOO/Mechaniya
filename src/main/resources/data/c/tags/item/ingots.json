@@ -1,0 +1,10 @@
+{
+  "replace": false,
+  "values": [
+    "mechaniya:mithril_ingot",
+    "mechaniya:enderium_ingot",
+    "mechaniya:entro_platinum_ingot",
+    "mechaniya:overcharged_alloy",
+    "mechaniya:blaze_gold_ingot"
+  ]
+}
