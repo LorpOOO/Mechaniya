@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "mechaniya:hyper_experience_block"
+    }
+  ],
+  "result": {
+    "id": "mechaniya:hyper_experience_nugget",
+    "count": 9
+  }
+}

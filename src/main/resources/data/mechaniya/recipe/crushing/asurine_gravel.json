@@ -2,7 +2,7 @@
   "type": "create:crushing",
   "ingredients": [
     {
-      "item": "mechaniya:deepleeted_asurine"
+      "item": "mechaniya:depleted_asurine"
     }
   ],
   "processing_time": 100,

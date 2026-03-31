@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:smithing_transform",
+  "base": {
+    "item": "create_sa:experience_shovel"
+  },
+  "addition": {
+    "item": "create_enchantment_industry:super_experience_block"
+  },
+  "template": {
+    "item": "minecraft:diamond"
+  },
+  "result": {
+    "id": "mechaniya:super_experience_shovel"
+  }
+}

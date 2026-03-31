@@ -79,11 +79,11 @@ public class ModBlocks {
             () -> new ModFallingBlocks(BlockBehaviour.Properties.of()
                     .strength(2f).requiresCorrectToolForDrops().sound(SoundType.GRAVEL)));
 
-    public static final DeferredBlock<Block> DEEPLEETED_ASURINE = registerBlock("deepleeted_asurine",
+    public static final DeferredBlock<Block> DEPLETED_ASURINE = registerBlock("depleted_asurine",
             () -> new Block(BlockBehaviour.Properties.of()
                     .strength(2f).requiresCorrectToolForDrops().sound(SoundType.STONE)));
 
-    public static final DeferredBlock<Block> DEEPLEETED_VERIDIUM = registerBlock("deepleeted_veridium",
+    public static final DeferredBlock<Block> DEPLETED_VERIDIUM = registerBlock("depleted_veridium",
             () -> new Block(BlockBehaviour.Properties.of()
                     .strength(2f).requiresCorrectToolForDrops().sound(SoundType.STONE)));
 
@@ -105,10 +105,18 @@ public class ModBlocks {
             () -> new Block(BlockBehaviour.Properties.of()
                     .strength(4f).requiresCorrectToolForDrops().sound(SoundType.METAL)));
 
-    public static final DeferredBlock<Block> HUPER_EXPERIENCE_BLOCK = registerSpecificBlock("huper_experience_block",
+    public static final DeferredBlock<Block> HYPER_EXPERIENCE_BLOCK = registerSpecificBlock("hyper_experience_block",
             () -> new Block(BlockBehaviour.Properties.of()
                     .strength(4f).requiresCorrectToolForDrops().sound(SoundType.AMETHYST)),
             new Item.Properties().rarity(Rarity.EPIC));
+
+    public static final DeferredBlock<Block> STEEL_MIX_BLOCK= registerBlock("steel_mix_block",
+            () -> new Block(BlockBehaviour.Properties.of().sound(SoundType.METAL).strength(4f).requiresCorrectToolForDrops().noOcclusion()
+    ));
+
+    public static final DeferredBlock<Block> COAL_COKE_BLOCK = registerBlock("coal_coke_block",
+            () -> new Block(BlockBehaviour.Properties.of().sound(SoundType.STONE).strength(4f).requiresCorrectToolForDrops().noOcclusion()
+            ));
 
     // --- Special & Decorative ---
     public static final DeferredBlock<Block> TROPHY = registerBlock("trophy",
@@ -121,52 +129,57 @@ public class ModBlocks {
     public static final DeferredBlock<LiquidBlock> SHIMMER_BLOCK = BLOCKS.register("shimmer_block",
             () -> new LiquidBlock(ModFluid.SOURCE_SHIMMER.get(), BlockBehaviour.Properties.of()
                     .mapColor(MapColor.TERRACOTTA_WHITE).noCollission().strength(100.0F)
-                    .pushReaction(PushReaction.DESTROY).noLootTable().replaceable()));
+                    .pushReaction(PushReaction.DESTROY).noLootTable().noOcclusion().replaceable()));
+
+    public static final DeferredBlock<LiquidBlock> LUBRICANT_BLOCK = BLOCKS.register("lubricant_block",
+            () -> new LiquidBlock(ModFluid.SOURCE_LUBRICANT.get(), BlockBehaviour.Properties.of()
+                    .mapColor(MapColor.TERRACOTTA_PINK).noCollission().strength(100.0F)
+                    .pushReaction(PushReaction.DESTROY).noLootTable().noOcclusion().replaceable()));
 
     public static final DeferredBlock<LiquidBlock> CRUDE_OIL_BLOCK = BLOCKS.register("crude_oil_block",
             () -> new LiquidBlock(ModFluid.SOURCE_CRUDE_OIL.get(), BlockBehaviour.Properties.of()
                     .mapColor(MapColor.COLOR_BLACK).noCollission().strength(100.0F)
-                    .pushReaction(PushReaction.DESTROY).noLootTable().replaceable()));
+                    .pushReaction(PushReaction.DESTROY).noLootTable().noOcclusion().replaceable()));
 
     public static final DeferredBlock<LiquidBlock> LATEX_BLOCK = BLOCKS.register("latex_block",
             () -> new LiquidBlock(ModFluid.SOURCE_LATEX.get(), BlockBehaviour.Properties.of()
                     .mapColor(MapColor.WOOD).noCollission().strength(100.0F)
-                    .pushReaction(PushReaction.DESTROY).noLootTable().replaceable()));
+                    .pushReaction(PushReaction.DESTROY).noLootTable().noOcclusion().replaceable()));
 
     public static final DeferredBlock<LiquidBlock> WARPED_LATEX_BLOCK = BLOCKS.register("warped_latex_block",
             () -> new LiquidBlock(ModFluid.SOURCE_WARPED_LATEX.get(), BlockBehaviour.Properties.of()
                     .mapColor(MapColor.COLOR_CYAN).noCollission().strength(100.0F)
-                    .pushReaction(PushReaction.DESTROY).noLootTable().replaceable()));
+                    .pushReaction(PushReaction.DESTROY).noLootTable().noOcclusion().replaceable()));
 
     public static final DeferredBlock<LiquidBlock> STEAM_CRACKED_FUEL_BLOCK = BLOCKS.register("steam_cracked_fuel_block",
             () -> new LiquidBlock(ModFluid.SOURCE_STEAM_CRACKED_FUEL.get(), BlockBehaviour.Properties.of()
                     .mapColor(MapColor.COLOR_GRAY).noCollission().strength(100.0F)
-                    .pushReaction(PushReaction.DESTROY).noLootTable().replaceable()));
+                    .pushReaction(PushReaction.DESTROY).noLootTable().noOcclusion().replaceable()));
 
     public static final DeferredBlock<LiquidBlock> SULFURIC_FUEL_BLOCK = BLOCKS.register("sulfuric_fuel_block",
             () -> new LiquidBlock(ModFluid.SOURCE_SULFURIC_FUEL.get(), BlockBehaviour.Properties.of()
                     .mapColor(MapColor.COLOR_YELLOW).noCollission().strength(100.0F)
-                    .pushReaction(PushReaction.DESTROY).noLootTable().replaceable()));
+                    .pushReaction(PushReaction.DESTROY).noLootTable().noOcclusion().replaceable()));
 
     public static final DeferredBlock<LiquidBlock> FUEL_BLOCK = BLOCKS.register("fuel_block",
             () -> new LiquidBlock(ModFluid.SOURCE_FUEL.get(), BlockBehaviour.Properties.of()
                     .mapColor(MapColor.GOLD).noCollission().strength(100.0F)
-                    .pushReaction(PushReaction.DESTROY).noLootTable().replaceable()));
+                    .pushReaction(PushReaction.DESTROY).noLootTable().noOcclusion().replaceable()));
 
     public static final DeferredBlock<LiquidBlock> OIL_FUEL_BLOCK = BLOCKS.register("oil_fuel_block",
             () -> new LiquidBlock(ModFluid.SOURCE_OIL_FUEL.get(), BlockBehaviour.Properties.of()
                     .mapColor(MapColor.COLOR_BLACK).noCollission().strength(100.0F)
-                    .pushReaction(PushReaction.DESTROY).noLootTable().replaceable()));
+                    .pushReaction(PushReaction.DESTROY).noLootTable().noOcclusion().replaceable()));
 
     public static final DeferredBlock<LiquidBlock> ETHYLENE_BLOCK = BLOCKS.register("ethylene_block",
             () -> new LiquidBlock(ModFluid.SOURCE_ETHYLENE.get(), BlockBehaviour.Properties.of()
                     .mapColor(MapColor.SNOW).noCollission().strength(100.0F)
-                    .pushReaction(PushReaction.DESTROY).noLootTable().replaceable()));
+                    .pushReaction(PushReaction.DESTROY).noLootTable().noOcclusion().replaceable()));
 
     public static final DeferredBlock<LiquidBlock> MOLTEN_PLASTIC_BLOCK = BLOCKS.register("molten_plastic_block",
             () -> new LiquidBlock(ModFluid.SOURCE_MOLTEN_PLASTIC.get(), BlockBehaviour.Properties.of()
                     .mapColor(MapColor.CLAY).noCollission().strength(100.0F)
-                    .pushReaction(PushReaction.DESTROY).noLootTable().replaceable()));
+                    .pushReaction(PushReaction.DESTROY).noLootTable().noOcclusion().replaceable()));
 
     // --- Helper Methods ---
     private static <T extends Block> DeferredBlock<T> registerBlock(String name, Supplier<T> block) {

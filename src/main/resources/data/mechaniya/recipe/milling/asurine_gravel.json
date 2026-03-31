@@ -2,7 +2,7 @@
   "type": "create:milling",
   "ingredients": [
     {
-      "item": "mechaniya:deepleeted_asurine"
+      "item": "mechaniya:depleted_asurine"
     }
   ],
   "processing_time": 150,

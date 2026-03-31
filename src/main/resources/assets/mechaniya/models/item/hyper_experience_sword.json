@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/handheld",
+  "textures": {
+    "layer0": "mechaniya:item/hyper_experience_sword"
+  }
+}

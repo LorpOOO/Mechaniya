@@ -7,11 +7,10 @@ import net.minecraft.network.chat.Component;
 import net.minecraft.world.effect.MobEffectInstance;
 import net.minecraft.world.effect.MobEffects;
 import net.minecraft.world.food.FoodProperties;
-import net.minecraft.world.item.BucketItem;
-import net.minecraft.world.item.Item;
-import net.minecraft.world.item.Items;
-import net.minecraft.world.item.Rarity;
+import net.minecraft.world.item.*;
 import net.minecraft.world.item.component.ItemLore;
+import net.minecraft.world.item.enchantment.Enchantments;
+import net.minecraft.world.item.enchantment.ItemEnchantments;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.neoforge.registries.DeferredItem;
 import net.neoforged.neoforge.registries.DeferredRegister;
@@ -68,11 +67,11 @@ public class ModItems {
             () -> new Item(new Item.Properties()
                     .component(DataComponents.RARITY, Rarity.RARE)
                     .component(DataComponents.ENCHANTMENT_GLINT_OVERRIDE, true)));
-    public static final DeferredItem<Item> HUPER_EXPERIENCE_HEAP = ITEMS.register("huper_experience_heap",
+    public static final DeferredItem<Item> HYPER_EXPERIENCE_HEAP = ITEMS.register("hyper_experience_heap",
             () -> new Item(new Item.Properties()
                     .component(DataComponents.RARITY, Rarity.EPIC)
                     .component(DataComponents.ENCHANTMENT_GLINT_OVERRIDE, true)));
-    public static final DeferredItem<Item> HUPER_EXPERIENCE_NUGGET = ITEMS.register("huper_experience_nugget",
+    public static final DeferredItem<Item> HYPER_EXPERIENCE_NUGGET = ITEMS.register("hyper_experience_nugget",
             () -> new Item(new Item.Properties()
                     .component(DataComponents.RARITY, Rarity.EPIC)
                     .component(DataComponents.ENCHANTMENT_GLINT_OVERRIDE, true)));
@@ -80,9 +79,19 @@ public class ModItems {
     // --- Technical Components ---
     public static final DeferredItem<Item> CERTUS_QUARTZ_TUBE = ITEMS.register("certus_quartz_tube",
             () -> new Item(new Item.Properties()));
+    public static final DeferredItem<Item> COAL_COKE_DUST = ITEMS.register("coal_coke_dust",
+            () -> new Item(new Item.Properties()));
+    public static final DeferredItem<Item> COAL_COKE = ITEMS.register("coal_coke",
+            () -> new Item(new Item.Properties()));
+    public static final DeferredItem<Item> STEEL_MIX = ITEMS.register("steel_mix",
+            () -> new Item(new Item.Properties()));
     public static final DeferredItem<Item> DENSE_FABRIC = ITEMS.register("dense_fabric",
             () -> new Item(new Item.Properties().fireResistant()));
     public static final DeferredItem<Item> INCOMPLETE_DENSE_FABRIC = ITEMS.register("incomplete_dense_fabric",
+            () -> new Item(new Item.Properties().fireResistant()));
+    public static final DeferredItem<Item> INCOMPLETE_STEEL_MECHANISM = ITEMS.register("incomplete_steel_mechanism",
+            () -> new Item(new Item.Properties().fireResistant()));
+    public static final DeferredItem<Item> STEEL_MECHANISM = ITEMS.register("steel_mechanism",
             () -> new Item(new Item.Properties().fireResistant()));
     public static final DeferredItem<Item> WARPED_RUBBER = ITEMS.register("warped_rubber",
             () -> new Item(new Item.Properties()));
@@ -99,9 +108,40 @@ public class ModItems {
     public static final DeferredItem<Item> PARAFFIN_WAX = ITEMS.register("paraffin_wax",
             () -> new ParaffinWaxItem(new Item.Properties()));
 
+    // --- Tools ---
+    public static final DeferredItem<SwordItem> SUPER_EXPERIENCE_SWORD = ITEMS.register("super_experience_sword",
+            () -> new SwordItem(ModToolTiers.SUPER_EXPERIENCE_HEAP, experienceToolProps(Rarity.RARE, false)
+                    .attributes(SwordItem.createAttributes(ModToolTiers.SUPER_EXPERIENCE_HEAP, 3, -2.0f))));
+    public static final DeferredItem<PickaxeItem> SUPER_EXPERIENCE_PICKAXE = ITEMS.register("super_experience_pickaxe",
+            () -> new PickaxeItem(ModToolTiers.SUPER_EXPERIENCE_HEAP, experienceToolProps(Rarity.RARE, false)
+                    .attributes(PickaxeItem.createAttributes(ModToolTiers.SUPER_EXPERIENCE_HEAP, 1.0F, -2.8f))));
+    public static final DeferredItem<ShovelItem> SUPER_EXPERIENCE_SHOVEL = ITEMS.register("super_experience_shovel",
+            () -> new ShovelItem(ModToolTiers.SUPER_EXPERIENCE_HEAP, experienceToolProps(Rarity.RARE, false)
+                    .attributes(ShovelItem.createAttributes(ModToolTiers.SUPER_EXPERIENCE_HEAP, 1.5F, -3.0f))));
+    public static final DeferredItem<AxeItem> SUPER_EXPERIENCE_AXE = ITEMS.register("super_experience_axe",
+            () -> new AxeItem(ModToolTiers.SUPER_EXPERIENCE_HEAP, experienceToolProps(Rarity.RARE, false)
+                    .attributes(AxeItem.createAttributes(ModToolTiers.SUPER_EXPERIENCE_HEAP, 6.0F, -3.2f))));
+
+    public static final DeferredItem<SwordItem> HYPER_EXPERIENCE_SWORD = ITEMS.register("hyper_experience_sword",
+            () -> new SwordItem(ModToolTiers.HYPER_EXPERIENCE_HEAP, experienceToolProps(Rarity.EPIC, true)
+                    .attributes(SwordItem.createAttributes(ModToolTiers.HYPER_EXPERIENCE_HEAP, 4, -2.0f))));
+    public static final DeferredItem<PickaxeItem> HYPER_EXPERIENCE_PICKAXE = ITEMS.register("hyper_experience_pickaxe",
+            () -> new PickaxeItem(ModToolTiers.HYPER_EXPERIENCE_HEAP, experienceToolProps(Rarity.EPIC, true)
+                    .attributes(PickaxeItem.createAttributes(ModToolTiers.HYPER_EXPERIENCE_HEAP, 1.0F, -2.8f))));
+    public static final DeferredItem<ShovelItem> HYPER_EXPERIENCE_SHOVEL = ITEMS.register("hyper_experience_shovel",
+            () -> new ShovelItem(ModToolTiers.HYPER_EXPERIENCE_HEAP, experienceToolProps(Rarity.EPIC, true)
+                    .attributes(ShovelItem.createAttributes(ModToolTiers.HYPER_EXPERIENCE_HEAP, 1.5F, -3.0f))));
+    public static final DeferredItem<AxeItem> HYPER_EXPERIENCE_AXE = ITEMS.register("hyper_experience_axe",
+            () -> new AxeItem(ModToolTiers.HYPER_EXPERIENCE_HEAP, experienceToolProps(Rarity.EPIC, true)
+                    .attributes(AxeItem.createAttributes(ModToolTiers.HYPER_EXPERIENCE_HEAP, 4.5F, -3.2f))));
+
+
     // --- Buckets ---
     public static final DeferredItem<Item> CRUDE_OIL_BUCKET = ITEMS.register("crude_oil_bucket",
             () -> new BucketItem(ModFluid.SOURCE_CRUDE_OIL.get(),
+                    new Item.Properties().craftRemainder(Items.BUCKET).stacksTo(1)));
+    public static final DeferredItem<Item> LUBRICANT_BUCKET = ITEMS.register("lubricant_bucket",
+            () -> new BucketItem(ModFluid.SOURCE_LUBRICANT.get(),
                     new Item.Properties().craftRemainder(Items.BUCKET).stacksTo(1)));
     public static final DeferredItem<Item> LATEX_BUCKET = ITEMS.register("latex_bucket",
             () -> new BucketItem(ModFluid.SOURCE_LATEX.get(),
@@ -157,6 +197,18 @@ public class ModItems {
                     .component(DataComponents.ENCHANTMENT_GLINT_OVERRIDE, true)
                     .component(DataComponents.RARITY, Rarity.RARE)
                     .component(DataComponents.LORE, new ItemLore(List.of(Component.translatable("item.lore_ledok"))))));
+
+    private static Item.Properties experienceToolProps(Rarity rarity, boolean isHyper) {
+        Item.Properties props = new Item.Properties()
+                .rarity(rarity)
+                .component(DataComponents.ENCHANTMENT_GLINT_OVERRIDE, true);
+
+        if (isHyper) {
+            props.fireResistant();
+        }
+
+        return props;
+    }
 
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);

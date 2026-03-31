@@ -19,9 +19,7 @@ public class ParaffinWaxItem extends Item {
         BlockPos pos = context.getClickedPos();
         BlockState state = level.getBlockState(pos);
 
-        // Ця функція перевіряє, чи можна натерти блок воском (мідь тощо)
         return HoneycombItem.getWaxed(state).map(waxedState -> {
-            // Якщо так — міняємо блок на вощений
             level.setBlockAndUpdate(pos, waxedState);
             level.levelEvent(context.getPlayer(), 3003, pos, 0); // Звук та іскри
             context.getItemInHand().shrink(1); // Забираємо 1 парафін

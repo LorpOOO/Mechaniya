@@ -35,6 +35,7 @@ public class MechaniyaModClient {
         registerFluidRender(event, ModFluidType.OIL_FUEL.get(), "oil_fuel");
         registerFluidRender(event, ModFluidType.ETHYLENE.get(), "ethylene");
         registerFluidRender(event, ModFluidType.MOLTEN_PLASTIC.get(), "molten_plastic");
+        registerFluidRender(event, ModFluidType.LUBRICANT.get(), "lubricant");
     }
 
     private static void registerFluidRender(RegisterClientExtensionsEvent event, FluidType type, String textureName) {
@@ -93,6 +94,10 @@ public class MechaniyaModClient {
 
                 if (textureName.contains("molten_plastic")) {
                     return new Vector3f(0.8f, 0.8f, 0.8f); // Білий/сірий пластик
+                }
+
+                if (textureName.contains("lubricant")) {
+                    return new Vector3f(0.206f, 0.195f, 0.201f);
                 }
 
                 return fluidFogColor;

@@ -24,13 +24,25 @@ public class ModCreativeModeTabs {
                         output.accept(ModBlocks.TROPHY.get());
                         output.accept(ModItems.MINESTAR_LOGO.get());
 
+                        // --- Tools & Weapons ---
+                        output.accept(ModItems.SUPER_EXPERIENCE_SWORD.get());
+                        output.accept(ModItems.SUPER_EXPERIENCE_PICKAXE.get());
+                        output.accept(ModItems.SUPER_EXPERIENCE_AXE.get());
+                        output.accept(ModItems.SUPER_EXPERIENCE_SHOVEL.get());
+
+                        output.accept(ModItems.HYPER_EXPERIENCE_SWORD.get());
+                        output.accept(ModItems.HYPER_EXPERIENCE_PICKAXE.get());
+                        output.accept(ModItems.HYPER_EXPERIENCE_AXE.get());
+                        output.accept(ModItems.HYPER_EXPERIENCE_SHOVEL.get());
+
+
                         // --- Ores and Resources ---
                         output.accept(ModBlocks.OIL_DEPOSIT.get());
                         output.accept(ModBlocks.DEEPSLATE_GRAVEL.get());
                         output.accept(ModBlocks.VERIDIUM_GRAVEL.get());
                         output.accept(ModBlocks.ASURINE_GRAVEL.get());
-                        output.accept(ModBlocks.DEEPLEETED_VERIDIUM.get());
-                        output.accept(ModBlocks.DEEPLEETED_ASURINE.get());
+                        output.accept(ModBlocks.DEPLETED_VERIDIUM.get());
+                        output.accept(ModBlocks.DEPLETED_ASURINE.get());
                         output.accept(ModBlocks.END_SAND.get());
                         output.accept(ModItems.PLASTIC_SHEET.get());
                         output.accept(ModItems.BITUMEN.get());
@@ -55,6 +67,11 @@ public class ModCreativeModeTabs {
                         output.accept(ModItems.MITHRIL_NUGGET.get());
                         output.accept(ModBlocks.MITHRIL_BLOCK.get());
 
+                        // Coke Coal
+                        output.accept(ModBlocks.COAL_COKE_BLOCK);
+                        output.accept(ModItems.COAL_COKE.get());
+                        output.accept(ModItems.COAL_COKE_DUST.get());
+
                         // Blaze Gold
                         output.accept(ModItems.BLAZE_GOLD_INGOT.get());
                         output.accept(ModItems.BLAZE_GOLD_SHEET.get());
@@ -73,18 +90,22 @@ public class ModCreativeModeTabs {
 
                         // Experience Materials
                         output.accept(ModItems.SUPER_EXPERIENCE_HEAP.get());
-                        output.accept(ModItems.HUPER_EXPERIENCE_HEAP.get());
-                        output.accept(ModItems.HUPER_EXPERIENCE_NUGGET.get());
-                        output.accept(ModBlocks.HUPER_EXPERIENCE_BLOCK.get());
+                        output.accept(ModItems.HYPER_EXPERIENCE_HEAP.get());
+                        output.accept(ModItems.HYPER_EXPERIENCE_NUGGET.get());
+                        output.accept(ModBlocks.HYPER_EXPERIENCE_BLOCK.get());
 
                         // Other Alloys
                         output.accept(ModItems.ENDERIUM_INGOT.get());
                         output.accept(ModItems.OVERCHARGED_ALLOY.get());
+                        output.accept(ModItems.STEEL_MIX.get());
+                        output.accept(ModBlocks.STEEL_MIX_BLOCK.get());
 
                         // --- Components and Mechanisms ---
                         output.accept(ModItems.CERTUS_QUARTZ_TUBE.get());
                         output.accept(ModItems.DENSE_FABRIC.get());
                         output.accept(ModItems.INCOMPLETE_DENSE_FABRIC.get());
+                        output.accept(ModItems.INCOMPLETE_STEEL_MECHANISM.get());
+                        output.accept(ModItems.STEEL_MECHANISM.get());
                         output.accept(ModBlocks.PARAFFIN_WAX_BLOCK.get());
 
                         // --- Rubber and Latex ---
@@ -102,6 +123,7 @@ public class ModCreativeModeTabs {
                         output.accept(ModItems.OIL_FUEL_BUCKET.get());
                         output.accept(ModItems.ETHYLENE_BUCKET.get());
                         output.accept(ModItems.MOLTEN_PLASTIC_BUCKET.get());
+                        output.accept(ModItems.LUBRICANT_BUCKET.get());
 
                         // --- Food and Misc ---
                         output.accept(ModItems.LEDOK.get());

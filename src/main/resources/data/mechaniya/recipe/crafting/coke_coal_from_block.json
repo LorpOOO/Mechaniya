@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "mechaniya:coal_coke_block"
+    }
+  ],
+  "result": {
+    "id": "mechaniya:coal_coke",
+    "count": 9
+  }
+}

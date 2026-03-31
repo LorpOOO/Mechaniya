@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "AAA",
+    "AAA",
+    "AAA"
+  ],
+  "key": {
+    "A": {
+      "item": "mechaniya:hyper_experience_nugget"
+    }
+  },
+  "result": {
+    "id": "mechaniya:hyper_experience_block",
+    "count": 1
+  }
+}

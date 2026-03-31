@@ -2,7 +2,7 @@
   "type": "create:crushing",
   "ingredients": [
     {
-      "item": "mechaniya:deepleeted_veridium"
+      "item": "mechaniya:depleted_veridium"
     }
   ],
   "processing_time": 100,

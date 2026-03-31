@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "AAA",
+    "AAA",
+    "AAA"
+  ],
+  "key": {
+    "A": {
+      "item": "mechaniya:coal_coke"
+    }
+  },
+  "result": {
+    "id": "mechaniya:coal_coke_block",
+    "count": 1
+  }
+}

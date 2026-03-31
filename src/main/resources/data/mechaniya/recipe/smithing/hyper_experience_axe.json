@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:smithing_transform",
+  "base": {
+    "item": "mechaniya:super_experience_axe"
+  },
+  "addition": {
+    "item": "mechaniya:hyper_experience_block"
+  },
+  "template": {
+    "item": "minecraft:netherite_ingot"
+  },
+  "result": {
+    "id": "mechaniya:hyper_experience_axe"
+  }
+}

@@ -30,6 +30,22 @@ public class ModFluid {
     public static final DeferredHolder<Fluid, BaseFlowingFluid> FLOWING_SHIMMER = FLUIDS.register("shimmer_flow",
             () -> new BaseFlowingFluid.Flowing(SHIMMER_PROPERTIES.get()));
 
+    private static final Supplier<BaseFlowingFluid.Properties> LUBRICANT_PROPERTIES = Suppliers.memoize(() ->
+            new BaseFlowingFluid.Properties(
+                    ModFluidType.LUBRICANT,
+                    ModFluid.SOURCE_LUBRICANT,
+                    ModFluid.FLOWING_LUBRICANT
+            )
+                    .block(ModBlocks.LUBRICANT_BLOCK)
+                    .bucket(ModItems.LUBRICANT_BUCKET)
+    );
+
+    public static final DeferredHolder<Fluid, BaseFlowingFluid> SOURCE_LUBRICANT = FLUIDS.register("lubricant",
+            () -> new BaseFlowingFluid.Source(LUBRICANT_PROPERTIES.get()));
+    public static final DeferredHolder<Fluid, BaseFlowingFluid> FLOWING_LUBRICANT = FLUIDS.register("lubricant_flow",
+            () -> new BaseFlowingFluid.Flowing(LUBRICANT_PROPERTIES.get()));
+
+
     private static final Supplier<BaseFlowingFluid.Properties> LATEX_PROPERTIES = Suppliers.memoize(() ->
             new BaseFlowingFluid.Properties(
                     ModFluidType.LATEX,

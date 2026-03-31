@@ -19,14 +19,25 @@
   "block.mechaniya.asurine_gravel": "Азуриновий гравій",
   "block.mechaniya.veridium_gravel": "Веридієвий гравій",
   "block.mechaniya.end_sand": "Пісок Енду",
-  "block.mechaniya.deepleeted_asurine": "Низькозбагачений азурин",
-  "block.mechaniya.deepleeted_veridium": "Низькозбагачений веридій",
+  "block.mechaniya.depleted_asurine": "Низькозбагачений азурин",
+  "block.mechaniya.depleted_veridium": "Низькозбагачений веридій",
 
   // --- Blocks: Materials & Storage ---
   "block.mechaniya.mithril_block": "Мітриловий блок",
   "block.mechaniya.blaze_gold_block": "Блок пломеневого золота",
   "block.mechaniya.entro_platinum_block": "Ентропіїзований платиновий блок",
-  "block.mechaniya.huper_experience_block": "Блок гіпер-досвіду",
+  "block.mechaniya.huper_experience_block": "Блок гіпер досвіду",
+
+  // --- Tools & Weapons ---
+  "item.mechaniya.super_experience_sword": "Меч супер досвіду",
+  "item.mechaniya.super_experience_pickaxe": "Кайло супер досвіду",
+  "item.mechaniya.super_experience_shovel": "Лопата супер досвіду",
+  "item.mechaniya.super_experience_axe": "Сокира супер досвіду",
+
+  "item.mechaniya.hyper_experience_sword": "Меч гіпер досвіду",
+  "item.mechaniya.hyper_experience_pickaxe": "Кайло гіпер досвіду",
+  "item.mechaniya.hyper_experience_shovel": "Лопата гіпер досвіду",
+  "item.mechaniya.hyper_experience_axe": "Сокира гіпер досвіду",
 
   // --- Items: Metals & Alloys ---
   "item.mechaniya.mithril_ingot": "Мітриловий злиток",
@@ -41,11 +52,18 @@
   "item.mechaniya.radiant_sheet": "Осяяний лист",
   "item.mechaniya.enderium_ingot": "Ендерієвий злиток",
   "item.mechaniya.overcharged_alloy": "Надзаряджений сплав",
+  "item.mechaniya.incomplete_steel_mechanism": "Незавершений сталевий механізм",
+  "item.mechaniya.steel_mechanism": "Сталевий механізм",
+  "item.mechaniya.steel_mix": "Сталева суміш",
+  "item.mechaniya.steel_mix_block": "Блок сталевої суміші",
+  "block.mechaniya.coal_coke_block": "Блок коксового вугілля",
+  "item.mechaniya.coke_coal": "Коксове вугілля",
+  "item.mechaniya.coke_coal_dust": "Коксовий пил",
 
   // --- Items: Experience ---
   "item.mechaniya.super_experience_heap": "Супер купа досвіду",
-  "item.mechaniya.huper_experience_heap": "Гіпер купа досвіду",
-  "item.mechaniya.huper_experience_nugget": "Гіпер шматочок досвіду",
+  "item.mechaniya.hyper_experience_heap": "Гіпер купа досвіду",
+  "item.mechaniya.hyper_experience_nugget": "Гіпер шматочок досвіду",
 
   // --- Items: Technical Components ---
   "item.mechaniya.certus_quartz_tube": "Лампа з істинного кварцу",
@@ -70,6 +88,7 @@
   "item.mechaniya.fuel_bucket": "Відро палива",
   "item.mechaniya.oil_fuel_bucket": "Відро мазуту",
   "item.mechaniya.ethylene_bucket": "Відро етилену",
+  "item.mechaniya.lubricant_bucket": "Відро змазки",
   "item.mechaniya.molten_plastic_bucket": "Відро розплавленого пластику",
   "item.mechaniya.shimmer_bucket": "<rainb>Відро мерехтіння",
   "fluid_type.mechaniya.crude_oil": "Сира нафта",
@@ -90,6 +109,8 @@
   "block.mechaniya.oil_fuel_block": "Мазут",
   "fluid_type.mechaniya.ethylene": "Етилен",
   "block.mechaniya.ethylene_block": "Етилен",
+  "fluid_type.mechaniya.lubricant": "Змазка",
+  "block.mechaniya.lubricant_block": "Змазка",
   "fluid_type.mechaniya.molten_plastic": "Розплавлений пластик",
   "block.mechaniya.molten_plastic_block": "Розплавлений пластик",
 
@@ -102,5 +123,12 @@
   // --- Lore & Tooltips ---
   "item.lore_minestar_logo": "§7Символ великої спільноти.",
   "item.lore_roll_of_rolls": "§dНа смак як шестерні, у середині сперечаються 3 маленькі роли.",
-  "item.lore_ledok": "§bДивний кубик льоду. Виглядає... знайомо."
+  "item.lore_ledok": "§bДивний кубик льоду. Виглядає... знайомо.",
+  "tooltip.mechaniya.hold_shift": "Утримуйте %s для опису",
+  "tooltip.mechaniya.summary_line1": "При кожному ударі інструмент",
+  "tooltip.mechaniya.summary_line2": "зношується, а %s час від",
+  "tooltip.mechaniya.summary_line3": "часу з'являються.",
+  "tooltip.mechaniya.summary_line4": "Має вбудоване %s.",
+  "tooltip.mechaniya.xp_orbs": "сфери досвіду",
+  "tooltip.mechaniya.mending": "лагодження"
 }
