@@ -36,6 +36,7 @@ public class MechaniyaModClient {
         registerFluidRender(event, ModFluidType.ETHYLENE.get(), "ethylene");
         registerFluidRender(event, ModFluidType.MOLTEN_PLASTIC.get(), "molten_plastic");
         registerFluidRender(event, ModFluidType.LUBRICANT.get(), "lubricant");
+        registerFluidRender(event, ModFluidType.SUPER_GLUE.get(), "super_glue");
     }
 
     private static void registerFluidRender(RegisterClientExtensionsEvent event, FluidType type, String textureName) {
@@ -73,31 +74,35 @@ public class MechaniyaModClient {
                 }
 
                 if (textureName.contains("steam_cracked_fuel")) {
-                    return new Vector3f(0.5f, 0.5f, 0.5f); // Сірий/паровий
+                    return new Vector3f(0.5f, 0.5f, 0.5f);
                 }
 
                 if (textureName.contains("sulfuric_fuel")) {
-                    return new Vector3f(0.8f, 0.8f, 0.0f); // Жовтуватий (сірка)
+                    return new Vector3f(0.8f, 0.8f, 0.0f);
                 }
 
                 if (textureName.contains("fuel")) {
-                    return new Vector3f(1.0f, 0.8f, 0.0f); // Золотистий/паливо
+                    return new Vector3f(1.0f, 0.8f, 0.0f);
                 }
 
                 if (textureName.contains("oil_fuel")) {
-                    return new Vector3f(0.1f, 0.1f, 0.1f); // Темно-сірий
+                    return new Vector3f(0.1f, 0.1f, 0.1f);
                 }
 
                 if (textureName.contains("ethylene")) {
-                    return new Vector3f(0.9f, 0.9f, 0.9f); // Світлий/газоподібний
+                    return new Vector3f(0.9f, 0.9f, 0.9f);
                 }
 
                 if (textureName.contains("molten_plastic")) {
-                    return new Vector3f(0.8f, 0.8f, 0.8f); // Білий/сірий пластик
+                    return new Vector3f(0.8f, 0.8f, 0.8f);
                 }
 
                 if (textureName.contains("lubricant")) {
                     return new Vector3f(0.206f, 0.195f, 0.201f);
+                }
+
+                if (textureName.contains("super_glue")) {
+                    return new Vector3f(0.226f, 0.28f, 0.74f);
                 }
 
                 return fluidFogColor;

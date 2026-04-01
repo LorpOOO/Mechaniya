@@ -12,6 +12,8 @@
   "block.mechaniya.ender_machine": "Ender Machine",
   "block.mechaniya.radiant_machine": "Radiant Machine",
 
+  "block.mechaniya.andesite_controller": "Andesite Controller",
+
   // --- Blocks: Ores & Resources ---
   "block.mechaniya.end_platinum_ore": "End Platinum Ore",
   "block.mechaniya.asurine_gravel": "Asurine Gravel",
@@ -45,6 +47,7 @@
   "item.mechaniya.sulfuric_fuel_bucket": "Sulfuric Fuel Bucket",
   "item.mechaniya.fuel_bucket": "Fuel Bucket",
   "item.mechaniya.oil_fuel_bucket": "Oil Fuel Bucket",
+  "item.mechaniya.super_glue_bucket": "Super Glue Bucket",
   "item.mechaniya.lubricant_bucket": "Lubricant Bucket",
   "item.mechaniya.ethylene_bucket": "Ethylene Bucket",
   "item.mechaniya.molten_plastic_bucket": "Molten Plastic Bucket",
@@ -105,6 +108,8 @@
   "block.mechaniya.ethylene_block": "Ethylene",
   "fluid_type.mechaniya.lubricant": "Lubricant",
   "block.mechaniya.lubricant_block": "Lubricant",
+  "fluid_type.mechaniya.super_glue": "Super Glue",
+  "block.mechaniya.super_glue_block": "Super Glue",
   "fluid_type.mechaniya.molten_plastic": "Molten Plastic",
   "block.mechaniya.molten_plastic_block": "Molten Plastic",
 

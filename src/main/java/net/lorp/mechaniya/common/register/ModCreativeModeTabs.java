@@ -124,6 +124,7 @@ public class ModCreativeModeTabs {
                         output.accept(ModItems.ETHYLENE_BUCKET.get());
                         output.accept(ModItems.MOLTEN_PLASTIC_BUCKET.get());
                         output.accept(ModItems.LUBRICANT_BUCKET.get());
+                        output.accept(ModItems.SUPER_GLUE_BUCKET.get());
 
                         // --- Food and Misc ---
                         output.accept(ModItems.LEDOK.get());

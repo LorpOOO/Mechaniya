@@ -140,6 +140,9 @@ public class ModItems {
     public static final DeferredItem<Item> CRUDE_OIL_BUCKET = ITEMS.register("crude_oil_bucket",
             () -> new BucketItem(ModFluid.SOURCE_CRUDE_OIL.get(),
                     new Item.Properties().craftRemainder(Items.BUCKET).stacksTo(1)));
+    public static final DeferredItem<Item> SUPER_GLUE_BUCKET = ITEMS.register("super_glue_bucket",
+            () -> new BucketItem(ModFluid.SOURCE_CRUDE_OIL.get(),
+                    new Item.Properties().craftRemainder(Items.BUCKET).stacksTo(1)));
     public static final DeferredItem<Item> LUBRICANT_BUCKET = ITEMS.register("lubricant_bucket",
             () -> new BucketItem(ModFluid.SOURCE_LUBRICANT.get(),
                     new Item.Properties().craftRemainder(Items.BUCKET).stacksTo(1)));

@@ -22,6 +22,17 @@ public class ModFluidType {
             )
     );
 
+    public static final DeferredHolder<FluidType, FluidType> SUPER_GLUE = FLUID_TYPES.register("super_glue",
+            () -> new FluidType(FluidType.Properties.create()
+                    .density(1)
+                    .canSwim(true)
+                    .canDrown(true)
+                    .canPushEntity(true)
+                    .canHydrate(false)
+                    .supportsBoating(true)
+            )
+    );
+
     public static final DeferredHolder<FluidType, FluidType> LUBRICANT = FLUID_TYPES.register("lubricant",
             () -> new FluidType(FluidType.Properties.create()
                     .density(1)

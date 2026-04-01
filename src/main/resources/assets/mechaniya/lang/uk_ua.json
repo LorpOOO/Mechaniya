@@ -12,6 +12,8 @@
   "block.mechaniya.ender_machine": "Ендер машина",
   "block.mechaniya.radiant_machine": "Осяяна машина",
 
+  "block.mechaniya.andesite_controller": "Андезитовий контролер",
+
   // --- Blocks: Ores & Resources ---
   "block.mechaniya.end_platinum_ore": "Платинова руда Енду",
   "block.mechaniya.oil_deposit": "Поклад нафти",
@@ -89,6 +91,7 @@
   "item.mechaniya.oil_fuel_bucket": "Відро мазуту",
   "item.mechaniya.ethylene_bucket": "Відро етилену",
   "item.mechaniya.lubricant_bucket": "Відро змазки",
+  "item.mechaniya.super_glue_bucket": "Відро суперклею",
   "item.mechaniya.molten_plastic_bucket": "Відро розплавленого пластику",
   "item.mechaniya.shimmer_bucket": "<rainb>Відро мерехтіння",
   "fluid_type.mechaniya.crude_oil": "Сира нафта",
@@ -111,6 +114,8 @@
   "block.mechaniya.ethylene_block": "Етилен",
   "fluid_type.mechaniya.lubricant": "Змазка",
   "block.mechaniya.lubricant_block": "Змазка",
+  "fluid_type.mechaniya.super_glue": "Суперклей",
+  "block.mechaniya.super_glue_block": "Суперклей",
   "fluid_type.mechaniya.molten_plastic": "Розплавлений пластик",
   "block.mechaniya.molten_plastic_block": "Розплавлений пластик",
 

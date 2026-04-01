@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "mechaniya:block/andesite_controller"
+    },
+    "facing=south": {
+      "model": "mechaniya:block/andesite_controller",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "mechaniya:block/andesite_controller",
+      "y": 270
+    },
+    "facing=east": {
+      "model": "mechaniya:block/andesite_controller",
+      "y": 90
+    }
+  }
+}

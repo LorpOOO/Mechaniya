@@ -40,6 +40,21 @@ public class ModFluid {
                     .bucket(ModItems.LUBRICANT_BUCKET)
     );
 
+    private static final Supplier<BaseFlowingFluid.Properties> SUPER_GLUE_PROPERTIES = Suppliers.memoize(() ->
+            new BaseFlowingFluid.Properties(
+                    ModFluidType.SUPER_GLUE,
+                    ModFluid.SOURCE_SUPER_GLUE,
+                    ModFluid.FLOWING_SUPER_GLUE
+            )
+                    .block(ModBlocks.SUPER_GLUE_BLOCK)
+                    .bucket(ModItems.SUPER_GLUE_BUCKET)
+    );
+
+    public static final DeferredHolder<Fluid, BaseFlowingFluid> SOURCE_SUPER_GLUE = FLUIDS.register("super_glue",
+            () -> new BaseFlowingFluid.Source(SUPER_GLUE_PROPERTIES.get()));
+    public static final DeferredHolder<Fluid, BaseFlowingFluid> FLOWING_SUPER_GLUE = FLUIDS.register("super_glue_flow",
+            () -> new BaseFlowingFluid.Flowing(SUPER_GLUE_PROPERTIES.get()));
+
     public static final DeferredHolder<Fluid, BaseFlowingFluid> SOURCE_LUBRICANT = FLUIDS.register("lubricant",
             () -> new BaseFlowingFluid.Source(LUBRICANT_PROPERTIES.get()));
     public static final DeferredHolder<Fluid, BaseFlowingFluid> FLOWING_LUBRICANT = FLUIDS.register("lubricant_flow",

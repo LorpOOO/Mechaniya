@@ -50,6 +50,10 @@ public class ModBlocks {
             () -> new Block(BlockBehaviour.Properties.of()
                     .strength(4f).requiresCorrectToolForDrops().sound(SoundType.STONE)));
 
+    public static final DeferredBlock<Block> ANDESITE_CONTROLLER = registerBlock("andesite_controller",
+            () -> new FaceBlock(BlockBehaviour.Properties.of()
+                    .strength(4f).requiresCorrectToolForDrops().sound(SoundType.STONE)));
+
     public static final DeferredBlock<Block> RADIANT_MACHINE = registerBlock("radiant_machine",
             () -> new FaceBlock(BlockBehaviour.Properties.of()
                     .strength(4f).requiresCorrectToolForDrops().sound(SoundType.METAL).noOcclusion()));
@@ -169,6 +173,11 @@ public class ModBlocks {
     public static final DeferredBlock<LiquidBlock> OIL_FUEL_BLOCK = BLOCKS.register("oil_fuel_block",
             () -> new LiquidBlock(ModFluid.SOURCE_OIL_FUEL.get(), BlockBehaviour.Properties.of()
                     .mapColor(MapColor.COLOR_BLACK).noCollission().strength(100.0F)
+                    .pushReaction(PushReaction.DESTROY).noLootTable().noOcclusion().replaceable()));
+
+    public static final DeferredBlock<LiquidBlock> SUPER_GLUE_BLOCK = BLOCKS.register("super_glue_block",
+            () -> new LiquidBlock(ModFluid.SOURCE_SUPER_GLUE.get(), BlockBehaviour.Properties.of()
+                    .mapColor(MapColor.TERRACOTTA_BLUE).noCollission().strength(100.0F)
                     .pushReaction(PushReaction.DESTROY).noLootTable().noOcclusion().replaceable()));
 
     public static final DeferredBlock<LiquidBlock> ETHYLENE_BLOCK = BLOCKS.register("ethylene_block",
