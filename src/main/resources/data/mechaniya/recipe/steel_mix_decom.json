@@ -2,11 +2,11 @@
   "type": "minecraft:crafting_shapeless",
   "ingredients": [
     {
-      "item": "mechaniya:raw_sulfur_block"
+      "item": "mechaniya:steel_mix_block"
     }
   ],
   "result": {
-    "id": "mechaniya:raw_sulfur",
-    "count": 4
+    "id": "mechaniya:steel_mix",
+    "count": 9
   }
 }

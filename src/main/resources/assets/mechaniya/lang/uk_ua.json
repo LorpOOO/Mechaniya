@@ -57,7 +57,7 @@
   "item.mechaniya.incomplete_steel_mechanism": "Незавершений сталевий механізм",
   "item.mechaniya.steel_mechanism": "Сталевий механізм",
   "item.mechaniya.steel_mix": "Сталева суміш",
-  "item.mechaniya.steel_mix_block": "Блок сталевої суміші",
+  "block.mechaniya.steel_mix_block": "Блок сталевої суміші",
   "block.mechaniya.coal_coke_block": "Блок коксового вугілля",
   "item.mechaniya.coke_coal": "Коксове вугілля",
   "item.mechaniya.coke_coal_dust": "Коксовий пил",
