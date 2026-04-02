@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "mechaniya:raw_sulfur"
+    },
+    {
+      "item": "mechaniya:raw_sulfur"
+    },
+    {
+      "item": "mechaniya:raw_sulfur"
+    },
+    {
+      "item": "mechaniya:raw_sulfur"
+    }
+  ],
+  "result": {
+    "id": "mechaniya:raw_sulfur_block"
+  }
+}

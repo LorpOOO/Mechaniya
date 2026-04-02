@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "mechaniya:raw_sulfur_block"
+    }
+  ],
+  "result": {
+    "id": "mechaniya:raw_sulfur_block",
+    "count": 4
+  }
+}

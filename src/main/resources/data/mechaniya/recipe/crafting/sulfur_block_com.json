@@ -1,0 +1,36 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "mechaniya:sulfur_dust"
+    },
+    {
+      "item": "mechaniya:sulfur_dust"
+    },
+    {
+      "item": "mechaniya:sulfur_dust"
+    },
+    {
+      "item": "mechaniya:sulfur_dust"
+    },
+    {
+      "item": "mechaniya:sulfur_dust"
+    },
+    {
+      "item": "mechaniya:sulfur_dust"
+    },
+    {
+      "item": "mechaniya:sulfur_dust"
+    },
+    {
+      "item": "mechaniya:sulfur_dust"
+    },
+    {
+      "item": "mechaniya:sulfur_dust"
+    }
+  ],
+  "result": {
+    "id": "mechaniya:sulfur_block",
+    "count": 1
+  }
+}

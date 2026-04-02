@@ -77,9 +77,19 @@
   "item.mechaniya.plastic_sheet": "Пластиковий лист",
   "item.mechaniya.bitumen": "Бітум",
   "item.mechaniya.oil_fuel_ball": "Кулька мазуту",
-  "item.mechaniya.sulfur_dust": "Сірчаний пил",
   "item.mechaniya.paraffin_wax": "Парафіновий віск",
   "block.mechaniya.oil_pipe": "Нафтова труба",
+
+  // --- Sulfur ---
+  "item.mechaniya.sulfur_dust": "Сірчаний пил",
+  "item.mechaniya.raw_sulfur": "Необроблена сірка",
+  "block.mechaniya.sulfur_block": "Блок сірки",
+  "block.mechaniya.raw_sulfur_block": "Блок необробленої сірки",
+  "block.mechaniya.budding_sulfur": "Родюча сірка",
+  "block.mechaniya.small_sulfur_bud": "Малий зародок сірки",
+  "block.mechaniya.medium_sulfur_bud": "Середній зародок сірки",
+  "block.mechaniya.large_sulfur_bud": "Великий зародок сірки",
+  "block.mechaniya.sulfur_cluster": "Сірчана друза",
 
   // --- Items: Buckets & Fluids ---
   "item.mechaniya.crude_oil_bucket": "Відро сирої нафти",

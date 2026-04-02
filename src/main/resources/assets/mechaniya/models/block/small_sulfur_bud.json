@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/cross",
+  "textures": {
+    "cross": "mechaniya:block/small_sulfur_bud"
+  }
+}

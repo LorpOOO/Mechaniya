@@ -2,16 +2,17 @@ package net.lorp.mechaniya.common.register;
 
 import net.lorp.mechaniya.Mechaniya;
 import net.lorp.mechaniya.common.block.*;
+import net.minecraft.client.renderer.ItemBlockRenderTypes;
+import net.minecraft.client.renderer.RenderType;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.Rarity;
-import net.minecraft.world.level.block.Block;
-import net.minecraft.world.level.block.LiquidBlock;
-import net.minecraft.world.level.block.SoundType;
+import net.minecraft.world.level.block.*;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.material.MapColor;
 import net.minecraft.world.level.material.PushReaction;
 import net.neoforged.bus.api.IEventBus;
+import net.neoforged.fml.event.lifecycle.FMLClientSetupEvent;
 import net.neoforged.neoforge.registries.DeferredBlock;
 import net.neoforged.neoforge.registries.DeferredRegister;
 
@@ -190,6 +191,24 @@ public class ModBlocks {
                     .mapColor(MapColor.CLAY).noCollission().strength(100.0F)
                     .pushReaction(PushReaction.DESTROY).noLootTable().noOcclusion().replaceable()));
 
+    // --- Sulfure ---
+    public static final DeferredBlock<Block> RAW_SULFUR_BLOCK = BLOCKS.register("raw_sulfur_block",
+            () -> new Block(BlockBehaviour.Properties.of().requiresCorrectToolForDrops().mapColor(MapColor.COLOR_YELLOW)
+                    .strength(1.5F).sound(SoundType.AMETHYST)));
+
+    public static final DeferredBlock<Block> SULFUR_BLOCK = registerBlock("sulfur_block",
+            () -> new Block(BlockBehaviour.Properties.of()
+                    .strength(2f).sound(SoundType.STONE)));
+
+    public static final DeferredBlock<BuddingAmethystBlock> BUDDING_SULFUR = BLOCKS.register("budding_sulfur",
+            () -> new BuddingSulfurBlock(BlockBehaviour.Properties.of().requiresCorrectToolForDrops().mapColor(MapColor.COLOR_YELLOW)
+                    .randomTicks().strength(1.5F).sound(SoundType.AMETHYST_CLUSTER).pushReaction(PushReaction.DESTROY)));
+
+    public static final DeferredBlock<AmethystClusterBlock> SMALL_SULFUR_BUD = registerSulfurCluster("small_sulfur_bud", 3, 4);
+    public static final DeferredBlock<AmethystClusterBlock> MEDIUM_SULFUR_BUD = registerSulfurCluster("medium_sulfur_bud", 4, 3);
+    public static final DeferredBlock<AmethystClusterBlock> LARGE_SULFUR_BUD = registerSulfurCluster("large_sulfur_bud", 5, 3);
+    public static final DeferredBlock<AmethystClusterBlock> SULFUR_CLUSTER = registerSulfurCluster("sulfur_cluster", 7, 3);
+
     // --- Helper Methods ---
     private static <T extends Block> DeferredBlock<T> registerBlock(String name, Supplier<T> block) {
         DeferredBlock<T> toReturn = BLOCKS.register(name, block);
@@ -205,6 +224,28 @@ public class ModBlocks {
 
     private static <T extends Block> void registerBlockItem(String name, DeferredBlock<T> block) {
         ModItems.ITEMS.register(name, () -> new BlockItem(block.get(), new Item.Properties()));
+    }
+
+    private static DeferredBlock<AmethystClusterBlock> registerSulfurCluster(String name, int height, int width) {
+        return BLOCKS.register(name, () -> new AmethystClusterBlock(height, width,
+                BlockBehaviour.Properties.of()
+                        .mapColor(MapColor.COLOR_YELLOW)
+                        .forceSolidOn()
+                        .noOcclusion()
+                        .randomTicks()
+                        .sound(SoundType.AMETHYST_CLUSTER)
+                        .strength(1.5F)
+                        .lightLevel((state) -> 3)
+                        .pushReaction(PushReaction.DESTROY)));
+    }
+
+    private void onClientSetup(final FMLClientSetupEvent event) {
+        event.enqueueWork(() -> {
+            ItemBlockRenderTypes.setRenderLayer(ModBlocks.SMALL_SULFUR_BUD.get(), RenderType.cutout());
+            ItemBlockRenderTypes.setRenderLayer(ModBlocks.MEDIUM_SULFUR_BUD.get(), RenderType.cutout());
+            ItemBlockRenderTypes.setRenderLayer(ModBlocks.LARGE_SULFUR_BUD.get(), RenderType.cutout());
+            ItemBlockRenderTypes.setRenderLayer(ModBlocks.SULFUR_CLUSTER.get(), RenderType.cutout());
+        });
     }
 
     public static void register(IEventBus eventBus) {

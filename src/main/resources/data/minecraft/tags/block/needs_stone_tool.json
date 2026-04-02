@@ -5,6 +5,12 @@
     "mechaniya:veridium_gravel",
     "mechaniya:depleted_veridium",
     "mechaniya:depleted_asurine",
-    "mechaniya:deepslate_gravel"
+    "mechaniya:deepslate_gravel",
+    "mechaniya:sulfur_block",
+    "mechaniya:budding_sulfur",
+    "mechaniya:small_sulfur_bud",
+    "mechaniya:medium_sulfur_bud",
+    "mechaniya:large_sulfur_bud",
+    "mechaniya:sulfur_cluster"
   ]
 }
