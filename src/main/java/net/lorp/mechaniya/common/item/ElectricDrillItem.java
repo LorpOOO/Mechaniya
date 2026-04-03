@@ -166,12 +166,6 @@ public class ElectricDrillItem extends Item {
         super.appendHoverText(stack, context, tooltip, flag);
     }
 
-    // Прибрано складні перевірки зачарувань, які викликали конфлікт імпортів
-    @Override
-    public boolean isEnchantable(ItemStack stack) {
-        return false; // Поки що просто вимкнемо, щоб ти міг скомпілювати проект
-    }
-
     @Override public boolean isBarVisible(ItemStack stack) { return true; }
     @Override public int getBarWidth(ItemStack stack) { return Math.round(13.0f * getEnergy(stack) / ENERGY_CAPACITY); }
     @Override public int getBarColor(ItemStack stack) { return 0x00E1FF; }
