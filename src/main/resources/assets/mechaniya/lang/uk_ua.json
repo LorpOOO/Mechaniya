@@ -60,7 +60,7 @@
   "block.mechaniya.steel_mix_block": "Блок сталевої суміші",
   "block.mechaniya.coal_coke_block": "Блок коксового вугілля",
   "item.mechaniya.coke_coal": "Коксове вугілля",
-  "item.mechaniya.coke_coal_dust": "Коксовий пил",
+  "item.mechaniya.coal_coke_dust": "Коксовий пил",
 
   // --- Items: Experience ---
   "item.mechaniya.super_experience_heap": "Супер купа досвіду",
