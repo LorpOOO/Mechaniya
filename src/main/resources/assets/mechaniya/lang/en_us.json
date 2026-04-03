@@ -154,6 +154,6 @@
   "tooltip.mechaniya.speed.high": "Fast",
   "tooltip.mechaniya.speed.insane": "Insane",
   "tooltip.mechaniya.energy": "Energy: %s / %s FE",
-  "tooltip.mechaniya.instruction.mode": "Shift+RMB: Change mining mode",
-  "tooltip.mechaniya.instruction.speed": "Ctrl+Shift+RMB: Change mining speed"
+  "tooltip.mechaniya.instruction.mode": "Shift+Right Click: Change mining mode",
+  "tooltip.mechaniya.instruction.speed": "Ctrl+Shift+Right Click: Change mining speed"
 }
