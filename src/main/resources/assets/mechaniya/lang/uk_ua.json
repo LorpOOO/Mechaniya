@@ -145,5 +145,19 @@
   "tooltip.mechaniya.summary_line3": "часу з'являються.",
   "tooltip.mechaniya.summary_line4": "Має вбудоване %s.",
   "tooltip.mechaniya.xp_orbs": "сфери досвіду",
-  "tooltip.mechaniya.mending": "лагодження"
+  "tooltip.mechaniya.mending": "лагодження",
+  "item.mechaniya.portable_electric_drill": "Портативний Електричний Бур",
+  "message.mechaniya.drill_mode": "Режим ламання: %s",
+  "message.mechaniya.drill_speed": "Швидкість ламання: %s",
+  "tooltip.mechaniya.drill_mode": "Режим: %s",
+  "tooltip.mechaniya.drill_speed": "Швидкість: %s",
+  "tooltip.mechaniya.mode.1x1": "1х1",
+  "tooltip.mechaniya.mode.3x3": "3х3",
+  "tooltip.mechaniya.speed.low": "Повільна",
+  "tooltip.mechaniya.speed.medium": "Середня",
+  "tooltip.mechaniya.speed.high": "Висока",
+  "tooltip.mechaniya.energy": "Енергія: %s / %s FE",
+  "tooltip.mechaniya.instruction.mode": "Shift+ПКМ: змінити режим",
+  "tooltip.mechaniya.instruction.speed": "Cntrl+Shift+ПКМ: змінити швидкість",
+  "tooltip.mechaniya.speed.insane": "Максимальна"
 }

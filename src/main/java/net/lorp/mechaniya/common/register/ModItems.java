@@ -1,17 +1,25 @@
 package net.lorp.mechaniya.common.register;
 
 import net.lorp.mechaniya.Mechaniya;
+import net.lorp.mechaniya.common.item.ElectricDrillItem;
 import net.lorp.mechaniya.common.item.ParaffinWaxItem;
 import net.minecraft.core.component.DataComponents;
 import net.minecraft.network.chat.Component;
+import net.minecraft.tags.BlockTags;
 import net.minecraft.world.effect.MobEffectInstance;
 import net.minecraft.world.effect.MobEffects;
+import net.minecraft.world.entity.EquipmentSlotGroup;
+import net.minecraft.world.entity.ai.attributes.AttributeModifier;
+import net.minecraft.world.entity.ai.attributes.Attributes;
 import net.minecraft.world.food.FoodProperties;
 import net.minecraft.world.item.*;
+import net.minecraft.world.item.component.ItemAttributeModifiers;
 import net.minecraft.world.item.component.ItemLore;
+import net.minecraft.world.item.component.Tool;
 import net.minecraft.world.item.enchantment.Enchantments;
 import net.minecraft.world.item.enchantment.ItemEnchantments;
 import net.neoforged.bus.api.IEventBus;
+import net.neoforged.neoforge.registries.DeferredHolder;
 import net.neoforged.neoforge.registries.DeferredItem;
 import net.neoforged.neoforge.registries.DeferredRegister;
 
@@ -171,6 +179,25 @@ public class ModItems {
     public static final DeferredItem<Item> MOLTEN_PLASTIC_BUCKET = ITEMS.register("molten_plastic_bucket",
             () -> new BucketItem(ModFluid.SOURCE_MOLTEN_PLASTIC.get(),
                     new Item.Properties().craftRemainder(Items.BUCKET).stacksTo(1)));
+
+    public static final DeferredHolder<Item, ElectricDrillItem> PORTABLE_ELECTRIC_DRILL =
+            ITEMS.register("portable_electric_drill", () -> new ElectricDrillItem(
+                    new Item.Properties()
+                            .stacksTo(1)
+                            .component(DataComponents.TOOL, new Tool(
+                                    List.of(
+                                            Tool.Rule.minesAndDrops(BlockTags.MINEABLE_WITH_PICKAXE, 50.0F),
+                                            Tool.Rule.minesAndDrops(BlockTags.MINEABLE_WITH_SHOVEL, 50.0F)
+                                    ), 1.0F, 1))
+                            .attributes(ItemAttributeModifiers.builder()
+                                    .add(Attributes.ATTACK_DAMAGE, new AttributeModifier(
+                                                    Item.BASE_ATTACK_DAMAGE_ID, 5.0, AttributeModifier.Operation.ADD_VALUE),
+                                            EquipmentSlotGroup.MAINHAND)
+                                    .add(Attributes.ATTACK_SPEED, new AttributeModifier(
+                                                    Item.BASE_ATTACK_SPEED_ID, -2.8, AttributeModifier.Operation.ADD_VALUE),
+                                            EquipmentSlotGroup.MAINHAND)
+                                    .build())
+            ));
 
     // --- Sulfur Geode Blocks & Crystals ---
     public static final DeferredItem<Item> RAW_SULFUR = ITEMS.register("raw_sulfur",

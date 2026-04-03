@@ -35,6 +35,8 @@ public class ModCreativeModeTabs {
                         output.accept(ModItems.HYPER_EXPERIENCE_AXE.get());
                         output.accept(ModItems.HYPER_EXPERIENCE_SHOVEL.get());
 
+                        output.accept(ModItems.PORTABLE_ELECTRIC_DRILL.get());
+
 
                         // --- Ores and Resources ---
                         output.accept(ModBlocks.OIL_DEPOSIT.get());

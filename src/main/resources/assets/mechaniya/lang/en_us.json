@@ -141,5 +141,19 @@
   "tooltip.mechaniya.summary_line2": "and %s occasionally appear.",
   "tooltip.mechaniya.summary_line3": "Has a build-in %s.",
   "tooltip.mechaniya.xp_orbs": "XP orbs",
-  "tooltip.mechaniya.mending": "Mending"
+  "tooltip.mechaniya.mending": "Mending",
+  "item.mechaniya.portable_electric_drill": "Portable Electric Drill",
+  "message.mechaniya.drill_mode": "Mining Mode: %s",
+  "message.mechaniya.drill_speed": "Mining Speed: %s",
+  "tooltip.mechaniya.drill_mode": "Mode: %s",
+  "tooltip.mechaniya.drill_speed": "Speed: %s",
+  "tooltip.mechaniya.mode.1x1": "1x1",
+  "tooltip.mechaniya.mode.3x3": "3x3",
+  "tooltip.mechaniya.speed.low": "Slow",
+  "tooltip.mechaniya.speed.medium": "Normal",
+  "tooltip.mechaniya.speed.high": "Fast",
+  "tooltip.mechaniya.speed.insane": "Insane",
+  "tooltip.mechaniya.energy": "Energy: %s / %s FE",
+  "tooltip.mechaniya.instruction.mode": "Shift+RMB: Change mining mode",
+  "tooltip.mechaniya.instruction.speed": "Ctrl+Shift+RMB: Change mining speed"
 }
