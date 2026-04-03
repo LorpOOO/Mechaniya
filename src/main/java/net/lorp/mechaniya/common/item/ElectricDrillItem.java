@@ -40,7 +40,7 @@ public class ElectricDrillItem extends Item {
         if (state.is(BlockTags.MINEABLE_WITH_PICKAXE) || state.is(BlockTags.MINEABLE_WITH_SHOVEL)) {
             int index = getSpeedIndex(stack);
             return switch (index) {
-                case 3 -> 999.0F;
+                case 3 -> 1500.0F;
                 case 2 -> 50.0F;
                 case 1 -> 30.0F;
                 default -> 10.0F;
@@ -164,12 +164,6 @@ public class ElectricDrillItem extends Item {
         tooltip.add(Component.translatable("tooltip.mechaniya.instruction.speed").withStyle(ChatFormatting.GRAY, ChatFormatting.ITALIC));
 
         super.appendHoverText(stack, context, tooltip, flag);
-    }
-
-    // Прибрано складні перевірки зачарувань, які викликали конфлікт імпортів
-    @Override
-    public boolean isEnchantable(ItemStack stack) {
-        return false; // Поки що просто вимкнемо, щоб ти міг скомпілювати проект
     }
 
     @Override public boolean isBarVisible(ItemStack stack) { return true; }
