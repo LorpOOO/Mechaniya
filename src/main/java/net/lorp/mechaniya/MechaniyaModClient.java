@@ -2,20 +2,27 @@ package net.lorp.mechaniya;
 
 import com.mojang.blaze3d.shaders.FogShape;
 import com.mojang.blaze3d.systems.RenderSystem;
+import net.lorp.mechaniya.client.models.electric_drill.ElectricDrillRenderer;
 import net.lorp.mechaniya.common.register.ModFluidType;
+import net.lorp.mechaniya.common.register.ModItems;
 import net.minecraft.client.Camera;
 import net.minecraft.client.multiplayer.ClientLevel;
+import net.minecraft.client.renderer.BlockEntityWithoutLevelRenderer;
 import net.minecraft.client.renderer.FogRenderer;
 import net.minecraft.resources.ResourceLocation;
+import net.minecraft.world.item.Item;
 import net.neoforged.bus.api.SubscribeEvent;
 import net.neoforged.fml.ModContainer;
 import net.neoforged.neoforge.client.extensions.common.IClientFluidTypeExtensions;
+import net.neoforged.neoforge.client.extensions.common.IClientItemExtensions;
 import net.neoforged.neoforge.client.extensions.common.RegisterClientExtensionsEvent;
 import net.neoforged.neoforge.client.gui.ConfigurationScreen;
 import net.neoforged.neoforge.client.gui.IConfigScreenFactory;
 import net.neoforged.neoforge.fluids.FluidType;
 import org.jetbrains.annotations.NotNull;
 import org.joml.Vector3f;
+
+import java.util.function.Supplier;
 
 public class MechaniyaModClient {
 
@@ -37,6 +44,9 @@ public class MechaniyaModClient {
         registerFluidRender(event, ModFluidType.MOLTEN_PLASTIC.get(), "molten_plastic");
         registerFluidRender(event, ModFluidType.LUBRICANT.get(), "lubricant");
         registerFluidRender(event, ModFluidType.SUPER_GLUE.get(), "super_glue");
+
+
+        registerItemRender(event, ElectricDrillRenderer::new, ModItems.PORTABLE_ELECTRIC_DRILL.get());
     }
 
     private static void registerFluidRender(RegisterClientExtensionsEvent event, FluidType type, String textureName) {
@@ -115,5 +125,25 @@ public class MechaniyaModClient {
                 RenderSystem.setShaderFogEnd(6.0f);
             }
         }, type);
+    }
+
+
+    private static void registerItemRender(
+            RegisterClientExtensionsEvent event,
+            Supplier<BlockEntityWithoutLevelRenderer> rendererFactory,
+            Item item) {
+        event.registerItem(
+                new IClientItemExtensions() {
+                    private BlockEntityWithoutLevelRenderer renderer;
+
+                    @Override
+                    public @NotNull BlockEntityWithoutLevelRenderer getCustomRenderer() {
+                        if (this.renderer == null) {
+                            this.renderer = rendererFactory.get();
+                        }
+                        return this.renderer;
+                    }
+                },
+                item);
     }
 }

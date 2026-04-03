@@ -1,7 +1,9 @@
 package net.lorp.mechaniya.common.item;
 
+import net.lorp.mechaniya.client.models.electric_drill.ElectricDrillRenderer;
 import net.minecraft.ChatFormatting;
 import net.minecraft.client.gui.screens.Screen;
+import net.minecraft.client.renderer.BlockEntityWithoutLevelRenderer;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
 import net.minecraft.core.component.DataComponents;
@@ -18,11 +20,22 @@ import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.phys.BlockHitResult;
 import net.minecraft.world.phys.HitResult;
+import org.jetbrains.annotations.NotNull;
+import software.bernie.geckolib.animatable.GeoItem;
+import software.bernie.geckolib.animatable.client.GeoRenderProvider;
+import software.bernie.geckolib.animatable.instance.AnimatableInstanceCache;
+import software.bernie.geckolib.animation.AnimatableManager;
+import software.bernie.geckolib.animation.AnimationController;
+import software.bernie.geckolib.animation.RawAnimation;
+import software.bernie.geckolib.util.GeckoLibUtil;
 
 import java.util.List;
 import java.util.ArrayList;
+import java.util.function.Consumer;
 
-public class ElectricDrillItem extends Item {
+@SuppressWarnings("all")
+public class ElectricDrillItem extends Item implements GeoItem {
+    private final AnimatableInstanceCache cache = GeckoLibUtil.createInstanceCache(this);
     public static final int ENERGY_CAPACITY = 500000;
     public static final int ENERGY_PER_BLOCK = 100;
 
@@ -34,7 +47,7 @@ public class ElectricDrillItem extends Item {
     }
 
     @Override
-    public float getDestroySpeed(ItemStack stack, BlockState state) {
+    public float getDestroySpeed(@NotNull ItemStack stack, @NotNull BlockState state) {
         if (getEnergy(stack) < ENERGY_PER_BLOCK) return 0.1F;
 
         if (state.is(BlockTags.MINEABLE_WITH_PICKAXE) || state.is(BlockTags.MINEABLE_WITH_SHOVEL)) {
@@ -50,12 +63,12 @@ public class ElectricDrillItem extends Item {
     }
 
     @Override
-    public boolean isCorrectToolForDrops(ItemStack stack, BlockState state) {
+    public boolean isCorrectToolForDrops(@NotNull ItemStack stack, BlockState state) {
         return state.is(BlockTags.MINEABLE_WITH_PICKAXE) || state.is(BlockTags.MINEABLE_WITH_SHOVEL);
     }
 
     @Override
-    public InteractionResultHolder<ItemStack> use(Level level, Player player, InteractionHand hand) {
+    public @NotNull InteractionResultHolder<ItemStack> use(Level level, Player player, @NotNull InteractionHand hand) {
         ItemStack stack = player.getItemInHand(hand);
 
         if (!level.isClientSide) {
@@ -100,7 +113,7 @@ public class ElectricDrillItem extends Item {
     }
 
     @Override
-    public boolean mineBlock(ItemStack stack, Level level, BlockState state, BlockPos pos, LivingEntity entity) {
+    public boolean mineBlock(@NotNull ItemStack stack, Level level, @NotNull BlockState state, @NotNull BlockPos pos, @NotNull LivingEntity entity) {
         if (!level.isClientSide && state.getDestroySpeed(level, pos) != 0.0F) {
             consumeEnergy(stack, ENERGY_PER_BLOCK);
 
@@ -138,7 +151,7 @@ public class ElectricDrillItem extends Item {
     }
 
     @Override
-    public void appendHoverText(ItemStack stack, TooltipContext context, List<Component> tooltip, TooltipFlag flag) {
+    public void appendHoverText(@NotNull ItemStack stack, @NotNull TooltipContext context, List<Component> tooltip, @NotNull TooltipFlag flag) {
         String modeName = is3x3Mode(stack) ? "tooltip.mechaniya.mode.3x3" : "tooltip.mechaniya.mode.1x1";
         tooltip.add(Component.translatable("tooltip.mechaniya.drill_mode", Component.translatable(modeName)).withStyle(ChatFormatting.GOLD));
 
@@ -166,6 +179,7 @@ public class ElectricDrillItem extends Item {
         super.appendHoverText(stack, context, tooltip, flag);
     }
 
+
     @Override public boolean isBarVisible(ItemStack stack) { return true; }
     @Override public int getBarWidth(ItemStack stack) { return Math.round(13.0f * getEnergy(stack) / ENERGY_CAPACITY); }
     @Override public int getBarColor(ItemStack stack) { return 0x00E1FF; }
@@ -179,4 +193,27 @@ public class ElectricDrillItem extends Item {
 
     private int getSpeedIndex(ItemStack stack) { return stack.getOrDefault(DataComponents.CUSTOM_DATA, CustomData.EMPTY).getUnsafe().getInt(NBT_SPEED); }
     private void setSpeedIndex(ItemStack stack, int index) { stack.update(DataComponents.CUSTOM_DATA, CustomData.EMPTY, cd -> cd.update(tag -> tag.putInt(NBT_SPEED, index))); }
+
+    @Override
+    public void registerControllers(AnimatableManager.ControllerRegistrar controllers) {
+        AnimatableManager.ControllerRegistrar idleAnimation = controllers.add(
+                new AnimationController<>(this, "idle_animation", 0, state -> {
+                    return state.setAndContinue(RawAnimation.begin().thenLoop("electic_drill.idle_animation"));
+                }));
+    }
+
+    @Override
+    public AnimatableInstanceCache getAnimatableInstanceCache() {
+        return this.cache;
+    }
+
+    @Override
+    public void createGeoRenderer(Consumer<GeoRenderProvider> consumer) {
+        consumer.accept(new GeoRenderProvider() {
+            private final ElectricDrillRenderer renderer = new ElectricDrillRenderer();
+
+            @Override
+            public BlockEntityWithoutLevelRenderer getGeoItemRenderer(){ return this.renderer; }
+        });
+    }
 }

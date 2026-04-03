@@ -23,6 +23,8 @@ repositories {
 dependencies {
     implementation name: 'architectury-13.0.8'
 
+    implementation group: 'software.bernie.geckolib', name: 'geckolib', version:'4.8.3'
+    implementation group: 'com.enderio.enderio', name: 'enderio', version:'8.2.5'
     implementation name: 'create-1.21.1-6.0.10'
     implementation name: 'ftb-essentials-2101.1.9'
     implementation name: 'ftb-library-2101.1.30'
