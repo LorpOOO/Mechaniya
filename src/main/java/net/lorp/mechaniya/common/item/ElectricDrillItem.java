@@ -40,7 +40,7 @@ public class ElectricDrillItem extends Item {
         if (state.is(BlockTags.MINEABLE_WITH_PICKAXE) || state.is(BlockTags.MINEABLE_WITH_SHOVEL)) {
             int index = getSpeedIndex(stack);
             return switch (index) {
-                case 3 -> 800.0F;
+                case 3 -> 999.0F;
                 case 2 -> 50.0F;
                 case 1 -> 30.0F;
                 default -> 10.0F;
