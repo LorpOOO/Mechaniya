@@ -64,10 +64,6 @@ public class ModBlocks {
                             .noOcclusion()
                     ));
 
-    // Додано: Fluid Mithril Smelter
-    public static final DeferredBlock<Block> FLUID_MITHRIL_SMELTER = registerBlock("fluid_mithril_smelter",
-            () -> new FluidMithrilSmelterBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.IRON_BLOCK).requiresCorrectToolForDrops()));
-
     public static final DeferredBlock<Block> ELECTRIC_MACHINE_BLOCK = registerBlock("electric_machine_block",
             () -> new FaceBlock(BlockBehaviour.Properties.of()
                     .strength(4f).requiresCorrectToolForDrops().sound(SoundType.METAL)));

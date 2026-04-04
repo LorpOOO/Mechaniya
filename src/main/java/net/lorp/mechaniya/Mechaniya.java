@@ -3,8 +3,6 @@ package net.lorp.mechaniya;
 import com.mojang.logging.LogUtils;
 import net.lorp.mechaniya.common.item.ElectricDrillItem;
 import net.lorp.mechaniya.common.register.*;
-import net.lorp.mechaniya.common.init.MMenus;
-import net.lorp.mechaniya.common.init.MRecipes;
 import net.lorp.mechaniya.server.handler.ChatHandler;
 import net.minecraft.client.renderer.ItemBlockRenderTypes;
 import net.minecraft.client.renderer.RenderType;
@@ -38,9 +36,6 @@ public class Mechaniya {
         ModFluidType.register(modEventBus);
         ModFluid.register(modEventBus);
         ModCreativeModeTabs.register(modEventBus);
-
-        MMenus.register(modEventBus);
-        MRecipes.register(modEventBus);
 
         NeoForge.EVENT_BUS.register(this);
         NeoForge.EVENT_BUS.register(ChatHandler.class);

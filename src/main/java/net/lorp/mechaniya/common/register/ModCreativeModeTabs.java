@@ -127,18 +127,17 @@ public class ModCreativeModeTabs {
                         output.accept(ModItems.MOLTEN_PLASTIC_BUCKET.get());
                         output.accept(ModItems.LUBRICANT_BUCKET.get());
                         output.accept(ModItems.SUPER_GLUE_BUCKET.get());
-                        output.accept(ModBlocks.FLUID_MITHRIL_SMELTER.get());
 
                         // --- Sulfur ---
-//                        output.accept(ModItems.SULFUR_DUST.get());
-//                        output.accept(ModBlocks.SULFUR_BLOCK.get());
-//                        output.accept(ModItems.RAW_SULFUR_BLOCK);
-//                        output.accept(ModItems.BUDDING_SULFUR);
-//                        output.accept(ModItems.SMALL_SULFUR_BUD);
-//                        output.accept(ModItems.MEDIUM_SULFUR_BUD);
-//                        output.accept(ModItems.LARGE_SULFUR_BUD);
-//                        output.accept(ModItems.SULFUR_CLUSTER);
-//                        output.accept(ModItems.RAW_SULFUR);
+                        output.accept(ModItems.SULFUR_DUST.get());
+                        output.accept(ModBlocks.SULFUR_BLOCK.get());
+                        output.accept(ModItems.RAW_SULFUR_BLOCK);
+                        output.accept(ModItems.BUDDING_SULFUR);
+                        output.accept(ModItems.SMALL_SULFUR_BUD);
+                        output.accept(ModItems.MEDIUM_SULFUR_BUD);
+                        output.accept(ModItems.LARGE_SULFUR_BUD);
+                        output.accept(ModItems.SULFUR_CLUSTER);
+                        output.accept(ModItems.RAW_SULFUR);
 
                         // --- Food and Misc ---
                         output.accept(ModItems.LEDOK.get());
