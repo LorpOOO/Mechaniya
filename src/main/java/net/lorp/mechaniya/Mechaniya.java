@@ -2,12 +2,8 @@ package net.lorp.mechaniya;
 
 import com.mojang.logging.LogUtils;
 import net.lorp.mechaniya.common.item.ElectricDrillItem;
-import net.lorp.mechaniya.common.register.ModBlocks;
-import net.lorp.mechaniya.common.register.ModFluid;
-import net.lorp.mechaniya.common.register.ModFluidType;
+import net.lorp.mechaniya.common.register.*;
 import net.lorp.mechaniya.server.handler.ChatHandler;
-import net.lorp.mechaniya.common.register.ModCreativeModeTabs;
-import net.lorp.mechaniya.common.register.ModItems;
 import net.minecraft.client.renderer.ItemBlockRenderTypes;
 import net.minecraft.client.renderer.RenderType;
 import net.minecraft.core.component.DataComponents;
@@ -40,6 +36,7 @@ public class Mechaniya {
         ModCreativeModeTabs.register(modEventBus);
         ModItems.register(modEventBus);
         ModBlocks.register(modEventBus);
+        ModBlockEntity.BLOCK_ENTITY.register(modEventBus);
         ModFluidType.register(modEventBus);
         ModFluid.register(modEventBus);
 
@@ -50,6 +47,7 @@ public class Mechaniya {
 
         if (FMLEnvironment.dist == Dist.CLIENT) {
             modEventBus.addListener(MechaniyaModClient::onRegisterClientExtensions);
+            modEventBus.addListener(MechaniyaModClient::registerRenderersBlock);
         }
     }
 

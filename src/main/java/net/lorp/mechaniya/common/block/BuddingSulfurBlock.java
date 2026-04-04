@@ -11,6 +11,7 @@ import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.block.BuddingAmethystBlock;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.material.Fluids;
+import org.jetbrains.annotations.NotNull;
 
 public class BuddingSulfurBlock extends BuddingAmethystBlock {
     public BuddingSulfurBlock(Properties properties) {
@@ -18,7 +19,7 @@ public class BuddingSulfurBlock extends BuddingAmethystBlock {
     }
 
     @Override
-    public void randomTick(BlockState state, ServerLevel level, BlockPos pos, RandomSource random) {
+    public void randomTick(@NotNull BlockState state, @NotNull ServerLevel level, @NotNull BlockPos pos, RandomSource random) {
         if (random.nextInt(5) == 0) {
             Direction direction = Direction.values()[random.nextInt(Direction.values().length)];
             BlockPos targetPos = pos.relative(direction);

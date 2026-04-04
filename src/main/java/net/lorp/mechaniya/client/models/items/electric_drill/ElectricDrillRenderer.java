@@ -1,4 +1,4 @@
-package net.lorp.mechaniya.client.models.electric_drill;
+package net.lorp.mechaniya.client.models.items.electric_drill;
 
 import net.lorp.mechaniya.common.item.ElectricDrillItem;
 import software.bernie.geckolib.renderer.GeoItemRenderer;

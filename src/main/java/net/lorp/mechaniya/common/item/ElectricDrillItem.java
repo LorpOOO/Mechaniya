@@ -1,6 +1,6 @@
 package net.lorp.mechaniya.common.item;
 
-import net.lorp.mechaniya.client.models.electric_drill.ElectricDrillRenderer;
+import net.lorp.mechaniya.client.models.items.electric_drill.ElectricDrillRenderer;
 import net.minecraft.ChatFormatting;
 import net.minecraft.client.gui.screens.Screen;
 import net.minecraft.client.renderer.BlockEntityWithoutLevelRenderer;

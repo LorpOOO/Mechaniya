@@ -2,7 +2,9 @@ package net.lorp.mechaniya;
 
 import com.mojang.blaze3d.shaders.FogShape;
 import com.mojang.blaze3d.systems.RenderSystem;
-import net.lorp.mechaniya.client.models.electric_drill.ElectricDrillRenderer;
+import net.lorp.mechaniya.client.models.blocks.andesite_controller.AndesiteControllerRenderer;
+import net.lorp.mechaniya.client.models.items.electric_drill.ElectricDrillRenderer;
+import net.lorp.mechaniya.common.register.ModBlockEntity;
 import net.lorp.mechaniya.common.register.ModFluidType;
 import net.lorp.mechaniya.common.register.ModItems;
 import net.minecraft.client.Camera;
@@ -13,6 +15,7 @@ import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.item.Item;
 import net.neoforged.bus.api.SubscribeEvent;
 import net.neoforged.fml.ModContainer;
+import net.neoforged.neoforge.client.event.EntityRenderersEvent;
 import net.neoforged.neoforge.client.extensions.common.IClientFluidTypeExtensions;
 import net.neoforged.neoforge.client.extensions.common.IClientItemExtensions;
 import net.neoforged.neoforge.client.extensions.common.RegisterClientExtensionsEvent;
@@ -47,6 +50,12 @@ public class MechaniyaModClient {
 
 
         registerItemRender(event, ElectricDrillRenderer::new, ModItems.PORTABLE_ELECTRIC_DRILL.get());
+    }
+
+    @SubscribeEvent
+    public static void registerRenderersBlock(EntityRenderersEvent.RegisterRenderers event){
+        event.registerBlockEntityRenderer(ModBlockEntity.ANDESITE_CONTROLLER_BLOCK_ENTITY.get(), AndesiteControllerRenderer::new);
+
     }
 
     private static void registerFluidRender(RegisterClientExtensionsEvent event, FluidType type, String textureName) {
