@@ -3,10 +3,13 @@ package net.lorp.mechaniya;
 import com.mojang.logging.LogUtils;
 import net.lorp.mechaniya.common.item.ElectricDrillItem;
 import net.lorp.mechaniya.common.register.*;
+import net.lorp.mechaniya.common.init.MMenus;
+import net.lorp.mechaniya.common.init.MRecipes;
 import net.lorp.mechaniya.server.handler.ChatHandler;
 import net.minecraft.client.renderer.ItemBlockRenderTypes;
 import net.minecraft.client.renderer.RenderType;
 import net.minecraft.core.component.DataComponents;
+import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.item.component.CustomData;
 import net.neoforged.api.distmarker.Dist;
 import net.neoforged.bus.api.IEventBus;
@@ -29,19 +32,21 @@ public class Mechaniya {
     public static final Logger LOGGER = LogUtils.getLogger();
 
     public Mechaniya(IEventBus modEventBus, ModContainer modContainer) {
-        NeoForge.EVENT_BUS.register(this);
-        NeoForge.EVENT_BUS.register(ChatHandler.class);
-
-        ModCreativeModeTabs.register(modEventBus);
-        ModItems.register(modEventBus);
         ModBlocks.register(modEventBus);
+        ModItems.register(modEventBus);
         ModBlockEntity.BLOCK_ENTITY.register(modEventBus);
         ModFluidType.register(modEventBus);
         ModFluid.register(modEventBus);
+        ModCreativeModeTabs.register(modEventBus);
+
+        MMenus.register(modEventBus);
+        MRecipes.register(modEventBus);
+
+        NeoForge.EVENT_BUS.register(this);
+        NeoForge.EVENT_BUS.register(ChatHandler.class);
 
         modEventBus.addListener(this::registerCapabilities);
         modEventBus.addListener(this::onClientSetup);
-
         modContainer.registerConfig(ModConfig.Type.COMMON, Config.SPEC);
 
         if (FMLEnvironment.dist == Dist.CLIENT) {
@@ -50,25 +55,21 @@ public class Mechaniya {
         }
     }
 
+    public static ResourceLocation rl(String path) {
+        return ResourceLocation.fromNamespaceAndPath(MOD_ID, path);
+    }
+
     public void registerCapabilities(RegisterCapabilitiesEvent event) {
         event.registerItem(Capabilities.EnergyStorage.ITEM, (stack, context) -> {
             return new EnergyStorage(ElectricDrillItem.ENERGY_CAPACITY) {
                 @Override
                 public int getEnergyStored() {
-                    return stack.getOrDefault(DataComponents.CUSTOM_DATA, CustomData.EMPTY)
-                            .getUnsafe().getInt("energy");
+                    return stack.getOrDefault(DataComponents.CUSTOM_DATA, CustomData.EMPTY).getUnsafe().getInt("energy");
                 }
-
-                @Override
-                public int getMaxEnergyStored() {
-                    return ElectricDrillItem.ENERGY_CAPACITY;
-                }
-
-                @Override
-                public int receiveEnergy(int maxReceive, boolean simulate) {
+                @Override public int getMaxEnergyStored() { return ElectricDrillItem.ENERGY_CAPACITY; }
+                @Override public int receiveEnergy(int maxReceive, boolean simulate) {
                     int stored = getEnergyStored();
                     int toReceive = Math.min(getMaxEnergyStored() - stored, maxReceive);
-
                     if (!simulate && toReceive > 0) {
                         int newEnergy = stored + toReceive;
                         stack.update(DataComponents.CUSTOM_DATA, CustomData.EMPTY, customData ->
@@ -76,21 +77,9 @@ public class Mechaniya {
                     }
                     return toReceive;
                 }
-
-                @Override
-                public int extractEnergy(int maxExtract, boolean simulate) {
-                    return 0;
-                }
-
-                @Override
-                public boolean canExtract() {
-                    return false;
-                }
-
-                @Override
-                public boolean canReceive() {
-                    return true;
-                }
+                @Override public int extractEnergy(int maxExtract, boolean simulate) { return 0; }
+                @Override public boolean canExtract() { return false; }
+                @Override public boolean canReceive() { return true; }
             };
         }, ModItems.PORTABLE_ELECTRIC_DRILL.get());
     }
@@ -106,6 +95,5 @@ public class Mechaniya {
     }
 
     @SubscribeEvent
-    public void onServerStarting(ServerStartingEvent event) {
-    }
+    public void onServerStarting(ServerStartingEvent event) {}
 }

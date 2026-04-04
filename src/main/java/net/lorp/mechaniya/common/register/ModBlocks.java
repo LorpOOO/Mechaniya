@@ -64,7 +64,9 @@ public class ModBlocks {
                             .noOcclusion()
                     ));
 
-
+    // Додано: Fluid Mithril Smelter
+    public static final DeferredBlock<Block> FLUID_MITHRIL_SMELTER = registerBlock("fluid_mithril_smelter",
+            () -> new FluidMithrilSmelterBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.IRON_BLOCK).requiresCorrectToolForDrops()));
 
     public static final DeferredBlock<Block> ELECTRIC_MACHINE_BLOCK = registerBlock("electric_machine_block",
             () -> new FaceBlock(BlockBehaviour.Properties.of()
@@ -132,7 +134,7 @@ public class ModBlocks {
 
     public static final DeferredBlock<Block> STEEL_MIX_BLOCK= registerBlock("steel_mix_block",
             () -> new Block(BlockBehaviour.Properties.of().sound(SoundType.METAL).strength(4f).requiresCorrectToolForDrops().noOcclusion()
-    ));
+            ));
 
     public static final DeferredBlock<Block> COAL_COKE_BLOCK = registerBlock("coal_coke_block",
             () -> new Block(BlockBehaviour.Properties.of().sound(SoundType.STONE).strength(4f).requiresCorrectToolForDrops().noOcclusion()
@@ -252,15 +254,6 @@ public class ModBlocks {
                         .strength(1.5F)
                         .lightLevel((state) -> 3)
                         .pushReaction(PushReaction.DESTROY)));
-    }
-
-    private void onClientSetup(final FMLClientSetupEvent event) {
-        event.enqueueWork(() -> {
-            ItemBlockRenderTypes.setRenderLayer(ModBlocks.SMALL_SULFUR_BUD.get(), RenderType.cutout());
-            ItemBlockRenderTypes.setRenderLayer(ModBlocks.MEDIUM_SULFUR_BUD.get(), RenderType.cutout());
-            ItemBlockRenderTypes.setRenderLayer(ModBlocks.LARGE_SULFUR_BUD.get(), RenderType.cutout());
-            ItemBlockRenderTypes.setRenderLayer(ModBlocks.SULFUR_CLUSTER.get(), RenderType.cutout());
-        });
     }
 
     public static void register(IEventBus eventBus) {

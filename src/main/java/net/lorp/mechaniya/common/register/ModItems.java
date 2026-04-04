@@ -211,29 +211,29 @@ public class ModItems {
             ));
 
     // --- Sulfur Geode Blocks & Crystals ---
-    public static final DeferredItem<Item> RAW_SULFUR = ITEMS.register("raw_sulfur",
-            () -> new ParaffinWaxItem(new Item.Properties()));
-
-    public static final DeferredItem<Item> SULFUR_DUST = ITEMS.register("sulfur_dust",
-            () -> new Item(new Item.Properties()));
-
-    public static final DeferredItem<BlockItem> RAW_SULFUR_BLOCK = ITEMS.register("raw_sulfur_block",
-            () -> new BlockItem(ModBlocks.RAW_SULFUR_BLOCK.get(), new Item.Properties()));
-
-    public static final DeferredItem<BlockItem> BUDDING_SULFUR = ITEMS.register("budding_sulfur",
-            () -> new BlockItem(ModBlocks.BUDDING_SULFUR.get(), new Item.Properties()));
-
-    public static final DeferredItem<BlockItem> SMALL_SULFUR_BUD = ITEMS.register("small_sulfur_bud",
-            () -> new BlockItem(ModBlocks.SMALL_SULFUR_BUD.get(), new Item.Properties()));
-
-    public static final DeferredItem<BlockItem> MEDIUM_SULFUR_BUD = ITEMS.register("medium_sulfur_bud",
-            () -> new BlockItem(ModBlocks.MEDIUM_SULFUR_BUD.get(), new Item.Properties()));
-
-    public static final DeferredItem<BlockItem> LARGE_SULFUR_BUD = ITEMS.register("large_sulfur_bud",
-            () -> new BlockItem(ModBlocks.LARGE_SULFUR_BUD.get(), new Item.Properties()));
-
-    public static final DeferredItem<BlockItem> SULFUR_CLUSTER = ITEMS.register("sulfur_cluster",
-            () -> new BlockItem(ModBlocks.SULFUR_CLUSTER.get(), new Item.Properties()));
+//    public static final DeferredItem<Item> RAW_SULFUR = ITEMS.register("raw_sulfur",
+//            () -> new ParaffinWaxItem(new Item.Properties()));
+//
+//    public static final DeferredItem<Item> SULFUR_DUST = ITEMS.register("sulfur_dust",
+//            () -> new Item(new Item.Properties()));
+//
+//    public static final DeferredItem<BlockItem> RAW_SULFUR_BLOCK = ITEMS.register("raw_sulfur_block",
+//            () -> new BlockItem(ModBlocks.RAW_SULFUR_BLOCK.get(), new Item.Properties()));
+//
+//    public static final DeferredItem<BlockItem> BUDDING_SULFUR = ITEMS.register("budding_sulfur",
+//            () -> new BlockItem(ModBlocks.BUDDING_SULFUR.get(), new Item.Properties()));
+//
+//    public static final DeferredItem<BlockItem> SMALL_SULFUR_BUD = ITEMS.register("small_sulfur_bud",
+//            () -> new BlockItem(ModBlocks.SMALL_SULFUR_BUD.get(), new Item.Properties()));
+//
+//    public static final DeferredItem<BlockItem> MEDIUM_SULFUR_BUD = ITEMS.register("medium_sulfur_bud",
+//            () -> new BlockItem(ModBlocks.MEDIUM_SULFUR_BUD.get(), new Item.Properties()));
+//
+//    public static final DeferredItem<BlockItem> LARGE_SULFUR_BUD = ITEMS.register("large_sulfur_bud",
+//            () -> new BlockItem(ModBlocks.LARGE_SULFUR_BUD.get(), new Item.Properties()));
+//
+//    public static final DeferredItem<BlockItem> SULFUR_CLUSTER = ITEMS.register("sulfur_cluster",
+//            () -> new BlockItem(ModBlocks.SULFUR_CLUSTER.get(), new Item.Properties()));
 
     // --- Food & Consumables ---
     public static final DeferredItem<Item> ROLL_OF_ROLLS = ITEMS.register("roll_of_rolls",
