@@ -6,17 +6,17 @@
 				"identifier": "geometry.andesite_controller",
 				"texture_width": 256,
 				"texture_height": 256,
-				"visible_bounds_width": 4,
+				"visible_bounds_width": 6,
 				"visible_bounds_height": 6,
 				"visible_bounds_offset": [0, 2, 0]
 			},
 			"bones": [
 				{
 					"name": "bone",
-					"pivot": [-16, -63, 1],
+					"pivot": [-16, -64, 17],
 					"cubes": [
 						{
-							"origin": [-8, -15, 23],
+							"origin": [-8, -16, 39],
 							"size": [16, 16, 1],
 							"uv": {
 								"north": {"uv": [96, 47], "uv_size": [16, 16]},
@@ -28,7 +28,7 @@
 							}
 						},
 						{
-							"origin": [-24, -15, -24],
+							"origin": [-24, -16, -8],
 							"size": [48, 64, 47],
 							"uv": {
 								"north": {"uv": [0, 0], "uv_size": [48, 64]},
@@ -40,7 +40,7 @@
 							}
 						},
 						{
-							"origin": [8, -15, 23],
+							"origin": [8, -16, 39],
 							"size": [16, 64, 1],
 							"uv": {
 								"north": {"uv": [94, 111], "uv_size": [16, 64]},
@@ -52,7 +52,7 @@
 							}
 						},
 						{
-							"origin": [-24, -15, 23],
+							"origin": [-24, -16, 39],
 							"size": [16, 64, 1],
 							"uv": {
 								"north": {"uv": [126, 111], "uv_size": [16, 64]},
@@ -64,7 +64,7 @@
 							}
 						},
 						{
-							"origin": [-8, 17, 23],
+							"origin": [-8, 16, 39],
 							"size": [16, 32, 1],
 							"uv": {
 								"north": {"uv": [16, 128], "uv_size": [16, 32]},

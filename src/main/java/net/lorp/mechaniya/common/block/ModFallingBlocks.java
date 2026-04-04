@@ -4,6 +4,7 @@ import com.mojang.serialization.MapCodec;
 import net.minecraft.world.level.block.FallingBlock;
 import org.jetbrains.annotations.Nullable;
 
+@SuppressWarnings("all")
 public class ModFallingBlocks extends FallingBlock {
 
     public ModFallingBlocks(Properties properties) {

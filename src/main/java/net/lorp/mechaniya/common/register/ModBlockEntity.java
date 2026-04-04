@@ -8,6 +8,7 @@ import net.neoforged.neoforge.registries.DeferredRegister;
 
 import static net.lorp.mechaniya.Mechaniya.MOD_ID;
 
+@SuppressWarnings("all")
 public class ModBlockEntity {
     public static final DeferredRegister<BlockEntityType<?>> BLOCK_ENTITY = DeferredRegister.create(BuiltInRegistries.BLOCK_ENTITY_TYPE, MOD_ID);
 

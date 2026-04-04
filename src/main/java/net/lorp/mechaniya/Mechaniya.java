@@ -18,7 +18,6 @@ import net.neoforged.fml.event.lifecycle.FMLClientSetupEvent;
 import net.neoforged.fml.loading.FMLEnvironment;
 import net.neoforged.neoforge.capabilities.Capabilities;
 import net.neoforged.neoforge.capabilities.RegisterCapabilitiesEvent;
-import net.neoforged.neoforge.client.event.EntityRenderersEvent;
 import net.neoforged.neoforge.common.NeoForge;
 import net.neoforged.neoforge.energy.EnergyStorage;
 import net.neoforged.neoforge.event.server.ServerStartingEvent;
@@ -26,7 +25,7 @@ import org.slf4j.Logger;
 
 @Mod(Mechaniya.MOD_ID)
 public class Mechaniya {
-    public static final String MOD_ID = "mechaniya"; // Ідентифікатор мода
+    public static final String MOD_ID = "mechaniya";
     public static final Logger LOGGER = LogUtils.getLogger();
 
     public Mechaniya(IEventBus modEventBus, ModContainer modContainer) {
@@ -41,8 +40,8 @@ public class Mechaniya {
         ModFluid.register(modEventBus);
 
         modEventBus.addListener(this::registerCapabilities);
-
         modEventBus.addListener(this::onClientSetup);
+
         modContainer.registerConfig(ModConfig.Type.COMMON, Config.SPEC);
 
         if (FMLEnvironment.dist == Dist.CLIENT) {
@@ -50,8 +49,6 @@ public class Mechaniya {
             modEventBus.addListener(MechaniyaModClient::registerRenderersBlock);
         }
     }
-
-
 
     public void registerCapabilities(RegisterCapabilitiesEvent event) {
         event.registerItem(Capabilities.EnergyStorage.ITEM, (stack, context) -> {
@@ -82,7 +79,7 @@ public class Mechaniya {
 
                 @Override
                 public int extractEnergy(int maxExtract, boolean simulate) {
-                    return 0; // Тільки споживаємо
+                    return 0;
                 }
 
                 @Override
@@ -97,7 +94,8 @@ public class Mechaniya {
             };
         }, ModItems.PORTABLE_ELECTRIC_DRILL.get());
     }
-        @SuppressWarnings("deprecation")// здається це робиться тільки так, або через json
+
+    @SuppressWarnings("deprecation")
     private void onClientSetup(final FMLClientSetupEvent event) {
         event.enqueueWork(() -> {
             ItemBlockRenderTypes.setRenderLayer(ModBlocks.SMALL_SULFUR_BUD.get(), RenderType.cutout());
@@ -110,9 +108,4 @@ public class Mechaniya {
     @SubscribeEvent
     public void onServerStarting(ServerStartingEvent event) {
     }
-
-
-
-
-
 }

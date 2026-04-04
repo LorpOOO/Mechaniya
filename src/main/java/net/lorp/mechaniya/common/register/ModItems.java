@@ -1,7 +1,9 @@
 package net.lorp.mechaniya.common.register;
 
 import net.lorp.mechaniya.Mechaniya;
+import net.lorp.mechaniya.common.item.CustomCapacitor;
 import net.lorp.mechaniya.common.item.ElectricDrillItem;
+import net.lorp.mechaniya.common.item.ModCapacitor;
 import net.lorp.mechaniya.common.item.ParaffinWaxItem;
 import net.minecraft.core.component.DataComponents;
 import net.minecraft.network.chat.Component;
@@ -23,6 +25,7 @@ import net.neoforged.neoforge.registries.DeferredRegister;
 
 import java.util.List;
 
+@SuppressWarnings("all")
 public class ModItems {
     public static final DeferredRegister.Items ITEMS = DeferredRegister.createItems(Mechaniya.MOD_ID);
 
@@ -39,6 +42,11 @@ public class ModItems {
             () -> new Item(new Item.Properties().component(DataComponents.RARITY, Rarity.RARE)));
     public static final DeferredItem<Item> MITHRIL_NUGGET = ITEMS.register("mithril_nugget",
             () -> new Item(new Item.Properties().component(DataComponents.RARITY, Rarity.RARE)));
+
+    // --- Capacitor ---
+    public static final DeferredItem<Item> HEXADECIMAL_CAPACITOR = ITEMS.register(
+            "hexadecimal_capacitor",
+            () -> new CustomCapacitor(new Item.Properties(), ModCapacitor::HEXADECIMAL_CAPACITOR_DATA));
 
     // --- Metals: Blaze Gold ---
     public static final DeferredItem<Item> BLAZE_GOLD_INGOT = ITEMS.register("blaze_gold_ingot",

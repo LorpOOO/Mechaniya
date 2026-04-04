@@ -11,6 +11,7 @@ import net.minecraft.world.level.block.state.properties.BlockStateProperties;
 import net.minecraft.world.level.block.state.properties.DirectionProperty;
 import org.jetbrains.annotations.NotNull;
 
+@SuppressWarnings("all")
 public class FaceBlock extends Block {
 
     public static final DirectionProperty FACING = BlockStateProperties.HORIZONTAL_FACING;

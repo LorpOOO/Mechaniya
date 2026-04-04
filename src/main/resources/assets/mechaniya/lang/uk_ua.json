@@ -62,6 +62,7 @@
   "block.mechaniya.coal_coke_block": "Блок коксового вугілля",
   "item.mechaniya.coke_coal": "Коксове вугілля",
   "item.mechaniya.coal_coke_dust": "Коксовий пил",
+  "item.mechaniya.hexadecimal_capacitor": "Шістнадцятишаровий конденсатор",
 
   // --- Items: Experience ---
   "item.mechaniya.super_experience_heap": "Супер купа досвіду",

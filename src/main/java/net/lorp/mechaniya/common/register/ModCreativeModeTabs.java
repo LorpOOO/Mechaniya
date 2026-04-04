@@ -50,6 +50,7 @@ public class ModCreativeModeTabs {
                         output.accept(ModItems.BITUMEN.get());
                         output.accept(ModItems.OIL_FUEL_BALL.get());
                         output.accept(ModItems.PARAFFIN_WAX.get());
+                        output.accept(ModItems.HEXADECIMAL_CAPACITOR.get());
 
                         // --- Machine Casings ---
                         output.accept(ModBlocks.ANDESITE_MACHINE.get());

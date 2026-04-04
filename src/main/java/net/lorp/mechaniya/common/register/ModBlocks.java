@@ -28,6 +28,10 @@ public class ModBlocks {
             () -> new CustomMachineBlock(BlockBehaviour.Properties.of().requiresCorrectToolForDrops().strength(4f).noOcclusion(),
                     MachineShapes.ANDESITE));
 
+    public static final DeferredBlock<Block> SMALL_ANDESITE_CONTROLLER = registerBlock("small_andesite_controller",
+            () -> new FaceBlock(BlockBehaviour.Properties.of()
+                    .strength(4f).requiresCorrectToolForDrops().sound(SoundType.WOOD)));
+
     public static final DeferredBlock<Block> OIL_PIPE = registerBlock("oil_pipe",
             () -> new CustomMachineBlock(BlockBehaviour.Properties.of().requiresCorrectToolForDrops()
                     .strength(4f).noOcclusion(), MachineShapes.OIL_PIPE));
