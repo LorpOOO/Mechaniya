@@ -48,6 +48,11 @@ public class ModItems {
     public static final DeferredItem<Item> BLAZE_GOLD_NUGGET = ITEMS.register("blaze_gold_nugget",
             () -> new Item(new Item.Properties().component(DataComponents.RARITY, Rarity.UNCOMMON)));
 
+    // У вашому класі ModItems:
+    public static final DeferredHolder<Item, BlockItem> ANDESITE_CONTROLLER_ITEM =
+            ITEMS.register("andesite_controller",
+                    () -> new BlockItem(ModBlocks.ANDESITE_CONTROLLER.get(), new Item.Properties()));
+
     // --- Metals: Platinum & Radiant ---
     public static final DeferredItem<Item> ENTRO_PLATINUM_INGOT = ITEMS.register("entro_platinum_ingot",
             () -> new Item(new Item.Properties().fireResistant()));

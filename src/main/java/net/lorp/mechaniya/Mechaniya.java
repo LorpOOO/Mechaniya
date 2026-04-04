@@ -22,6 +22,7 @@ import net.neoforged.fml.event.lifecycle.FMLClientSetupEvent;
 import net.neoforged.fml.loading.FMLEnvironment;
 import net.neoforged.neoforge.capabilities.Capabilities;
 import net.neoforged.neoforge.capabilities.RegisterCapabilitiesEvent;
+import net.neoforged.neoforge.client.event.EntityRenderersEvent;
 import net.neoforged.neoforge.common.NeoForge;
 import net.neoforged.neoforge.energy.EnergyStorage;
 import net.neoforged.neoforge.event.server.ServerStartingEvent;
@@ -50,6 +51,14 @@ public class Mechaniya {
         if (FMLEnvironment.dist == Dist.CLIENT) {
             modEventBus.addListener(MechaniyaModClient::onRegisterClientExtensions);
         }
+    }
+
+    private void registerEntityRenderers(EntityRenderersEvent.RegisterRenderers event) {
+        // Реєструємо рендер для нашого GeckoLib блоку
+        event.registerBlockEntityRenderer(
+                net.lorp.mechaniya.common.register.ModBlockEntities.ANDESITE_CONTROLLER_BE.get(),
+                context -> new net.lorp.mechaniya.client.renderer.AndesiteControllerRenderer()
+        );
     }
 
     public void registerCapabilities(RegisterCapabilitiesEvent event) {
