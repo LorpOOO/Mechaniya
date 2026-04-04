@@ -30,7 +30,7 @@ import org.slf4j.Logger;
 
 @Mod(Mechaniya.MOD_ID)
 public class Mechaniya {
-    public static final String MOD_ID = "mechaniya";
+    public static final String MOD_ID = "mechaniya"; // Ідентифікатор мода
     public static final Logger LOGGER = LogUtils.getLogger();
 
     public Mechaniya(IEventBus modEventBus, ModContainer modContainer) {
@@ -53,13 +53,7 @@ public class Mechaniya {
         }
     }
 
-    private void registerEntityRenderers(EntityRenderersEvent.RegisterRenderers event) {
-        // Реєструємо рендер для нашого GeckoLib блоку
-        event.registerBlockEntityRenderer(
-                net.lorp.mechaniya.common.register.ModBlockEntities.ANDESITE_CONTROLLER_BE.get(),
-                context -> new net.lorp.mechaniya.client.renderer.AndesiteControllerRenderer()
-        );
-    }
+
 
     public void registerCapabilities(RegisterCapabilitiesEvent event) {
         event.registerItem(Capabilities.EnergyStorage.ITEM, (stack, context) -> {
@@ -105,7 +99,7 @@ public class Mechaniya {
             };
         }, ModItems.PORTABLE_ELECTRIC_DRILL.get());
     }
-
+        @SuppressWarnings("deprecation")// здається це робиться тільки так, або через json
     private void onClientSetup(final FMLClientSetupEvent event) {
         event.enqueueWork(() -> {
             ItemBlockRenderTypes.setRenderLayer(ModBlocks.SMALL_SULFUR_BUD.get(), RenderType.cutout());
@@ -118,4 +112,9 @@ public class Mechaniya {
     @SubscribeEvent
     public void onServerStarting(ServerStartingEvent event) {
     }
+
+
+
+
+
 }
