@@ -1,8 +1,0 @@
-{
-  "parent": "minecraft:block/orientable",
-  "textures": {
-    "front": "mechaniya:block/andesite_controller",
-    "side": "mechaniya:block/andesite_casing",
-    "top": "mechaniya:block/andesite_casing"
-  }
-}

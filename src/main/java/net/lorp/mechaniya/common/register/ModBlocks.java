@@ -14,6 +14,7 @@ import net.minecraft.world.level.material.PushReaction;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.fml.event.lifecycle.FMLClientSetupEvent;
 import net.neoforged.neoforge.registries.DeferredBlock;
+import net.neoforged.neoforge.registries.DeferredHolder;
 import net.neoforged.neoforge.registries.DeferredRegister;
 
 import java.util.function.Supplier;
@@ -51,9 +52,19 @@ public class ModBlocks {
             () -> new Block(BlockBehaviour.Properties.of()
                     .strength(4f).requiresCorrectToolForDrops().sound(SoundType.STONE)));
 
-    public static final DeferredBlock<Block> ANDESITE_CONTROLLER = registerBlock("andesite_controller",
+    public static final DeferredHolder<Block, AndesiteControllerBlock> ANDESITE_CONTROLLER =
+            BLOCKS.register("andesite_controller",
+                    () -> new AndesiteControllerBlock(BlockBehaviour.Properties.of()
+                            .mapColor(MapColor.STONE)
+                            .strength(3.0f)
+                            .noOcclusion()
+                    ));
+
+
+
+    public static final DeferredBlock<Block> ELECTRIC_MACHINE_BLOCK = registerBlock("electric_machine_block",
             () -> new FaceBlock(BlockBehaviour.Properties.of()
-                    .strength(4f).requiresCorrectToolForDrops().sound(SoundType.STONE)));
+                    .strength(4f).requiresCorrectToolForDrops().sound(SoundType.METAL)));
 
     public static final DeferredBlock<Block> RADIANT_MACHINE = registerBlock("radiant_machine",
             () -> new FaceBlock(BlockBehaviour.Properties.of()

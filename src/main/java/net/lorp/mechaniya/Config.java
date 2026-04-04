@@ -27,7 +27,7 @@ public class Config {
         ITEM_COOLDOWNS = BUILDER
                 .comment("Divide the value by what is indicated here")
                 .defineListAllowEmpty("item_cooldowns",
-                        List.of("mekanism:atomic_disassembler;0", "mekanism:meka_tool;0"),
+                        List.of("mechaniya:portable_electric_drill;0"),
                         obj -> obj instanceof String && ((String) obj).contains(";"));
 
         BUILDER.pop();
