@@ -19,6 +19,7 @@ public class AndesiteControllerModel extends GeoModel<AndesiteControllerBlock> {
     /**
      * @param andesiteControllerBlock
      * @deprecated
+     *
      */
     @Override
     public ResourceLocation getTextureResource(AndesiteControllerBlock andesiteControllerBlock) {
