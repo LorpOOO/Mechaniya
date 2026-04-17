@@ -12,8 +12,8 @@ import java.util.Map;
 
 import static net.lorp.mechaniya.Mechaniya.LOGGER;
 
-@SuppressWarnings("all")
-@EventBusSubscriber(modid = Mechaniya.MOD_ID, bus = EventBusSubscriber.Bus.MOD)
+
+@EventBusSubscriber(modid = Mechaniya.MOD_ID)
 public class Config {
     private static final ModConfigSpec.Builder BUILDER = new ModConfigSpec.Builder();
 
